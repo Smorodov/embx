@@ -1,0 +1,21 @@
+/** Nested types and enum code generation example. */
+namespace demo::nested;
+
+enum Kind: u8 {
+  Small = 1,
+  Large = 2
+}
+
+struct Point big {
+  x: u16;
+  y: u16;
+}
+
+type PointAlias = Point;
+
+struct Packet big {
+  kind: Kind;
+  head: Point;
+  alias_head: PointAlias;
+  points: Point[2];
+}

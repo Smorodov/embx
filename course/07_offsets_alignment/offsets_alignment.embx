@@ -1,0 +1,10 @@
+/** Lesson 7: explicit offsets, $next, and alignment. */
+struct OffsetAlign big {
+  head: u8;
+  at($next + 2) {
+    marker: u8;
+    align(4);
+    value: u16;
+  }
+  tail: u8;
+}

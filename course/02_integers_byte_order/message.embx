@@ -1,0 +1,7 @@
+/// Lesson 2: fixed-width integers and explicit byte order.
+struct Numbers big {
+  bigValue: u16;
+  littleValue: u16 little;
+  signedLittle: i16 little;
+  byteValue: u8;
+}

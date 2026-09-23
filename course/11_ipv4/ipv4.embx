@@ -1,0 +1,24 @@
+/** Lesson 11: a minimal IPv4 header. */
+namespace net::ipv4;
+
+enum Protocol: u8 {
+  ICMP = 1,
+  TCP = 6,
+  UDP = 17
+}
+
+struct Header big {
+  bits {
+    version: u8(4);
+    ihl: u8(4);
+  }
+  dscp: u8;
+  total_length: u16;
+  identification: u16;
+  flags_fragment: u16;
+  ttl: u8;
+  protocol: Protocol;
+  checksum: u16;
+  source: bytes[4];
+  destination: bytes[4];
+}

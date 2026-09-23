@@ -1,0 +1,18 @@
+/** Lesson 10: callbacks and transforms. */
+
+callback on_decode_event(value);
+callback on_encode_event(value);
+
+struct DecodeEvent big {
+  value: u8;
+  callback on_decode_event(value);
+}
+
+struct EncodeEvent big {
+  value: u8;
+  callback on_encode_event(value);
+}
+
+struct Measurement big {
+  temperature: i16 transform scale(0.1);
+}

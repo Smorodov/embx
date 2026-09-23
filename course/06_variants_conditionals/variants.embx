@@ -1,0 +1,18 @@
+/** Lesson 6: runtime variants and conditional fields. */
+struct Packet big {
+  kind: u8;
+  variant body by kind {
+    1: u16;
+    2: { value: u32; }
+    default: u8;
+  }
+}
+
+struct ConditionalPacket big {
+  flags: u8;
+  if (flags == 1) {
+    value: u32;
+  } else {
+    small: u16;
+  }
+}

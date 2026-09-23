@@ -1,0 +1,9 @@
+/** Lesson 3: one-byte bit field container. */
+struct Flags big {
+  bits {
+    version: u8(3);
+    kind: u8(2);
+    enabled: u8(1);
+    code: u8(2);
+  }
+}

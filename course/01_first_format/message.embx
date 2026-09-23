@@ -1,0 +1,6 @@
+/// The smallest complete EmbX binary format used by Lesson 1.
+struct Message big {
+  magic: u16 = 0xCAFE;
+  version: u8;
+  payload: bytes[4];
+}

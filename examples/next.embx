@@ -1,0 +1,7 @@
+struct NextLayout {
+  header: u8;
+  at($next + 2) {
+    payload: u16;
+  }
+  tail: u8;
+}

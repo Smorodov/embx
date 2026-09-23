@@ -1,0 +1,9 @@
+/** Lesson 4: fixed and runtime-sized arrays. */
+struct StaticArray big {
+  values: u8[4];
+}
+
+struct DynamicArray big {
+  count: u8;
+  values: u16[count];
+}

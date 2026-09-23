@@ -1,0 +1,10 @@
+/// Bidirectional callback extension points.
+callback on_decode_packet(ctx);
+callback on_encode_packet(ctx);
+
+struct Event little {
+  kind: u8;
+  callback on_decode_packet(kind);
+  callback on_encode_packet(kind);
+  payload: bytes[2];
+}
