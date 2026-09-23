@@ -57,4 +57,4 @@ From the build directory:
 ctest --test-dir build -R lesson_11_ipv4 --output-on-failure
 ```
 
-This lesson is part of the **0.9.47 accepted green baseline**. Local Windows/MSYS2 UCRT64 validation passed with 72/72 CTest tests.
+This lesson is part of the **0.9.48 accepted green baseline**. Local Windows/MSYS2 UCRT64 validation passed with 73/73 CTest tests.

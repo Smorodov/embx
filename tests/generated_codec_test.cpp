@@ -181,6 +181,35 @@ TEST_CASE("generated C++ emits scale transform in logical type and codec") {
     std::filesystem::remove(path);
 }
 
+TEST_CASE("generated C++ emits generic terminated sequence over struct elements") {
+    const auto path = std::filesystem::temp_directory_path() / "embx_generated_nested_terminated_sequence.embx";
+    std::ofstream out(path);
+    out << R"(struct Entry {
+  value: bytes until 0x00 max 8;
+}
+struct EntryList {
+  entries: Entry[*] until 0xFF 0xFF max 32;
+})";
+    out.close();
+
+    std::string error;
+    auto ast = embx::parser::parseFile(path.string(), error);
+    REQUIRE(ast); REQUIRE(error.empty());
+    auto ir = embx::ir::lower(*ast, error);
+    REQUIRE(ir); REQUIRE(error.empty());
+    auto plan = embx::plan::build(*ir, error);
+    REQUIRE(plan); REQUIRE(error.empty());
+    embx::codegen::Output generated;
+    REQUIRE(embx::codegen::generateCpp(*plan, generated, error));
+    REQUIRE(error.empty());
+    REQUIRE(generated.header.find("std::vector<") != std::string::npos);
+    REQUIRE(generated.source.find("atTerm(term)") != std::string::npos);
+    REQUIRE(generated.source.find("emplace_back()") != std::string::npos);
+
+    std::error_code ec;
+    std::filesystem::remove(path, ec);
+}
+
 TEST_CASE("generated C++ emits terminated byte sequence codec") {
     const auto path = std::filesystem::temp_directory_path() / "embx_generated_terminated_sequence.embx";
     std::ofstream out(path);

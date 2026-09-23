@@ -132,3 +132,101 @@ TEST_CASE("terminated sequence is visible in reflection") {
     REQUIRE(member.minSize == 1);
     REQUIRE(member.maxSize == 9);
 }
+
+
+TEST_CASE("terminated sequence accepts empty payload, non-NUL terminators, and terminal at input end") {
+    std::string err;
+    auto plan = makePlan(R"(struct Record {
+  payload: bytes until 0x7E max 4;
+})", err);
+    REQUIRE(plan);
+    REQUIRE(err.empty());
+
+    embx::decoder::Engine decoder(*plan);
+    const auto empty = decoder.decode("Record", std::vector<std::uint8_t>{0x7E});
+    REQUIRE(empty);
+    REQUIRE(std::get<embx::value::Value::Bytes>(empty.value.at("payload").data).empty());
+    REQUIRE(empty.consumed == 1);
+
+    const auto final = decoder.decode("Record", std::vector<std::uint8_t>{0x41,0x42,0x7E});
+    REQUIRE(final);
+    REQUIRE(std::get<embx::value::Value::Bytes>(final.value.at("payload").data) == embx::value::Value::Bytes{0x41,0x42});
+    REQUIRE(final.consumed == 3);
+}
+
+TEST_CASE("terminated sequence permits maximum payload exactly at the boundary") {
+    std::string err;
+    auto plan = makePlan(R"(struct Record {
+  payload: bytes until 0x00 max 3;
+  tail: u8;
+})", err);
+    REQUIRE(plan);
+    REQUIRE(err.empty());
+
+    embx::decoder::Engine decoder(*plan);
+    const auto exact = decoder.decode("Record", std::vector<std::uint8_t>{'a','b','c',0x00,0x7F});
+    REQUIRE(exact);
+    REQUIRE(std::get<embx::value::Value::Bytes>(exact.value.at("payload").data) == embx::value::Value::Bytes{'a','b','c'});
+    REQUIRE(std::get<std::uint64_t>(exact.value.at("tail").data) == 0x7F);
+    REQUIRE(exact.consumed == 5);
+}
+
+TEST_CASE("terminated sequence cannot search outside a bounded containing block") {
+    std::string err;
+    auto plan = makePlan(R"(struct Container {
+  block body[4] {
+    payload: bytes until 0x00 max 8;
+  }
+})", err);
+    REQUIRE(plan);
+    REQUIRE(err.empty());
+
+    embx::decoder::Engine decoder(*plan);
+    const auto result = decoder.decode("Container", std::vector<std::uint8_t>{'a','b','c','d',0x00});
+    REQUIRE_FALSE(result);
+    REQUIRE(result.consumed == 0);
+}
+
+TEST_CASE("nested terminated sequence terminates only between elements") {
+    std::string err;
+    auto plan = makePlan(R"(struct Entry {
+  value: bytes until 0x00 max 8;
+}
+struct EntryList {
+  entries: Entry[*] until 0xFF 0xFF max 32;
+  tail: u8;
+})", err);
+    REQUIRE(plan);
+    REQUIRE(err.empty());
+
+    embx::decoder::Engine decoder(*plan);
+    const std::vector<std::uint8_t> wire{'A',0x00,'B','C',0x00,0xFF,0xFF,0x7F};
+    const auto decoded = decoder.decode("EntryList", wire);
+    REQUIRE(decoded);
+    REQUIRE(decoded.consumed == wire.size());
+    const auto& entries = std::get<embx::value::Value::Array>(decoded.value.at("entries").data);
+    REQUIRE(entries.size() == 2);
+    REQUIRE(std::get<embx::value::Value::Bytes>(entries[0].at("value").data) == embx::value::Value::Bytes{'A'});
+    REQUIRE(std::get<embx::value::Value::Bytes>(entries[1].at("value").data) == embx::value::Value::Bytes{'B','C'});
+    REQUIRE(std::get<std::uint64_t>(decoded.value.at("tail").data) == 0x7F);
+
+    embx::value::Value::Object first;
+    first["value"] = embx::value::Value::Bytes{'A'};
+    embx::value::Value::Object second;
+    second["value"] = embx::value::Value::Bytes{'B','C'};
+    embx::value::Value::Array values;
+    values.emplace_back(std::move(first));
+    values.emplace_back(std::move(second));
+    embx::value::Value::Object value;
+    value["entries"] = std::move(values);
+    value["tail"] = std::uint64_t(0x7F);
+
+    embx::encoder::Engine encoder(*plan);
+    const auto encoded = encoder.encode("EntryList", value);
+    REQUIRE(encoded);
+    REQUIRE(encoded.data == wire);
+
+    const auto missingOuter = decoder.decode("EntryList", std::vector<std::uint8_t>{'A',0x00});
+    REQUIRE_FALSE(missingOuter);
+    REQUIRE(missingOuter.consumed == 0);
+}

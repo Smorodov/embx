@@ -495,14 +495,19 @@ bool lowerOne(const ir::Member* m, const ir::Module& src, core::Endian outer, co
     }
     if(auto* f=dynamic_cast<const ir::Field*>(m)){
         if (!f->type.terminator.empty()) {
-            if (f->type.kind != core::TypeKind::Bytes) { err = "terminated sequence is only valid for bytes: " + f->name; return false; }
             if (!f->type.maxPayload.has_value()) { err = "terminated sequence requires a maximum payload length: " + f->name; return false; }
-            if (!f->type.dimensions.empty()) { err = "terminated sequence cannot have an array suffix: " + f->name; return false; }
+            const bool byteForm = f->type.kind == core::TypeKind::Bytes && f->type.dimensions.empty();
+            const bool sequenceForm = f->type.dimensions.size() == 1 && f->type.dimensions[0].kind == core::Dimension::Kind::Remaining;
+            if (!byteForm && !sequenceForm) { err = "terminated sequence requires bytes or exactly one [*] dimension: " + f->name; return false; }
             if (*f->type.maxPayload > std::numeric_limits<runtime::LayoutSize>::max() - static_cast<runtime::LayoutSize>(f->type.terminator.size())) { err = "terminated sequence maximum length overflow: " + f->name; return false; }
         }
         if (f->symbol == core::InvalidSymbolId || !src.symbolTable.find(f->symbol) || src.symbolTable.find(f->symbol)->kind != core::SymbolKind::Field) { err="field has invalid SymbolId: "+f->name; return false; }
         auto x=std::make_unique<Field>(); x->symbol=f->symbol; x->attributes=f->attributes; x->documentation=f->documentation; x->name=f->name; if (!materializeExecutionType(f->type, src, env, x->type, err)) return false;
-        if (!x->type.terminator.empty() && !x->type.dimensions.empty()) { err = "terminated sequence cannot have an array suffix: " + f->name; return false; }
+        if (!x->type.terminator.empty()) {
+            const bool byteForm = x->type.kind == core::TypeKind::Bytes && x->type.dimensions.empty();
+            const bool sequenceForm = x->type.dimensions.size() == 1 && x->type.dimensions[0].kind == core::Dimension::Kind::Remaining;
+            if (!byteForm && !sequenceForm) { err = "terminated sequence requires bytes or exactly one [*] dimension: " + f->name; return false; }
+        }
         x->bits=f->bits; x->endian=resolveEndian(f->endian,outer,module); x->assertion=f->assertion;
         if (f->transform) {
             if (f->transform->name != "scale" || f->transform->arguments.size() != 1) { err = "invalid scale transform: " + f->name; return false; }
@@ -515,7 +520,7 @@ bool lowerOne(const ir::Member* m, const ir::Module& src, core::Endian outer, co
         }
         const bool hasTypeShape = !f->type.dimensions.empty();
         if (f->bits != 0) { err="bit width is only valid inside a bits block: "+f->name; return false; }
-        if(!bounded){std::unordered_set<core::SymbolId> visiting;if(dynamicStarType(f->type,src,visiting)){err="bytes[*]/string[*] requires a bounded context: "+f->name;return false;}}
+        if(!bounded && f->type.terminator.empty()){std::unordered_set<core::SymbolId> visiting;if(dynamicStarType(f->type,src,visiting)){err="bytes[*]/string[*] requires a bounded context: "+f->name;return false;}}
         if (hasTypeShape) {
             runtime::LayoutSize count = 1;
             bool fixed = true;
@@ -935,6 +940,10 @@ bool validateExecutableType(const Module& p, const Type& t, const std::string& o
         }
     }
     for (const auto& d : t.dimensions) {
+        // A remaining dimension ([*]) is a runtime sequence extent and has no
+        // expression. It is valid for terminated sequences over arbitrary
+        // element types; all other dimensions must carry an executable expression.
+        if (d.kind == core::Dimension::Kind::Remaining) continue;
         if (!d.expression) { err = owner + ": dimension has no expression"; return false; }
         std::string e;
         if (!validatePlanExprIdentity(p, d.expression.get(), owner, e)) {
@@ -1626,10 +1635,13 @@ LayoutBounds layoutBoundsImpl(const Module& p, const Type& t,
                               std::string& err) {
     LayoutBounds base;
     if (!t.terminator.empty()) {
-        if (t.kind != core::TypeKind::Bytes || !t.maxPayload.has_value() || t.terminator.empty()) { err = "invalid terminated sequence type"; return {}; }
+        const bool byteForm = t.kind == core::TypeKind::Bytes && t.dimensions.empty();
+        const bool sequenceForm = t.dimensions.size() == 1 && t.dimensions[0].kind == core::Dimension::Kind::Remaining;
+        if ((!byteForm && !sequenceForm) || !t.maxPayload.has_value() || t.terminator.empty()) { err = "invalid terminated sequence type"; return {}; }
         if (*t.maxPayload > std::numeric_limits<runtime::LayoutSize>::max() - static_cast<runtime::LayoutSize>(t.terminator.size())) { err = "terminated sequence maximum length overflow"; return {}; }
         base.minSize = static_cast<runtime::LayoutSize>(t.terminator.size());
         base.maxSize = *t.maxPayload + static_cast<runtime::LayoutSize>(t.terminator.size());
+        return base;
     } else if (auto s = primitiveSize(t.name)) base = LayoutBounds{*s, *s};
     else if (t.name == "bytes" || t.name == "string") base = LayoutBounds{1, 1};
     else if (const auto* sp = findStructByType(p, t)) {

@@ -49,8 +49,8 @@ attributeType: U8|I8|U16|I16|U32|I32|U64|I64|F32|F64|STRINGTYPE;
 attributes: '[' attributeEntry (',' attributeEntry)* ','? ']';
 attributeEntry: ID ('=' (literal | ID | TRUE | FALSE))?;
 
-typeRef: (terminatedBytesType | qualifiedName | baseType) typeSuffix? ;
-terminatedBytesType: BYTES UNTIL HEX+ MAX INT ;
+typeRef: (qualifiedName | baseType) typeSuffix? terminatedSequenceSuffix? ;
+terminatedSequenceSuffix: UNTIL HEX+ MAX INT ;
 typeSuffix: '[' (STAR | expr) ']' ;
 baseType: primitive | ID | BYTES | STRINGTYPE;
 primitive: U8|I8|U16|I16|U32|I32|U64|I64|F32|F64;

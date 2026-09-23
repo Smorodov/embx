@@ -143,26 +143,21 @@ struct Builder : EmbXBaseVisitor {
 
     ast::TypeRef tr(EmbXParser::TypeRefContext* c) {
         ast::TypeRef t; if(!c) return t;
-        if (c->terminatedBytesType()) {
-            t.name = "bytes";
-            for (auto* h : c->terminatedBytesType()->HEX()) {
+        t.name=c->baseType()?text(c->baseType()):text(c->qualifiedName());
+        auto* s = c->typeSuffix();
+        if(s) {
+            ast::TypeSuffix ts;
+            if(s->STAR()) ts.dynamic = true;
+            else ts.expr = expr(s->expr());
+            t.suffixes.push_back(std::move(ts));
+        }
+        if (c->terminatedSequenceSuffix()) {
+            for (auto* h : c->terminatedSequenceSuffix()->HEX()) {
                 const auto value = std::stoul(text(h), nullptr, 16);
                 if (value > 0xFFu) return {};
                 t.terminator.push_back(static_cast<std::uint8_t>(value));
             }
-            t.maxPayload = static_cast<std::uint64_t>(std::stoull(text(c->terminatedBytesType()->INT())));
-        } else {
-            t.name=c->baseType()?text(c->baseType()):text(c->qualifiedName());
-        }
-        auto* s = c->typeSuffix();
-        if(s) {
-            ast::TypeSuffix ts;
-            if(s->STAR()) {
-                ts.dynamic = true;
-            } else {
-                ts.expr = expr(s->expr());
-            }
-            t.suffixes.push_back(std::move(ts));
+            t.maxPayload = static_cast<std::uint64_t>(std::stoull(text(c->terminatedSequenceSuffix()->INT())));
         }
         return t;
     }

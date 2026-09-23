@@ -133,20 +133,6 @@ bool resolveFieldType(const plan::Module& module, const plan::Field& f, const pl
     base = resolveAlias(module, f.type, error);
     return base != nullptr;
 }
-const plan::Expr* dynamicLengthExpr(const plan::Field& f) {
-    for (const auto& d : f.type.dimensions) {
-        if ((d.kind == core::Dimension::Kind::Dynamic || d.kind == core::Dimension::Kind::Remaining) && d.expression) return d.expression.get();
-    }
-    return nullptr;
-}
-bool dynamicBytes(const plan::Field& f) {
-    // A dynamic suffix with an expression (e.g. values[count]) is a bounded
-    // element array, not the special bytes[*]/string[*] remainder form.
-    for (const auto& d : f.type.dimensions) {
-        if (d.kind == core::Dimension::Kind::Remaining) return true;
-    }
-    return false;
-}
 std::string fieldExpr(const std::string& object, const std::string& field) {
     return object + "." + leafName(field);
 }
@@ -440,7 +426,11 @@ std::string cppFieldType(const plan::Module& module, const plan::Field& f, std::
     if (!resolveFieldType(module, f, base, error)) return {};
     if (f.transform && f.type.dimensions.empty() && base->kind == core::TypeKind::Primitive) return "double";
     if (!f.type.terminator.empty()) {
-        if (base->kind != core::TypeKind::Bytes) { error = "generated terminated sequence requires bytes field: " + f.name; return {}; }
+        if (f.type.dimensions.size() == 1 && f.type.dimensions[0].kind == core::Dimension::Kind::Remaining) {
+            std::string type = cppFieldElementType(module, f, *base, error);
+            return type.empty() ? std::string{} : "std::vector<" + type + ">";
+        }
+        if (base->kind != core::TypeKind::Bytes) { error = "generated terminated sequence requires bytes or [*] element sequence: " + f.name; return {}; }
         return "std::vector<std::uint8_t>";
     }
     if (f.type.dimensions.empty()) return cppFieldElementType(module, f, *base, error);
@@ -481,6 +471,8 @@ void emitCodecHelpers(std::ostringstream& h, const plan::Module& module) {
       << "    void getBytes(std::vector<std::uint8_t>& out,std::size_t n){if(!need(n))return;out.assign(d.begin()+static_cast<std::ptrdiff_t>(p),d.begin()+static_cast<std::ptrdiff_t>(p+n));p+=n;}\n"
       << "    void getString(std::string& out,std::size_t n){if(!need(n))return;out.assign(reinterpret_cast<const char*>(d.data()+p),n);p+=n;}\n"
       << "    bool getTerminatedBytes(std::vector<std::uint8_t>& out,const std::vector<std::uint8_t>& term,std::uint64_t maxPayload,std::string* error){if(term.empty()){if(error)*error=\"empty terminator\";return false;}if(maxPayload>static_cast<std::uint64_t>((std::numeric_limits<std::size_t>::max)()-term.size())){if(error)*error=\"terminated sequence maximum exceeds host size\";return false;}const std::size_t saved=p;const std::size_t limitN=static_cast<std::size_t>(maxPayload)+term.size();out.clear();for(std::size_t i=0;i<limitN&&remaining()!=0;++i){const auto b=d[p++];out.push_back(b);if(out.size()>=term.size()&&std::equal(term.rbegin(),term.rend(),out.rbegin())){out.resize(out.size()-term.size());return true;}}p=saved;ok=false;this->error=\"terminated sequence terminator not found within maximum payload length\";if(error)*error=this->error;return false;}\n"
+      << "    bool atTerm(const std::vector<std::uint8_t>& term) const { return !term.empty() && remaining() >= term.size() && std::equal(term.begin(),term.end(),d.begin()+static_cast<std::ptrdiff_t>(p)); }\n"
+      << "    void consumeTerm(const std::vector<std::uint8_t>& term) { p += term.size(); }\n"
       << "};\n"
       << "template<class T> std::uint64_t checkedSize(T v){if constexpr(std::is_signed_v<T>){if(v<0)throw std::runtime_error(\"negative dynamic size\");}return static_cast<std::uint64_t>(v);}\n"
       << "inline bool checkedHostSize(std::uint64_t v,std::size_t& out){if(v>static_cast<std::uint64_t>((std::numeric_limits<std::size_t>::max)()))return false;out=static_cast<std::size_t>(v);return true;}\n"
@@ -637,7 +629,8 @@ bool emitVariantType(std::ostringstream& h, const plan::Module& module, const pl
     h << indent(1) << "using storage = std::variant<";
     bool first = true;
     for (std::size_t i = 0; i < v.cases.size(); ++i) {
-        if (!first) h << ", "; first = false;
+        if (!first) h << ", ";
+        first = false;
         if (v.cases[i].type) {
             std::string ct = cppVariantScalarType(module, *v.cases[i].type, error); if (ct.empty()) return false;
             h << ct;
@@ -653,7 +646,7 @@ bool emitVariantType(std::ostringstream& h, const plan::Module& module, const pl
     return true;
 }
 
-bool emitVariantDecode(std::ostringstream& c, const plan::Module& module, const plan::Struct& parent,
+bool emitVariantDecode(std::ostringstream& c, const plan::Module& module,
                        const plan::Variant& v, const std::string& obj, std::string& error) {
     std::string disc = emitRequireExpr(module, v.discriminator.get(), obj, error); if (disc.empty()) return false;
     const std::string dst = fieldExpr(obj, v.name);
@@ -698,7 +691,7 @@ bool emitVariantDecode(std::ostringstream& c, const plan::Module& module, const 
     return true;
 }
 
-bool emitVariantEncode(std::ostringstream& c, const plan::Module& module, const plan::Struct& parent,
+bool emitVariantEncode(std::ostringstream& c, const plan::Module& module,
                        const plan::Variant& v, const std::string& obj, std::string& error) {
     std::string disc = emitRequireExpr(module, v.discriminator.get(), obj, error); if (disc.empty()) return false;
     const std::string src = fieldExpr(obj, v.name);
@@ -1065,10 +1058,18 @@ bool emitDecodeField(std::ostringstream& c, const plan::Module& module, const pl
     const plan::Type* base=nullptr; if(!resolveFieldType(module,f,base,error)) return false;
     const std::string dst=fieldExpr(obj,f.name);
     if (!f.type.terminator.empty()) {
-        if (base->kind != core::TypeKind::Bytes || !f.type.maxPayload.has_value()) { error = "generated invalid terminated sequence: " + f.name; return false; }
+        if (!f.type.maxPayload.has_value()) { error = "generated invalid terminated sequence: " + f.name; return false; }
         c << "    { const std::vector<std::uint8_t> term{";
         for (std::size_t i = 0; i < f.type.terminator.size(); ++i) { if (i) c << ","; c << static_cast<unsigned>(f.type.terminator[i]); }
-        c << "}; if(!r.getTerminatedBytes(" << dst << ",term," << *f.type.maxPayload << "ULL,error)) return false; }\n";
+        c << "};";
+        if (f.type.dimensions.size() == 1 && f.type.dimensions[0].kind == core::Dimension::Kind::Remaining) {
+            c << " const std::size_t saved=r.p; " << dst << ".clear(); while(true){ if(r.atTerm(term)){r.consumeTerm(term);break;} if(r.p-saved>=" << *f.type.maxPayload << "ULL){r.p=saved;r.ok=false;r.error=\"terminated sequence terminator not found within maximum payload length\";if(error)*error=r.error;return false;} " << dst << ".emplace_back();";
+            if(!emitDecodeLeaf(c,module,f,*base,dst+".back()",error)) return false;
+            c << " if(r.p-saved>" << *f.type.maxPayload << "ULL){r.p=saved;r.ok=false;r.error=\"terminated sequence payload exceeds maximum length\";if(error)*error=r.error;return false;} } }\n";
+        } else {
+            if (base->kind != core::TypeKind::Bytes) { error = "generated invalid terminated sequence: " + f.name; return false; }
+            c << " if(!r.getTerminatedBytes(" << dst << ",term," << *f.type.maxPayload << "ULL,error)) return false; }\n";
+        }
     } else if (f.type.dimensions.size()==1 && f.type.dimensions[0].kind==core::Dimension::Kind::Remaining) {
         if(base->kind==core::TypeKind::Bytes) c<<"    r.getBytes("<<dst<<",r.remaining());\n";
         else if(base->kind==core::TypeKind::String) c<<"    r.getString("<<dst<<",r.remaining());\n";
@@ -1120,10 +1121,18 @@ bool emitEncodeField(std::ostringstream& c, const plan::Module& module, const pl
     const plan::Type* base=nullptr; if(!resolveFieldType(module,f,base,error)) return false;
     const std::string src=fieldExpr(obj,f.name);
     if (!f.type.terminator.empty()) {
-        if (base->kind != core::TypeKind::Bytes || !f.type.maxPayload.has_value()) { error = "generated invalid terminated sequence: " + f.name; return false; }
+        if (!f.type.maxPayload.has_value()) { error = "generated invalid terminated sequence: " + f.name; return false; }
         c << "    { const std::vector<std::uint8_t> term{";
         for (std::size_t i = 0; i < f.type.terminator.size(); ++i) { if (i) c << ","; c << static_cast<unsigned>(f.type.terminator[i]); }
-        c << "}; try { w.putTerminatedBytes(" << src << ",term," << *f.type.maxPayload << "ULL); } catch(const std::exception& ex){if(error)*error=ex.what();return false;} }\n";
+        c << "};";
+        if (f.type.dimensions.size() == 1 && f.type.dimensions[0].kind == core::Dimension::Kind::Remaining) {
+            c << " const std::size_t saved=w.p; for(const auto& elem:" << src << "){";
+            if(!emitEncodeLeaf(c,module,f,*base,"elem",error)) return false;
+            c << " if(w.p-saved>" << *f.type.maxPayload << "ULL){if(error)*error=\"terminated sequence payload exceeds maximum length\";return false;} } if(w.p-saved>" << *f.type.maxPayload << "ULL){if(error)*error=\"terminated sequence payload exceeds maximum length\";return false;} w.putBytes(term); }\n";
+        } else {
+            if (base->kind != core::TypeKind::Bytes) { error = "generated invalid terminated sequence: " + f.name; return false; }
+            c << " try { w.putTerminatedBytes(" << src << ",term," << *f.type.maxPayload << "ULL); } catch(const std::exception& ex){if(error)*error=ex.what();return false;} }\n";
+        }
     } else if(f.type.dimensions.size()==1 && f.type.dimensions[0].kind==core::Dimension::Kind::Remaining) {
         if(base->kind==core::TypeKind::Bytes)c<<"    w.putBytes("<<src<<");\n";
         else if(base->kind==core::TypeKind::String)c<<"    w.putString("<<src<<");\n";
@@ -1183,7 +1192,7 @@ bool emitStructCodec(std::ostringstream& h,std::ostringstream& c,const plan::Mod
             if(!emitConditionalDecode(c,module,static_cast<const plan::Conditional&>(*op),"out",error))return false;
         }
         else if(op->kind==plan::OpKind::Variant){
-            if(!emitVariantDecode(c,module,s,static_cast<const plan::Variant&>(*op),"out",error))return false;
+            if(!emitVariantDecode(c,module,static_cast<const plan::Variant&>(*op),"out",error))return false;
         }
         else if(op->kind==plan::OpKind::At){
             const auto& a=static_cast<const plan::At&>(*op); std::string sx;if(!emitOffsetExpr(module,a,"out",sx,error))return false;
@@ -1218,7 +1227,7 @@ bool emitStructCodec(std::ostringstream& h,std::ostringstream& c,const plan::Mod
             if(!emitConditionalEncode(c,module,static_cast<const plan::Conditional&>(*op),"work",error))return false;
         }
         else if(op->kind==plan::OpKind::Variant){
-            if(!emitVariantEncode(c,module,s,static_cast<const plan::Variant&>(*op),"work",error))return false;
+            if(!emitVariantEncode(c,module,static_cast<const plan::Variant&>(*op),"work",error))return false;
         }
         else if(op->kind==plan::OpKind::At){
             const auto& a=static_cast<const plan::At&>(*op); std::string sx;if(!emitOffsetExpr(module,a,"work",sx,error))return false;

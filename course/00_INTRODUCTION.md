@@ -366,7 +366,7 @@ The order is deliberate. Later lessons should reuse concepts already established
  ↓
 09  Virtual fields and aliases
  ↓
-10  Callbacks and transforms — development candidate
+10  Callbacks and transforms — accepted
  ↓
 11  IPv4
  ↓
@@ -437,11 +437,26 @@ The course therefore serves two purposes at once:
 
 ## 15. Current starting point
 
-At EmbX 0.9.46, Lessons 1–10 are active: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, and virtual fields and aliases, and callbacks and transforms. The MIDI lesson is also active as the first real-format conformance lesson.
+At EmbX 0.9.50, Lessons 1–12 are the active teaching sequence in this course candidate: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, virtual fields and aliases, callbacks and transforms, IPv4, and general terminated sequences. Lesson 13 is MIDI, the first real-format conformance lesson.
 
 Start with Lesson 1 after reading this introduction, then continue through the active sequence in order. The introduction is deliberately not a replacement for the lessons: it supplies the common map so each lesson can concentrate on its own language concept.
 
 
 ## Lesson 11 — IPv4
 
-Development candidate for 0.9.47. The lesson expresses a fixed 20-byte IPv4 header using existing EmbX primitives and validates it against a real binary fixture. It intentionally does not introduce IPv4-specific semantics.
+Accepted in 0.9.47 and retained in 0.9.48. The lesson expresses a fixed 20-byte IPv4 header using existing EmbX primitives and validates it against a real binary fixture. It intentionally does not introduce IPv4-specific semantics.
+
+## 16. Current practical sequence
+
+The active practical sequence now places generalized terminated sequences before the real-format MIDI lesson:
+
+```text
+Lesson 11 — IPv4
+Lesson 12 — General terminated sequences
+Lesson 13 — MIDI
+```
+
+Lesson 12 is deliberately format-neutral. It teaches a general binary rule already present in the
+language contract: a terminated sequence may contain structured elements, and a containing terminator
+is recognized only between complete elements. MIDI remains the first lesson whose main goal is
+external real-format conformance and playback.

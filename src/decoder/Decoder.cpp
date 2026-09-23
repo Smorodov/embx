@@ -83,25 +83,55 @@ class Decoder {
     bool readType(const plan::Type& t, Value& out, std::optional<runtime::LayoutSize> boundedBytes, std::string& err) {
         plan::Type effective=cloneType(t);
         if (!effective.terminator.empty()) {
-            if (effective.kind != core::TypeKind::Bytes || !effective.maxPayload.has_value()) { err="invalid terminated sequence type"; return false; }
+            if (!effective.maxPayload.has_value()) { err="invalid terminated sequence type"; return false; }
+            const bool byteForm = effective.kind == core::TypeKind::Bytes && effective.dimensions.empty();
+            const bool sequenceForm = effective.dimensions.size() == 1 && effective.dimensions[0].kind == core::Dimension::Kind::Remaining;
+            if (!byteForm && !sequenceForm) { err="invalid terminated sequence type"; return false; }
             const std::size_t termSize = effective.terminator.size();
             if (*effective.maxPayload > static_cast<runtime::LayoutSize>(std::numeric_limits<std::size_t>::max() - termSize)) { err="terminated sequence maximum exceeds host size"; return false; }
             const std::size_t scanLimit = static_cast<std::size_t>(*effective.maxPayload) + termSize;
             const auto saved = r.state();
-            std::vector<std::uint8_t> scanned;
-            scanned.reserve(std::min(scanLimit, r.remaining()));
-            for (std::size_t i = 0; i < scanLimit && r.remaining() != 0; ++i) {
-                const auto byte = static_cast<std::uint8_t>(r.uint(1));
-                scanned.push_back(byte);
-                if (scanned.size() >= termSize && std::equal(effective.terminator.rbegin(), effective.terminator.rend(), scanned.rbegin())) {
-                    scanned.resize(scanned.size() - termSize);
-                    out = std::move(scanned);
-                    return true;
+            if (byteForm) {
+                std::vector<std::uint8_t> scanned;
+                scanned.reserve(std::min(scanLimit, r.remaining()));
+                for (std::size_t i = 0; i < scanLimit && r.remaining() != 0; ++i) {
+                    const auto byte = static_cast<std::uint8_t>(r.uint(1));
+                    scanned.push_back(byte);
+                    if (scanned.size() >= termSize && std::equal(effective.terminator.rbegin(), effective.terminator.rend(), scanned.rbegin())) {
+                        scanned.resize(scanned.size() - termSize);
+                        out = std::move(scanned);
+                        return true;
+                    }
                 }
+                r.restore(saved);
+                err="terminated sequence terminator not found within maximum payload length";
+                return false;
             }
-            r.restore(saved);
-            err="terminated sequence terminator not found within maximum payload length";
-            return false;
+            const std::size_t activeLimit = std::min(scanLimit, r.remaining());
+            r.pushLimit(activeLimit);
+            Value::Array values;
+            while (true) {
+                if (r.remaining() >= termSize) {
+                    const auto probe = r.state();
+                    bool matches = true;
+                    for (const auto b : effective.terminator) { if (static_cast<std::uint8_t>(r.uint(1)) != b) { matches = false; break; } }
+                    r.restore(probe);
+                    if (matches) { r.bytes(termSize); r.popLimit(); out = std::move(values); return true; }
+                }
+                const std::size_t consumed = r.pos() - saved.pos;
+                if (consumed >= static_cast<std::size_t>(*effective.maxPayload)) { r.popLimit(); r.restore(saved); err="terminated sequence terminator not found within maximum payload length"; return false; }
+                plan::Type element = cloneType(effective);
+                element.dimensions.clear();
+                element.terminator = {};
+                element.maxPayload.reset();
+                Value value;
+                const std::string savedPath = path;
+                path = savedPath + "[" + std::to_string(values.size()) + "]";
+                if (!readType(element, value, std::nullopt, err)) { path = savedPath; r.popLimit(); r.restore(saved); return false; }
+                path = savedPath;
+                if (r.pos() - saved.pos > static_cast<std::size_t>(*effective.maxPayload)) { r.popLimit(); r.restore(saved); err="terminated sequence payload exceeds maximum length"; return false; }
+                values.push_back(std::move(value));
+            }
         }
         if(effective.name=="bytes" || effective.name=="string") {
             std::optional<runtime::LayoutSize> n;

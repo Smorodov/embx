@@ -249,17 +249,18 @@ bool typeShapeOk(const ast::TypeRef& t, const TypeResolver& resolver, std::strin
     if (!resolver.resolve(t, base, allSuffixes, err)) return false;
 
     if (!t.terminator.empty()) {
-        if (base != "bytes") { err = "terminated sequence is only valid for bytes: " + t.name; return false; }
         if (t.terminator.size() > 0xFFFFFFFFu) { err = "terminated sequence terminator is too long"; return false; }
         if (!t.maxPayload.has_value()) { err = "terminated sequence requires a maximum payload length: " + t.name; return false; }
-        if (!t.suffixes.empty()) { err = "terminated sequence cannot have an array suffix: " + t.name; return false; }
+        if (t.suffixes.size() != 1 || !t.suffixes[0].dynamic) {
+            if (base != "bytes" || !t.suffixes.empty()) { err = "terminated sequence requires [*] for non-bytes elements: " + t.name; return false; }
+        }
     }
 
     for (const auto* s : allSuffixes) {
         if (!s) { err = "null type suffix"; return false; }
         if (s->dynamic) {
-            if (base != "bytes" && base != "string") {
-                err = "[*] is only valid for bytes/string: " + t.name;
+            if (base != "bytes" && base != "string" && t.terminator.empty()) {
+                err = "[*] is only valid for bytes/string unless it is a terminated sequence: " + t.name;
                 return false;
             }
         } else if (containsNext(s->expr.get())) {

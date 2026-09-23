@@ -879,6 +879,18 @@ target_compile_features(embx_lesson_11_ipv4_test PRIVATE cxx_std_17)
 target_compile_options(embx_lesson_11_ipv4_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
 add_test(NAME lesson_11_ipv4 COMMAND embx_lesson_11_ipv4_test)
 
+add_executable(embx_lesson_12_terminated_sequences_test
+  tests/lesson_12_terminated_sequences_test.cpp
+  ${EMBX_CORE_SOURCES}
+  ${ANTLR4_GENERATED_FILES})
+add_dependencies(embx_lesson_12_terminated_sequences_test GenerateAntlr)
+target_include_directories(embx_lesson_12_terminated_sequences_test PRIVATE
+  "${ANTLR4_OUTPUT_DIR}" "${ANTLR4_RUNTIME_DIR}/include/antlr4-runtime" src)
+target_link_libraries(embx_lesson_12_terminated_sequences_test PRIVATE Catch2::Catch2WithMain "${ANTLR4_LIB}")
+target_compile_features(embx_lesson_12_terminated_sequences_test PRIVATE cxx_std_17)
+target_compile_options(embx_lesson_12_terminated_sequences_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
+add_test(NAME lesson_12_terminated_sequences COMMAND embx_lesson_12_terminated_sequences_test)
+
 add_executable(embx_terminated_sequence_test
   tests/terminated_sequence_test.cpp
   ${EMBX_CORE_SOURCES}

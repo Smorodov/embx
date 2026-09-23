@@ -5,9 +5,10 @@ AST → Semantic → IR → Plan → reference runtime/codecs → backends.
 
 ## Current development state
 
-- **0.9.47 is the accepted green executable-learning baseline through Lesson 11.** It preserves the 0.9.44 reflection contract and adds executable coverage of existing callbacks, transforms, and IPv4 layout without introducing new semantic machinery.
+- **0.9.49 is the accepted green language baseline after the generalized terminated-sequence closure.** The 0.9.50 course update adds Lesson 12 for that existing language feature and moves MIDI to Lesson 13.
 - The canonical pipeline remains one-way and minimal: AST → Semantic → IR → Plan → reference runtime/codecs; `SymbolId` is the executable identity boundary.
-- **Baseline status:** 0.9.47 is locally validated at 72/72 CTest tests, with Lessons 1–11 active. The course lessons add executable documentation only; Lessons 10 and 11 exercise existing callback, transform, and layout contracts and do not add language semantics.
+- **0.9.50 course-update validation gate:** the archive adds one executable lesson test to the accepted 73-test baseline. A clean local build must confirm **74/74 CTest tests (100%)** before 0.9.50 is promoted to an accepted green archive.
+- Generalized terminated sequences remain a language feature of the accepted 0.9.49 baseline; the course lesson adds no compiler semantics.
 
 ## Examples
 
@@ -31,7 +32,7 @@ protocol logs.
 - `docs/LANGUAGE_COMPLETION_MATRIX.md` — current implementation/status matrix.
 - `docs/ARCHITECTURE.md` and `docs/ARCHITECTURE_CONTRACTS.md` — architecture and invariants.
 - `docs/DEVELOPMENT_ROADMAP.md` — current roadmap and lesson plan.
-- `docs/TERMINATED_SEQUENCE_SPEC.md` — terminated-sequence design and 0.9.48 implementation contract.
+- `docs/TERMINATED_SEQUENCE_SPEC.md` — normative generalized terminated-sequence contract accepted in 0.9.49.
 - `docs/RELEASE_NOTES.md` — historical release record.
 - `course/` — executable learning and conformance material; start with `course/00_INTRODUCTION.md`.
 
@@ -44,15 +45,11 @@ contract.
 
 ## Current stage
 
-**0.9.47 — Lesson 11 IPv4 — ACCEPTED GREEN.**
+**0.9.50 — course update on the 0.9.49 accepted green language baseline.**
 
-0.9.47 is the accepted green baseline with 72/72 tests. It includes the executable IPv4 course lesson and its real 20-byte fixture, locally validated on Windows/MSYS2 UCRT64.
-
-Lessons 1–11 are active. Lessons 1–11 form the executable teaching sequence from basic binary layout through callbacks and transforms: EmbX source → Plan → reference encode/decode → binary fixture → CTest. The MIDI lesson remains the first real-format conformance lesson.
-
-The release gate is closed. Further work starts from this clean baseline; no additional semantic mechanism is implied. Rust and Python backends remain intentionally deferred.
-
-
-## 0.9.48 implementation candidate
-
-Terminated byte sequences are being implemented from the frozen design in `docs/TERMINATED_SEQUENCE_SPEC.md`. The accepted green baseline remains EmbX 0.9.47 with 72/72 tests until the new candidate is validated.
+Lesson 12 adds executable teaching material for generalized terminated sequences, including a
+structured sequence whose elements contain their own terminated byte payloads. The existing
+MIDI lesson is renumbered from Lesson 12 to Lesson 13 without changing its content or MIDI
+semantics. The language implementation itself remains the accepted 0.9.49 contract with 73/73
+tests; the 0.9.50 course update adds one CTest lesson target and must be locally revalidated at
+74/74 before release acceptance.

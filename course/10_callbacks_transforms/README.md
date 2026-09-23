@@ -78,4 +78,4 @@ From the build directory:
 ctest --test-dir build -R lesson_10_callbacks_transforms --output-on-failure
 ```
 
-The lesson is a development candidate until the full local test suite is run and reported green.
+This lesson is part of the accepted green course baseline. Local validation is included in the 73/73 CTest suite.

@@ -1,4 +1,4 @@
-# Lesson 12 — Standard MIDI File
+# Lesson 13 — Standard MIDI File
 
 This lesson uses a real Standard MIDI File rather than a synthetic language-only example.
 The goal is to demonstrate that EmbX can describe a real binary container while keeping

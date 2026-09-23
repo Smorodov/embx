@@ -166,15 +166,34 @@ class Encoder {
     }catch(const std::exception&ex){err=ex.what();return false;}}
     bool writeType(const plan::Type&t,const Value&v,std::optional<embx::runtime::LayoutSize> bound,std::string&err){plan::Type e=cloneType(t);
         if (!e.terminator.empty()) {
-            if (e.kind != core::TypeKind::Bytes || !e.maxPayload.has_value()) { err="invalid terminated sequence type"; return false; }
-            const auto* b = std::get_if<Value::Bytes>(&v.data);
-            if (!b) { err="expected bytes for terminated sequence"; return false; }
-            if (static_cast<embx::runtime::LayoutSize>(b->size()) > *e.maxPayload) { err="terminated sequence payload exceeds maximum length"; return false; }
-            if (std::search(b->begin(), b->end(), e.terminator.begin(), e.terminator.end()) != b->end()) { err="terminated sequence payload contains its terminator"; return false; }
-            if (bound && static_cast<embx::runtime::LayoutSize>(b->size()) + static_cast<embx::runtime::LayoutSize>(e.terminator.size()) > *bound) { err="terminated sequence exceeds field bound"; return false; }
-            w.bytes(*b);
-            w.bytes(e.terminator);
-            return true;
+            if (!e.maxPayload.has_value()) { err="invalid terminated sequence type"; return false; }
+            const bool byteForm = e.kind == core::TypeKind::Bytes && e.dimensions.empty();
+            const bool sequenceForm = e.dimensions.size() == 1 && e.dimensions[0].kind == core::Dimension::Kind::Remaining;
+            if (!byteForm && !sequenceForm) { err="invalid terminated sequence type"; return false; }
+            if (byteForm) {
+                const auto* b = std::get_if<Value::Bytes>(&v.data);
+                if (!b) { err="expected bytes for terminated sequence"; return false; }
+                if (static_cast<embx::runtime::LayoutSize>(b->size()) > *e.maxPayload) { err="terminated sequence payload exceeds maximum length"; return false; }
+                if (std::search(b->begin(), b->end(), e.terminator.begin(), e.terminator.end()) != b->end()) { err="terminated sequence payload contains its terminator"; return false; }
+                if (bound && static_cast<embx::runtime::LayoutSize>(b->size()) + static_cast<embx::runtime::LayoutSize>(e.terminator.size()) > *bound) { err="terminated sequence exceeds field bound"; return false; }
+                w.bytes(*b); w.bytes(e.terminator); return true;
+            }
+            const auto* a = std::get_if<Value::Array>(&v.data);
+            if (!a) { err="expected array for terminated sequence"; return false; }
+            const std::size_t start = w.pos();
+            plan::Type element = cloneType(e);
+            element.dimensions.clear();
+            element.terminator = {};
+            element.maxPayload.reset();
+            for (std::size_t i = 0; i < a->size(); ++i) {
+                const std::string savedPath = path;
+                path = savedPath + "[" + std::to_string(i) + "]";
+                if (!writeType(element, (*a)[i], std::nullopt, err)) { path = savedPath; return false; }
+                path = savedPath;
+                if (static_cast<embx::runtime::LayoutSize>(w.pos() - start) > *e.maxPayload) { err="terminated sequence payload exceeds maximum length"; return false; }
+            }
+            if (bound && static_cast<embx::runtime::LayoutSize>(w.pos() - start) + static_cast<embx::runtime::LayoutSize>(e.terminator.size()) > *bound) { err="terminated sequence exceeds field bound"; return false; }
+            w.bytes(e.terminator); return true;
         }
         if(e.name=="bytes"||e.name=="string"){
             embx::runtime::LayoutSize logical=0;std::size_t n=0;bool fixed=false;if(!e.dimensions.empty()){if(e.dimensions[0].kind==core::Dimension::Kind::Fixed && e.dimensions[0].expression){if(!evalSize(e.dimensions[0].expression.get(),env,logical,err))return false;if(!toHostSize(logical,n,err))return false;fixed=true;}}
