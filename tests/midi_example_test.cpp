@@ -38,7 +38,7 @@ TEST_CASE("MIDI structural example decodes the real fixture", "[examples][midi]"
     std::vector<std::uint8_t> bytes;
     for (std::istreambuf_iterator<char> it(in), end; it != end; ++it)
         bytes.push_back(static_cast<std::uint8_t>(static_cast<unsigned char>(*it)));
-    REQUIRE(bytes.size() == 69);
+    REQUIRE(bytes.size() == 77);
 
     embx::decoder::Options options;
     options.requireFullInput = true;
@@ -58,12 +58,12 @@ TEST_CASE("MIDI structural example decodes the real fixture", "[examples][midi]"
     const auto& trackObject = std::get<Value::Object>(tracks[0].data);
     const auto lengthIt = trackObject.find("length");
     REQUIRE(lengthIt != trackObject.end());
-    REQUIRE(u(lengthIt->second) == 47);
+    REQUIRE(u(lengthIt->second) == 55);
 
     const auto rawIt = trackObject.find("raw");
     REQUIRE(rawIt != trackObject.end());
     const auto& raw = std::get<Value::Bytes>(rawIt->second.data);
-    REQUIRE(raw.size() == 47);
+    REQUIRE(raw.size() == 55);
     REQUIRE(raw[0] == 0x00);
     REQUIRE(raw[1] == 0xff);
     REQUIRE(raw[2] == 0x51);
@@ -72,14 +72,22 @@ TEST_CASE("MIDI structural example decodes the real fixture", "[examples][midi]"
     REQUIRE(raw[5] == 0xa1);
     REQUIRE(raw[6] == 0x20);
     REQUIRE(raw[7] == 0x00);
-    REQUIRE(raw[8] == 0x90);
-    REQUIRE(raw[9] == 0x3c);
-    REQUIRE(raw[10] == 0x60);
-    REQUIRE(raw[11] == 0x83);
-    REQUIRE(raw[12] == 0x60);
-    REQUIRE(raw[13] == 0x80);
-    REQUIRE(raw[14] == 0x3c);
-    REQUIRE(raw[15] == 0x40);
+    REQUIRE(raw[8] == 0x00);
+    REQUIRE(raw[9] == 0xff);
+    REQUIRE(raw[10] == 0x03);
+    REQUIRE(raw[11] == 0x04);
+    REQUIRE(raw[12] == 'E');
+    REQUIRE(raw[13] == 'm');
+    REQUIRE(raw[14] == 'b');
+    REQUIRE(raw[15] == 'X');
+    REQUIRE(raw[16] == 0x90);
+    REQUIRE(raw[17] == 0x3c);
+    REQUIRE(raw[18] == 0x60);
+    REQUIRE(raw[19] == 0x83);
+    REQUIRE(raw[20] == 0x60);
+    REQUIRE(raw[21] == 0x80);
+    REQUIRE(raw[22] == 0x3c);
+    REQUIRE(raw[23] == 0x40);
     REQUIRE(raw.back() == 0x00);
 
     embx::encoder::Engine encoder(*compilation->plan);

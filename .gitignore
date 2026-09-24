@@ -1,34 +1,42 @@
-# clatexmath runtime generated files
-macro.txt
-rp.txt
-symbols.txt
+# Build output
+/build/
+/build-*/
+/cmake-build-*/
 
-# meson
-_build/
+# Compiled binaries and objects
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.obj
+*.o
+*.pdb
 
-#ignore obj
-obj/
+# Generated parser / lexer output
+/generated/
 
-#ignore bin
-bin/
-*.cbp
-*.depend
-*.layout
-/CppCheckResults.xml
-.DS_Store
-docs/
-doxyfile
-build/
-src/doc
-src/Doxyfile
+# Local build and test logs
+build_protocol.txt
+build_log.txt
+ctest.log
+*.log
+
+# IDE / editor state
+.vs/
 .vscode/
-prebuilt-scripts/
-.idea
-cmake-build-*
-.vs
-init.cmd
-deployer.exe
-dpl_creator.exe
-dplcreator.cfg
-patch.dpl
-run_patch.cmd
+.idea/
+*.user
+*.suo
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local archives and temporary files
+*.zip
+*.tmp
+*.bak

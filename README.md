@@ -5,16 +5,16 @@ AST → Semantic → IR → Plan → reference runtime/codecs → backends.
 
 ## Current development state
 
-- **0.9.49 is the accepted green language baseline after the generalized terminated-sequence closure.** The 0.9.50 course update adds Lesson 12 for that existing language feature and moves MIDI to Lesson 13.
+- **0.9.52 is the current TLV Lesson 14 candidate after the Lesson 13 MIDI text-metadata extension. The 0.9.49 language baseline and 0.9.50 course closure remain unchanged.
 - The canonical pipeline remains one-way and minimal: AST → Semantic → IR → Plan → reference runtime/codecs; `SymbolId` is the executable identity boundary.
-- **0.9.50 course-update validation gate:** the archive adds one executable lesson test to the accepted 73-test baseline. A clean local build must confirm **74/74 CTest tests (100%)** before 0.9.50 is promoted to an accepted green archive.
+- **0.9.52 candidate gate:** 75 CTest registrations are present; local validation is pending after the Lesson 14 example fix.
 - Generalized terminated sequences remain a language feature of the accepted 0.9.49 baseline; the course lesson adds no compiler semantics.
 
 ## Examples
 
 The `examples/` directory is the small canonical corpus. In addition to language-feature
 examples, `midi.embx` describes the fixed structural layer of a real Standard MIDI File
-Type 0. `midi_demo.mid` is the corresponding four-note C-major arpeggio fixture.
+Type 0. `midi_demo.mid` is the corresponding four-note C-major arpeggio fixture and includes a standard Track Name text metadata event containing `EmbX`.
 
 Run `run_examples.cmd` after building. On Windows, `examples/play_midi.cmd` plays the MIDI
 fixture through the Windows MIDI sequencer API.
@@ -45,11 +45,9 @@ contract.
 
 ## Current stage
 
-**0.9.50 — course update on the 0.9.49 accepted green language baseline.**
+**0.9.52 — Lesson 14 TLV composition — CANDIDATE.**
 
 Lesson 12 adds executable teaching material for generalized terminated sequences, including a
-structured sequence whose elements contain their own terminated byte payloads. The existing
-MIDI lesson is renumbered from Lesson 12 to Lesson 13 without changing its content or MIDI
-semantics. The language implementation itself remains the accepted 0.9.49 contract with 73/73
-tests; the 0.9.50 course update adds one CTest lesson target and must be locally revalidated at
-74/74 before release acceptance.
+structured sequence whose elements contain their own terminated byte payloads. Lesson 13 extends
+the real MIDI fixture with a standard Track Name text metadata event. The language implementation
+remains the accepted 0.9.49 contract; the course suite is accepted at 75/75 tests.

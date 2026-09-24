@@ -65,4 +65,4 @@ From the build directory:
 ctest --test-dir build -R lesson_12_terminated_sequences --output-on-failure
 ```
 
-This lesson is part of the **0.9.50 course update** built on the accepted 0.9.49 language baseline.
+This lesson is part of the **0.9.51 accepted course** built on the accepted 0.9.49 language baseline.

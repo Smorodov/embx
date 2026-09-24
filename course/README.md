@@ -22,16 +22,20 @@ Read [`00_INTRODUCTION.md`](00_INTRODUCTION.md) before the individual lessons. I
 11. IPv4 — active
 12. General terminated sequences — active
 13. MIDI — active
-14. Container/packet format — planned
-15. Callback protocol — planned
-16. Complete protocol — planned
+14. TLV composition — active
+15. Container/packet format — planned
+16. Callback protocol — planned
+17. Complete protocol — planned
 
-Lessons 1–12 are the active teaching sequence. Lesson 12 is the practical introduction to
+Lessons 1–14 are the active teaching sequence. Lesson 12 is the practical introduction to
 general terminated sequences, including a structured element sequence terminated at element
 boundaries. It uses a concrete binary fixture and the existing compiler/reference runtime.
 
 The MIDI lesson is now Lesson 13, the first real-format conformance lesson. It contains the
 original 20 supplied MIDI fixtures, a deterministic corpus checker, and a playable Type 0 demo.
+The playable demo also contains a standard Track Name text metadata event (`EmbX`), so the lesson
+checks practical string-like metadata inside a real binary file without introducing a MIDI-specific
+string type into EmbX.
 
 The course is developed as executable documentation: a lesson is promoted to active only
 when its example is reproducible, its explanation matches the language contract, and its
@@ -40,7 +44,8 @@ format-specific semantics to the compiler.
 
 ## Current validation
 
-The accepted course update is **0.9.50**, built on the accepted **0.9.49** language baseline.
-Lessons 1–12 are active and the complete suite is **74/74 CTest tests (100%)**. Lesson 12
+The current course candidate is **0.9.52**, built on the accepted **0.9.49** language baseline.
+0.9.50 added the generalized terminated-sequence lesson; 0.9.51 extends Lesson 13 with MIDI text metadata; 0.9.52 adds the TLV composition lesson.
+Lessons 1–14 are active and the complete suite is **75/75 CTest tests (100%)**. Lesson 12
 covers generalized terminated sequences without adding lesson-specific compiler semantics.
-Lesson 13 — MIDI remains the first real-format conformance lesson.
+Lesson 13 — MIDI remains the first real-format conformance lesson. Lesson 14 demonstrates TLV composition using only existing language mechanisms.

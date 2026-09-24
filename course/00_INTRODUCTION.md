@@ -370,13 +370,15 @@ The order is deliberate. Later lessons should reuse concepts already established
  ↓
 11  IPv4
  ↓
-12  MIDI
+12  General terminated sequences
  ↓
-13  Container / packet format
+13  MIDI
  ↓
-14  Callback protocol
+14  Container / packet format
  ↓
-15  Complete protocol
+15  Callback protocol
+ ↓
+16  Complete protocol
 ```
 
 The first lessons isolate language mechanics. Later lessons combine them. Real-format lessons demonstrate that the same mechanisms describe actual binary data rather than only artificial teaching examples.
@@ -437,14 +439,14 @@ The course therefore serves two purposes at once:
 
 ## 15. Current starting point
 
-At EmbX 0.9.50, Lessons 1–12 are the active teaching sequence in this course candidate: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, virtual fields and aliases, callbacks and transforms, IPv4, and general terminated sequences. Lesson 13 is MIDI, the first real-format conformance lesson.
+At EmbX 0.9.52, Lessons 1–14 form the current teaching-sequence candidate in this course: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, virtual fields and aliases, callbacks and transforms, IPv4, and general terminated sequences, MIDI, and TLV composition. Lesson 13 is MIDI, the first real-format conformance lesson; Lesson 14 composes existing length-dependent and terminated-sequence mechanisms into a small TLV format.
 
 Start with Lesson 1 after reading this introduction, then continue through the active sequence in order. The introduction is deliberately not a replacement for the lessons: it supplies the common map so each lesson can concentrate on its own language concept.
 
 
 ## Lesson 11 — IPv4
 
-Accepted in 0.9.47 and retained in 0.9.48. The lesson expresses a fixed 20-byte IPv4 header using existing EmbX primitives and validates it against a real binary fixture. It intentionally does not introduce IPv4-specific semantics.
+Accepted in 0.9.47 and retained through 0.9.52. The lesson expresses a fixed 20-byte IPv4 header using existing EmbX primitives and validates it against a real binary fixture. It intentionally does not introduce IPv4-specific semantics.
 
 ## 16. Current practical sequence
 
@@ -454,9 +456,18 @@ The active practical sequence now places generalized terminated sequences before
 Lesson 11 — IPv4
 Lesson 12 — General terminated sequences
 Lesson 13 — MIDI
+Lesson 14 — TLV composition
 ```
 
 Lesson 12 is deliberately format-neutral. It teaches a general binary rule already present in the
 language contract: a terminated sequence may contain structured elements, and a containing terminator
 is recognized only between complete elements. MIDI remains the first lesson whose main goal is
 external real-format conformance and playback.
+
+## Lesson 14 — TLV composition
+
+Lesson 14 builds a small Type–Length–Value format from existing EmbX mechanisms: integer fields,
+expression-dependent byte arrays, a remaining structured sequence, and a terminated outer sequence.
+It intentionally introduces no TLV-specific compiler semantics. The lesson uses a real binary fixture,
+checks an inner `FF FF` payload against the outer sequence terminator rule, and exercises transactional
+failure when a declared payload length exceeds the available input.

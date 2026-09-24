@@ -2,7 +2,8 @@
 
 This lesson uses a real Standard MIDI File rather than a synthetic language-only example.
 The goal is to demonstrate that EmbX can describe a real binary container while keeping
-format-specific event semantics outside the language core.
+format-specific event semantics outside the language core. The demo also carries a standard MIDI
+Track Name text metadata event, providing a concrete string-like payload inside the binary file.
 
 ## 1. Header
 
@@ -25,12 +26,12 @@ The track chunk is:
 
 ```text
 4D 54 72 6B   MTrk
-00 00 00 2F   47 bytes
+00 00 00 37   55 bytes
 ```
 
-The event stream begins with a 120 BPM tempo event and then four C-major arpeggio notes.
-The demo deliberately omits program-change and other optional events so playback depends
-on as little external MIDI state as possible.
+The event stream begins with a 120 BPM tempo event, followed by a Track Name meta event whose
+text is `EmbX`, and then four C-major arpeggio notes. The demo deliberately omits program-change
+and other optional events so playback depends on as little external MIDI state as possible.
 
 ## 3. EmbX boundary
 
@@ -44,7 +45,9 @@ on as little external MIDI state as possible.
 - raw event bytes.
 
 MIDI variable-length quantities, running status and event semantics remain ordinary bytes
-at this stage. They are not special cases in the EmbX core.
+at this stage. They are not special cases in the EmbX core. The Track Name event demonstrates
+that a real binary format can carry human-readable metadata without requiring a special EmbX
+string type; the text bytes are part of the raw MIDI event stream.
 
 ## 4. Verification
 
@@ -70,6 +73,9 @@ The same fixture is checked at three independent levels:
 1. byte-level MIDI conformance corpus;
 2. EmbX compiler/reference-decoder round trip;
 3. audible playback on Windows.
+
+The regression test additionally checks that the raw Track Name event contains the ASCII bytes
+`45 6D 62 58` (`EmbX`) and that the complete file round-trips byte-for-byte through EmbX.
 
 A future lesson can move from raw track bytes to explicit MIDI event semantics without
 changing the structural contract demonstrated here.

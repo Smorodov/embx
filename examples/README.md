@@ -11,6 +11,7 @@ The examples are the small executable language corpus used by `run_examples.cmd`
 | `packet_import.embx` | imports, qualified names, alias, block and `at()` |
 | `metadata.embx` | attributes and documentation |
 | `nested_types.embx` | aliases, nested composite use and generated C++ |
+| `tlv.embx` | length-dependent payloads composed with a terminated sequence of structured records |
 
 Run the corpus with:
 
