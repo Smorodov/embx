@@ -5,9 +5,9 @@ AST → Semantic → IR → Plan → reference runtime/codecs → backends.
 
 ## Current development state
 
-- **0.9.52 is the current TLV Lesson 14 candidate after the Lesson 13 MIDI text-metadata extension. The 0.9.49 language baseline and 0.9.50 course closure remain unchanged.
+- **0.9.52 is the current accepted green course state. Lesson 14 adds TLV composition using only existing language mechanisms; the 0.9.49 language baseline remains unchanged.
 - The canonical pipeline remains one-way and minimal: AST → Semantic → IR → Plan → reference runtime/codecs; `SymbolId` is the executable identity boundary.
-- **0.9.52 candidate gate:** 75 CTest registrations are present; local validation is pending after the Lesson 14 example fix.
+- **0.9.52 acceptance:** the complete local suite is validated at 75/75 CTest tests (100%).
 - Generalized terminated sequences remain a language feature of the accepted 0.9.49 baseline; the course lesson adds no compiler semantics.
 
 ## Examples
@@ -45,7 +45,7 @@ contract.
 
 ## Current stage
 
-**0.9.52 — Lesson 14 TLV composition — CANDIDATE.**
+**0.9.52 — Lesson 14 TLV composition — ACCEPTED GREEN.**
 
 Lesson 12 adds executable teaching material for generalized terminated sequences, including a
 structured sequence whose elements contain their own terminated byte payloads. Lesson 13 extends

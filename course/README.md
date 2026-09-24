@@ -23,11 +23,11 @@ Read [`00_INTRODUCTION.md`](00_INTRODUCTION.md) before the individual lessons. I
 12. General terminated sequences — active
 13. MIDI — active
 14. TLV composition — active
-15. Container/packet format — planned
+15. GGUF real-format conformance — planned
 16. Callback protocol — planned
 17. Complete protocol — planned
 
-Lessons 1–14 are the active teaching sequence. Lesson 12 is the practical introduction to
+Lessons 1–14 are the active teaching sequence. Lesson 15 is the planned GGUF capstone and has a source-preserving GGUF reference plus an EmbX-oriented restatement. Lesson 12 is the practical introduction to
 general terminated sequences, including a structured element sequence terminated at element
 boundaries. It uses a concrete binary fixture and the existing compiler/reference runtime.
 
@@ -44,8 +44,8 @@ format-specific semantics to the compiler.
 
 ## Current validation
 
-The current course candidate is **0.9.52**, built on the accepted **0.9.49** language baseline.
-0.9.50 added the generalized terminated-sequence lesson; 0.9.51 extends Lesson 13 with MIDI text metadata; 0.9.52 adds the TLV composition lesson.
+The current course state is **0.9.52 accepted green**, built on the accepted **0.9.49** language baseline.
+0.9.50 added the generalized terminated-sequence lesson; 0.9.51 extended Lesson 13 with MIDI text metadata; 0.9.52 adds the accepted TLV composition lesson.
 Lessons 1–14 are active and the complete suite is **75/75 CTest tests (100%)**. Lesson 12
 covers generalized terminated sequences without adding lesson-specific compiler semantics.
 Lesson 13 — MIDI remains the first real-format conformance lesson. Lesson 14 demonstrates TLV composition using only existing language mechanisms.

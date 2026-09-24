@@ -57,4 +57,4 @@ From the build directory:
 ctest --test-dir build -R lesson_11_ipv4 --output-on-failure
 ```
 
-This lesson is retained in the **0.9.51 accepted green course baseline**. Its IPv4 contract was accepted in the 0.9.47 stage and remains unchanged.
+This lesson is retained in the **0.9.52 accepted green course baseline**. Its IPv4 contract was accepted in the 0.9.47 stage and remains unchanged.

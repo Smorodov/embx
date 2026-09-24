@@ -1,13 +1,14 @@
 # EmbX Release Notes
 
-## 0.9.52 — TLV composition course lesson — CANDIDATE (example fix)
+## 0.9.52 — TLV composition course lesson — ACCEPTED GREEN
 
 - Added Lesson 14, `course/14_tlv/`, as executable teaching material for a small Type–Length–Value format.
 - The lesson composes existing integer fields, expression-dependent byte arrays, structured remaining sequences and generalized terminated sequences.
 - Added real TLV fixtures for normal decoding/encoding, an inner `FF FF` payload, and invalid length handling.
-- Added one CTest registration, making the candidate suite 75 tests.
+- Added one CTest registration, making the accepted suite 75 tests.
 - Added `examples/tlv.embx` as a minimal reusable example.
 - Fixed the reserved-keyword collision in the example and Lesson 14 source by naming the one-byte field `kind` rather than `type`; no grammar change is required.
+- Corrected the Lesson 14 fixtures to declare big-endian record/message layout, matching the documented wire bytes; no runtime change was required.
 - No TLV-specific compiler, Plan or runtime semantics were introduced.
 
 
@@ -55,7 +56,7 @@ EmbX 0.9.49 generalizes the terminated-sequence operation from byte payloads to 
 - Reflection exposes the terminated flag, terminal bytes, maximum payload and canonical bounds.
 - Generated C++ uses the existing generated codec helper path.
 - Added focused terminated-sequence coverage without adding a second cursor, layout evaluator, resolver or expression representation.
-- Local Windows/MSYS2 UCRT64 validation passed: **74/74 CTest tests (100%)**.
+- Local Windows/MSYS2 UCRT64 validation passed: **72/72 CTest tests (100%)**.
 
 # 0.9.47 — ACCEPTED GREEN
 

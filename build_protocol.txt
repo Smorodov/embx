@@ -1,4 +1,4 @@
-Build started at 24.09.2026 10:10:29,00
+Build started at 24.09.2026 11:47:42,62
 -- The CXX compiler identification is GNU 16.2.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
@@ -16,21 +16,21 @@ Build started at 24.09.2026 10:10:29,00
 -- Grammar:   C:/projects/embx/grammar/EmbX.g4
 -- Generated: C:/projects/embx/build/generated
 -- =========================================================
--- Configuring done (2.7s)
+-- Configuring done (1.9s)
 -- Generating done (0.7s)
 -- Build files have been written to: C:/projects/embx/build
 [  0%] Generating ANTLR4 EmbX parser
-[  0%] Building CXX object CMakeFiles/embx_ast_test.dir/tests/ast_test.cpp.obj
 [  0%] Building CXX object CMakeFiles/embx_runtime_test.dir/tests/runtime_test.cpp.obj
+[  0%] Building CXX object CMakeFiles/embx_ast_test.dir/tests/ast_test.cpp.obj
 [  0%] Building CXX object CMakeFiles/embx_layout_size_64bit_test.dir/tests/layout_size_64bit_test.cpp.obj
 [  0%] Built target GenerateAntlr
 [  0%] Building CXX object CMakeFiles/embx_runtime_test.dir/src/runtime/Runtime.cpp.obj
 [  0%] Building CXX object CMakeFiles/embx_layout_size_64bit_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [  0%] Building CXX object CMakeFiles/embx_expression_test.dir/tests/expression_test.cpp.obj
 [  0%] Linking CXX executable embx_runtime_test.exe
-[  0%] Linking CXX executable embx_ast_test.exe
 [  0%] Built target embx_runtime_test
 [  0%] Building CXX object CMakeFiles/embx_expression_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[  0%] Linking CXX executable embx_ast_test.exe
 [  1%] Linking CXX executable embx_layout_size_64bit_test.exe
 [  1%] Built target embx_ast_test
 [  2%] Building CXX object CMakeFiles/embx_semantic_negative_test.dir/tests/semantic_negative_test.cpp.obj
@@ -49,150 +49,145 @@ Build started at 24.09.2026 10:10:29,00
 [  2%] Building CXX object CMakeFiles/embx_ir_structural_test.dir/src/parser/ParserDriver.cpp.obj
 [  2%] Building CXX object CMakeFiles/embx_semantic_negative_test.dir/generated/EmbXLexer.cpp.obj
 [  2%] Building CXX object CMakeFiles/embx_plan_test.dir/src/plan/LayoutGraph.cpp.obj
+[  2%] Building CXX object CMakeFiles/embx_semantic_negative_test.dir/generated/EmbXParser.cpp.obj
 [  3%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/src/plan/LayoutGraph.cpp.obj
-[  3%] Building CXX object CMakeFiles/embx_semantic_negative_test.dir/generated/EmbXParser.cpp.obj
+[  3%] Building CXX object CMakeFiles/embx_ir_structural_test.dir/generated/EmbXLexer.cpp.obj
 [  4%] Building CXX object CMakeFiles/embx_plan_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [  4%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[  4%] Building CXX object CMakeFiles/embx_ir_structural_test.dir/generated/EmbXLexer.cpp.obj
 [  4%] Building CXX object CMakeFiles/embx_plan_test.dir/src/ir/IrBuilder.cpp.obj
+[  4%] Linking CXX executable embx_semantic_negative_test.exe
 [  4%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/src/ir/IrBuilder.cpp.obj
 [  5%] Building CXX object CMakeFiles/embx_ir_structural_test.dir/generated/EmbXParser.cpp.obj
-[  5%] Linking CXX executable embx_semantic_negative_test.exe
 [  5%] Built target embx_semantic_negative_test
 [  5%] Building CXX object CMakeFiles/embx_plan_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [  5%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[  5%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/tests/runtime_lookup_audit_test.cpp.obj
-[  5%] Linking CXX executable embx_ir_structural_test.exe
 [  5%] Building CXX object CMakeFiles/embx_plan_test.dir/src/parser/ParserDriver.cpp.obj
+[  5%] Linking CXX executable embx_ir_structural_test.exe
+[  5%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/tests/runtime_lookup_audit_test.cpp.obj
 [  5%] Built target embx_ir_structural_test
+[  5%] Building CXX object CMakeFiles/embx_plan_test.dir/generated/EmbXLexer.cpp.obj
 [  5%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/src/parser/ParserDriver.cpp.obj
 [  5%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/compiler/Compiler.cpp.obj
-[  5%] Building CXX object CMakeFiles/embx_plan_test.dir/generated/EmbXLexer.cpp.obj
-[  5%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/parser/ParserDriver.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/tests/plan_execution_independence_test.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/parser/ParserDriver.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_test.dir/generated/EmbXParser.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/generated/EmbXLexer.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/generated/EmbXParser.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/plan/PlanBuilder.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [  6%] Linking CXX executable embx_plan_test.exe
+[  6%] Building CXX object CMakeFiles/embx_plan_executable_contract_test.dir/generated/EmbXParser.cpp.obj
 [  6%] Built target embx_plan_test
+[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/plan/LayoutGraph.cpp.obj
-[  6%] Linking CXX executable embx_plan_executable_contract_test.exe
 [  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/runtime/Runtime.cpp.obj
-[  6%] Built target embx_plan_executable_contract_test
-[  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/ir/IrBuilder.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/tests/dynamic_expression_determinism_audit_test.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/ir/IrBuilder.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/tests/plan_negative_test.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/plan/PlanBuilder.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/ir/IrBuilder.cpp.obj
+[  6%] Linking CXX executable embx_plan_executable_contract_test.exe
+[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[  6%] Built target embx_plan_executable_contract_test
 [  6%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/plan/PlanBuilder.cpp.obj
-[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/plan/PlanBuilder.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/ir/IrBuilder.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/tests/plan_negative_test.cpp.obj
 [  6%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/parser/ParserDriver.cpp.obj
-[  7%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/plan/LayoutGraph.cpp.obj
-[  8%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/plan/LayoutGraph.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/plan/PlanBuilder.cpp.obj
+[  6%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/plan/PlanBuilder.cpp.obj
+[  7%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/plan/LayoutGraph.cpp.obj
+[  7%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/ir/IrBuilder.cpp.obj
+[  7%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[  8%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/plan/LayoutGraph.cpp.obj
 [  9%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/plan/LayoutGraph.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/ir/IrBuilder.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/decoder/Decoder.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/ir/IrBuilder.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/runtime/Runtime.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/encoder/Encoder.cpp.obj
 [  9%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/encoder/Encoder.cpp.obj
-[  9%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[  9%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/runtime/Runtime.cpp.obj
+[  9%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[  9%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/decoder/Decoder.cpp.obj
+[  9%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/encoder/Encoder.cpp.obj
+[  9%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/ir/IrBuilder.cpp.obj
 [  9%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/parser/ParserDriver.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/decoder/Decoder.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/encoder/Encoder.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/src/parser/ParserDriver.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/value/Value.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/reflection/Reflection.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/value/Value.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/generated/EmbXLexer.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/generated/EmbXLexer.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/runtime/Runtime.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/generated/EmbXParser.cpp.obj
-[ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/generated/EmbXParser.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/encoder/Encoder.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/reflection/Reflection.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/generated/EmbXLexer.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_execution_independence_test.dir/generated/EmbXParser.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/generated/EmbXLexer.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/decoder/Decoder.cpp.obj
+[ 10%] Building CXX object CMakeFiles/embx_plan_negative_test.dir/generated/EmbXParser.cpp.obj
 [ 10%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/generated/EmbXLexer.cpp.obj
+[ 10%] Linking CXX executable embx_plan_execution_independence_test.exe
 [ 11%] Building CXX object CMakeFiles/embx_runtime_lookup_audit_test.dir/generated/EmbXParser.cpp.obj
-[ 11%] Linking CXX executable embx_plan_execution_independence_test.exe
-[ 11%] Linking CXX executable embx_plan_negative_test.exe
-[ 11%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/decoder/Decoder.cpp.obj
-[ 11%] Built target embx_plan_negative_test
-[ 11%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/value/Value.cpp.obj
 [ 11%] Built target embx_plan_execution_independence_test
+[ 11%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/value/Value.cpp.obj
+[ 11%] Building CXX object CMakeFiles/embx_decoder_test.dir/tests/decoder_test.cpp.obj
 [ 12%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 12%] Building CXX object CMakeFiles/embx_decoder_test.dir/tests/decoder_test.cpp.obj
+[ 12%] Linking CXX executable embx_plan_negative_test.exe
+[ 12%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/generated/EmbXLexer.cpp.obj
+[ 12%] Built target embx_plan_negative_test
+[ 12%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/decoder/Decoder.cpp.obj
 [ 12%] Linking CXX executable embx_runtime_lookup_audit_test.exe
+[ 12%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/generated/EmbXParser.cpp.obj
 [ 12%] Building CXX object CMakeFiles/embx_encoder_test.dir/tests/encoder_test.cpp.obj
 [ 13%] Built target embx_runtime_lookup_audit_test
-[ 13%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/decoder/Decoder.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/generated/EmbXLexer.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/encoder/Encoder.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_dynamic_expression_determinism_audit_test.dir/generated/EmbXParser.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/tests/composite_type_test.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/runtime/Runtime.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/decoder/Decoder.cpp.obj
-[ 13%] Linking CXX executable embx_dynamic_expression_determinism_audit_test.exe
+[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/encoder/Encoder.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/encoder/Encoder.cpp.obj
+[ 13%] Linking CXX executable embx_dynamic_expression_determinism_audit_test.exe
+[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/tests/composite_type_test.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/value/Value.cpp.obj
 [ 13%] Built target embx_dynamic_expression_determinism_audit_test
-[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/runtime/Runtime.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/decoder/Decoder.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_decoder_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/encoder/Encoder.cpp.obj
+[ 13%] Linking CXX executable embx_decoder_test.exe
+[ 13%] Built target embx_decoder_test
+[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/runtime/Runtime.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/tests/nested_composite_test.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/decoder/Decoder.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 13%] Linking CXX executable embx_decoder_test.exe
-[ 13%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/tests/nested_composite_test.cpp.obj
-[ 13%] Built target embx_decoder_test
+[ 13%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/tests/dynamic_layout_test.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/value/Value.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/runtime/Runtime.cpp.obj
-[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/encoder/Encoder.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_encoder_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 13%] Linking CXX executable embx_encoder_test.exe
-[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/runtime/Runtime.cpp.obj
 [ 13%] Built target embx_encoder_test
+[ 13%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/encoder/Encoder.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 13%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/decoder/Decoder.cpp.obj
+[ 13%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/tests/value_reflection_test.cpp.obj
 [ 14%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/value/Value.cpp.obj
-[ 14%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/tests/dynamic_layout_test.cpp.obj
+[ 14%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/decoder/Decoder.cpp.obj
 [ 14%] Building CXX object CMakeFiles/embx_composite_type_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 14%] Linking CXX executable embx_composite_type_test.exe
-[ 14%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/tests/value_reflection_test.cpp.obj
+[ 14%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/value/Value.cpp.obj
 [ 14%] Built target embx_composite_type_test
-[ 14%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/encoder/Encoder.cpp.obj
 [ 15%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/runtime/Runtime.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/value/Value.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/tests/diagnostics_pipeline_test.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/value/Value.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/decoder/Decoder.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/reflection/Reflection.cpp.obj
-[ 15%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 15%] Linking CXX executable embx_nested_composite_test.exe
-[ 15%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/decoder/Decoder.cpp.obj
-[ 15%] Built target embx_nested_composite_test
 [ 16%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/runtime/Runtime.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_value_reflection_test.dir/src/reflection/Reflection.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/tests/diagnostics_pipeline_test.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 16%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/value/Value.cpp.obj
 [ 17%] Linking CXX executable embx_value_reflection_test.exe
-[ 17%] Built target embx_value_reflection_test
-[ 17%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/encoder/Encoder.cpp.obj
-[ 17%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/tests/layout_graph_test.cpp.obj
-[ 17%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 17%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/value/Value.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/tests/dependency_validation_test.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/runtime/Runtime.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/parser/ParserDriver.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 18%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 17%] Built target embx_value_reflection_test
+[ 17%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/decoder/Decoder.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_nested_composite_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 17%] Linking CXX executable embx_nested_composite_test.exe
+[ 17%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/tests/layout_graph_test.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/parser/ParserDriver.cpp.obj
+[ 17%] Built target embx_nested_composite_test
+[ 17%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/encoder/Encoder.cpp.obj
 In file included from C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/ParserRuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/InterpreterRuleContext.h:8,
@@ -205,30 +200,26 @@ C:/msys64/ucrt64/include/antlr4-runtime/tree/ParseTree.h:50:18: warning: 'virtua
 C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:135:10: note:   by 'bool antlr4::RuleContext::operator==(const antlr4::RuleContext&)'
   135 |     bool operator == (const RuleContext &other) { return this == &other; } // Simple address comparison.
       |          ^~~~~~~~
-[ 18%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/runtime/Runtime.cpp.obj
+[ 17%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 18%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/tests/dependency_validation_test.cpp.obj
+[ 18%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 18%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/ir/IrBuilder.cpp.obj
 [ 19%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/value/Value.cpp.obj
+[ 19%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 19%] Building CXX object CMakeFiles/embx_diagnostics_pipeline_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 19%] Linking CXX executable embx_diagnostics_pipeline_test.exe
+[ 19%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 19%] Built target embx_diagnostics_pipeline_test
-[ 19%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 19%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 19%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/ir/IrBuilder.cpp.obj
-[ 19%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/tests/foundation_hardening_test.cpp.obj
-[ 19%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/ir/IrBuilder.cpp.obj
+[ 19%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 19%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 19%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/ir/IrBuilder.cpp.obj
 [ 19%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 20%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/decoder/Decoder.cpp.obj
-[ 20%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 20%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/parser/ParserDriver.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/parser/ParserDriver.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/encoder/Encoder.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 21%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/runtime/Runtime.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/generated/EmbXLexer.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/value/Value.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 19%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/tests/foundation_hardening_test.cpp.obj
+[ 20%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/generated/EmbXLexer.cpp.obj
 In file included from C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/ParserRuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/InterpreterRuleContext.h:8,
@@ -241,12 +232,9 @@ C:/msys64/ucrt64/include/antlr4-runtime/tree/ParseTree.h:50:18: warning: 'virtua
 C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:135:10: note:   by 'bool antlr4::RuleContext::operator==(const antlr4::RuleContext&)'
   135 |     bool operator == (const RuleContext &other) { return this == &other; } // Simple address comparison.
       |          ^~~~~~~~
-[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/generated/EmbXParser.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/value/Value.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/value/Value.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/generated/EmbXLexer.cpp.obj
+[ 21%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/parser/ParserDriver.cpp.obj
+[ 21%] Building CXX object CMakeFiles/embx_dynamic_layout_test.dir/generated/EmbXParser.cpp.obj
+[ 21%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 In file included from C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/ParserRuleContext.h:8,
                  from C:/msys64/ucrt64/include/antlr4-runtime/InterpreterRuleContext.h:8,
@@ -259,696 +247,708 @@ C:/msys64/ucrt64/include/antlr4-runtime/tree/ParseTree.h:50:18: warning: 'virtua
 C:/msys64/ucrt64/include/antlr4-runtime/RuleContext.h:135:10: note:   by 'bool antlr4::RuleContext::operator==(const antlr4::RuleContext&)'
   135 |     bool operator == (const RuleContext &other) { return this == &other; } // Simple address comparison.
       |          ^~~~~~~~
-[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 23%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/generated/EmbXLexer.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/decoder/Decoder.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/parser/ParserDriver.cpp.obj
+[ 22%] Linking CXX executable embx_dynamic_layout_test.exe
+[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 22%] Built target embx_dynamic_layout_test
+[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/encoder/Encoder.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/value/Value.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/tests/namespace_import_test.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/value/Value.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/runtime/Runtime.cpp.obj
+[ 22%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/generated/EmbXLexer.cpp.obj
+[ 23%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 23%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 23%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 23%] Building CXX object CMakeFiles/embx_layout_graph_test.dir/generated/EmbXParser.cpp.obj
-[ 23%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/reflection/Reflection.cpp.obj
-[ 23%] Linking CXX executable embx_dynamic_layout_test.exe
-[ 23%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/generated/EmbXParser.cpp.obj
-[ 23%] Linking CXX executable embx_foundation_hardening_test.exe
-[ 23%] Built target embx_dynamic_layout_test
-[ 23%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/tests/namespace_import_test.cpp.obj
-[ 23%] Built target embx_foundation_hardening_test
-[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/generated/EmbXLexer.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/value/Value.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/ir/IrBuilder.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_dependency_validation_test.dir/generated/EmbXParser.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_foundation_hardening_test.dir/src/reflection/Reflection.cpp.obj
 [ 24%] Linking CXX executable embx_layout_graph_test.exe
 [ 24%] Built target embx_layout_graph_test
-[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/ir/IrBuilder.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/parser/ParserDriver.cpp.obj
 [ 24%] Building CXX object CMakeFiles/embx_type_system_test.dir/tests/type_system_test.cpp.obj
+[ 24%] Linking CXX executable embx_foundation_hardening_test.exe
 [ 24%] Linking CXX executable embx_dependency_validation_test.exe
-[ 24%] Building CXX object CMakeFiles/embx_enum_test.dir/tests/enum_test.cpp.obj
+[ 24%] Built target embx_foundation_hardening_test
+[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/generated/EmbXLexer.cpp.obj
 [ 24%] Built target embx_dependency_validation_test
 [ 24%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/src/parser/ParserDriver.cpp.obj
-[ 24%] Building CXX object CMakeFiles/embx_enum_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 24%] Building CXX object CMakeFiles/embx_attribute_test.dir/tests/attribute_test.cpp.obj
-[ 24%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/generated/EmbXParser.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_enum_test.dir/tests/enum_test.cpp.obj
 [ 24%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 24%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/generated/EmbXLexer.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_enum_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 24%] Linking CXX executable embx_namespace_import_test.exe
+[ 24%] Built target embx_namespace_import_test
+[ 24%] Building CXX object CMakeFiles/embx_attribute_test.dir/tests/attribute_test.cpp.obj
+[ 24%] Building CXX object CMakeFiles/embx_enum_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 25%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/ir/IrBuilder.cpp.obj
-[ 25%] Building CXX object CMakeFiles/embx_enum_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 25%] Building CXX object CMakeFiles/embx_namespace_import_test.dir/generated/EmbXParser.cpp.obj
-[ 25%] Building CXX object CMakeFiles/embx_enum_test.dir/src/ir/IrBuilder.cpp.obj
-[ 25%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_documentation_test.dir/tests/documentation_test.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 25%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 25%] Linking CXX executable embx_namespace_import_test.exe
+[ 25%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/reflection/Reflection.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_enum_test.dir/src/ir/IrBuilder.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_enum_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 25%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/parser/ParserDriver.cpp.obj
 [ 26%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/ir/IrBuilder.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_enum_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 26%] Built target embx_namespace_import_test
-[ 26%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 26%] Building CXX object CMakeFiles/embx_enum_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_type_system_test.dir/src/parser/ParserDriver.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_documentation_test.dir/tests/documentation_test.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 26%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 26%] Building CXX object CMakeFiles/embx_enum_test.dir/src/parser/ParserDriver.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/reflection/Reflection.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/parser/ParserDriver.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 26%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 26%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 26%] Building CXX object CMakeFiles/embx_type_system_test.dir/generated/EmbXLexer.cpp.obj
-[ 26%] Building CXX object CMakeFiles/embx_type_system_test.dir/generated/EmbXParser.cpp.obj
-[ 27%] Building CXX object CMakeFiles/embx_enum_test.dir/generated/EmbXLexer.cpp.obj
-[ 27%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/reflection/Reflection.cpp.obj
-[ 27%] Building CXX object CMakeFiles/embx_enum_test.dir/generated/EmbXParser.cpp.obj
-[ 27%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 27%] Building CXX object CMakeFiles/embx_attribute_test.dir/generated/EmbXLexer.cpp.obj
-[ 27%] Linking CXX executable embx_type_system_test.exe
-[ 27%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 27%] Built target embx_type_system_test
-[ 27%] Building CXX object CMakeFiles/embx_attribute_test.dir/generated/EmbXParser.cpp.obj
-[ 28%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/ir/IrBuilder.cpp.obj
-[ 28%] Linking CXX executable embx_enum_test.exe
+[ 27%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/ir/IrBuilder.cpp.obj
+[ 27%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 27%] Building CXX object CMakeFiles/embx_type_system_test.dir/generated/EmbXParser.cpp.obj
+[ 27%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/parser/ParserDriver.cpp.obj
+[ 28%] Building CXX object CMakeFiles/embx_enum_test.dir/generated/EmbXLexer.cpp.obj
+[ 28%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 28%] Linking CXX executable embx_type_system_test.exe
+[ 28%] Building CXX object CMakeFiles/embx_enum_test.dir/generated/EmbXParser.cpp.obj
+[ 28%] Built target embx_type_system_test
+[ 28%] Building CXX object CMakeFiles/embx_attribute_test.dir/src/reflection/Reflection.cpp.obj
+[ 28%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/parser/ParserDriver.cpp.obj
 [ 28%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/tests/type_system_wp2_test.cpp.obj
-[ 29%] Built target embx_enum_test
-[ 29%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 30%] Linking CXX executable embx_attribute_test.exe
-[ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/tests/semantic_edge_cases_test.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_documentation_test.dir/src/parser/ParserDriver.cpp.obj
-[ 30%] Built target embx_attribute_test
-[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/src/parser/ParserDriver.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/decoder/Decoder.cpp.obj
+[ 28%] Building CXX object CMakeFiles/embx_attribute_test.dir/generated/EmbXLexer.cpp.obj
+[ 28%] Linking CXX executable embx_enum_test.exe
+[ 29%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 30%] Built target embx_enum_test
 [ 30%] Building CXX object CMakeFiles/embx_documentation_test.dir/generated/EmbXLexer.cpp.obj
+[ 30%] Building CXX object CMakeFiles/embx_attribute_test.dir/generated/EmbXParser.cpp.obj
+[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/src/parser/ParserDriver.cpp.obj
+[ 30%] Building CXX object CMakeFiles/embx_documentation_test.dir/generated/EmbXParser.cpp.obj
+[ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/tests/semantic_edge_cases_test.cpp.obj
+[ 30%] Linking CXX executable embx_attribute_test.exe
+[ 30%] Built target embx_attribute_test
+[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/generated/EmbXLexer.cpp.obj
+[ 30%] Linking CXX executable embx_documentation_test.exe
+[ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/decoder/Decoder.cpp.obj
+[ 30%] Built target embx_documentation_test
+[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/generated/EmbXParser.cpp.obj
 [ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/encoder/Encoder.cpp.obj
 [ 30%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/tests/runtime_hardening_test.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_documentation_test.dir/generated/EmbXParser.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/generated/EmbXLexer.cpp.obj
-[ 30%] Building CXX object CMakeFiles/embx_type_system_wp2_test.dir/generated/EmbXParser.cpp.obj
+[ 30%] Linking CXX executable embx_type_system_wp2_test.exe
+[ 30%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/tests/codec_symmetry_test.cpp.obj
 [ 30%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/runtime/Runtime.cpp.obj
+[ 30%] Built target embx_type_system_wp2_test
 [ 30%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/runtime/Runtime.cpp.obj
-[ 30%] Linking CXX executable embx_documentation_test.exe
+[ 30%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/encoder/Encoder.cpp.obj
 [ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 31%] Built target embx_documentation_test
 [ 31%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/encoder/Encoder.cpp.obj
 [ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/value/Value.cpp.obj
-[ 31%] Linking CXX executable embx_type_system_wp2_test.exe
-[ 31%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/tests/codec_symmetry_test.cpp.obj
-[ 31%] Built target embx_type_system_wp2_test
-[ 31%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/encoder/Encoder.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/value/Value.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/parser/ParserDriver.cpp.obj
 [ 31%] Building CXX object CMakeFiles/embx_reflection_contract_test.dir/tests/reflection_contract_test.cpp.obj
-[ 31%] Linking CXX executable embx_runtime_hardening_test.exe
-[ 31%] Built target embx_runtime_hardening_test
-[ 31%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/generated/EmbXLexer.cpp.obj
 [ 32%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/decoder/Decoder.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 32%] Building CXX object CMakeFiles/embx_reflection_contract_test.dir/src/reflection/Reflection.cpp.obj
-[ 32%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/tests/cpp_generator_test.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/value/Value.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/src/parser/ParserDriver.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/runtime/Runtime.cpp.obj
+[ 32%] Building CXX object CMakeFiles/embx_runtime_hardening_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 33%] Linking CXX executable embx_reflection_contract_test.exe
+[ 33%] Linking CXX executable embx_runtime_hardening_test.exe
+[ 33%] Built target embx_reflection_contract_test
+[ 33%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/generated/EmbXLexer.cpp.obj
+[ 33%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 33%] Built target embx_runtime_hardening_test
+[ 33%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/generated/EmbXParser.cpp.obj
+[ 33%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/value/Value.cpp.obj
+[ 33%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/tests/cpp_generator_test.cpp.obj
+[ 33%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 33%] Linking CXX executable embx_codec_symmetry_test.exe
+[ 33%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/tests/generated_codec_test.cpp.obj
+[ 33%] Linking CXX executable embx_semantic_edge_cases_test.exe
 [ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_semantic_edge_cases_test.dir/generated/EmbXParser.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/runtime/Runtime.cpp.obj
-[ 34%] Built target embx_reflection_contract_test
-[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/value/Value.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/tests/generated_codec_test.cpp.obj
-[ 34%] Linking CXX executable embx_semantic_edge_cases_test.exe
-[ 34%] Building CXX object CMakeFiles/embx_codec_symmetry_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 34%] Built target embx_semantic_edge_cases_test
-[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 34%] Linking CXX executable embx_codec_symmetry_test.exe
-[ 34%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 34%] Built target embx_codec_symmetry_test
-[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 34%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 34%] Built target embx_semantic_edge_cases_test
+[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 34%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/tests/generated_dynamic_codec_test.cpp.obj
 [ 34%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/ir/IrBuilder.cpp.obj
 [ 34%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/tests/generated_nested_types_test.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 34%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 34%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 34%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 34%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 34%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 35%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 35%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 35%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 35%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/parser/ParserDriver.cpp.obj
+[ 35%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/ir/IrBuilder.cpp.obj
 [ 35%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/ir/IrBuilder.cpp.obj
+[ 35%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 35%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 35%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 35%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 35%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 36%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/generated/EmbXLexer.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/parser/ParserDriver.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/ir/IrBuilder.cpp.obj
-[ 36%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/generated/EmbXParser.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/src/parser/ParserDriver.cpp.obj
 [ 36%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/ir/IrBuilder.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/ir/IrBuilder.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/src/parser/ParserDriver.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/generated/EmbXLexer.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_cpp_generator_test.dir/generated/EmbXParser.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/generated/EmbXLexer.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/parser/ParserDriver.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/parser/ParserDriver.cpp.obj
+[ 36%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/generated/EmbXParser.cpp.obj
 [ 37%] Linking CXX executable embx_cpp_generator_test.exe
-[ 37%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 37%] Built target embx_cpp_generator_test
-[ 37%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/generated/EmbXLexer.cpp.obj
-[ 37%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 37%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/src/parser/ParserDriver.cpp.obj
-[ 38%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/tests/generated_callback_test.cpp.obj
-[ 38%] Building CXX object CMakeFiles/embx_generated_codec_test.dir/generated/EmbXParser.cpp.obj
-[ 38%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/src/parser/ParserDriver.cpp.obj
-[ 38%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 38%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/generated/EmbXLexer.cpp.obj
 [ 38%] Linking CXX executable embx_generated_codec_test.exe
 [ 38%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/generated/EmbXLexer.cpp.obj
-[ 38%] Built target embx_generated_codec_test
-[ 39%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/generated/EmbXLexer.cpp.obj
-[ 39%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 39%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/generated/EmbXParser.cpp.obj
-[ 39%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/tests/encoder_callback_symmetry_test.cpp.obj
+[ 39%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/tests/generated_callback_test.cpp.obj
 [ 39%] Building CXX object CMakeFiles/embx_generated_nested_types_test.dir/generated/EmbXParser.cpp.obj
-[ 39%] Linking CXX executable embx_generated_dynamic_codec_test.exe
-[ 39%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/encoder/Encoder.cpp.obj
+[ 39%] Built target embx_generated_codec_test
+[ 39%] Building CXX object CMakeFiles/embx_generated_dynamic_codec_test.dir/generated/EmbXParser.cpp.obj
+[ 39%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 39%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/tests/encoder_callback_symmetry_test.cpp.obj
 [ 39%] Linking CXX executable embx_generated_nested_types_test.exe
-[ 39%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 39%] Built target embx_generated_dynamic_codec_test
-[ 39%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/runtime/Runtime.cpp.obj
+[ 39%] Linking CXX executable embx_generated_dynamic_codec_test.exe
+[ 39%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 40%] Built target embx_generated_nested_types_test
-[ 40%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/encoder/Encoder.cpp.obj
+[ 40%] Built target embx_generated_dynamic_codec_test
+[ 40%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 40%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/tests/compiler_pipeline_test.cpp.obj
-[ 40%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/ir/IrBuilder.cpp.obj
+[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/runtime/Runtime.cpp.obj
 [ 40%] Building CXX object CMakeFiles/embx_core_expression_test.dir/tests/core_expression_test.cpp.obj
-[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/value/Value.cpp.obj
 [ 40%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/compiler/Compiler.cpp.obj
+[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 40%] Building CXX object CMakeFiles/embx_core_expression_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 41%] Linking CXX executable embx_encoder_callback_symmetry_test.exe
+[ 40%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 40%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/value/Value.cpp.obj
+[ 41%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 41%] Linking CXX executable embx_core_expression_test.exe
-[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 41%] Building CXX object CMakeFiles/embx_encoder_callback_symmetry_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 41%] Built target embx_core_expression_test
+[ 41%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/ir/IrBuilder.cpp.obj
+[ 42%] Linking CXX executable embx_encoder_callback_symmetry_test.exe
+[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 42%] Built target embx_encoder_callback_symmetry_test
 [ 42%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 42%] Built target embx_core_expression_test
-[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 42%] Building CXX object CMakeFiles/embx_expression_type_test.dir/tests/expression_type_test.cpp.obj
 [ 42%] Linking CXX executable embx_expression_type_test.exe
+[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 42%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/src/parser/ParserDriver.cpp.obj
 [ 42%] Built target embx_expression_type_test
-[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 42%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/generated/EmbXLexer.cpp.obj
 [ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/ir/IrBuilder.cpp.obj
+[ 42%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/generated/EmbXLexer.cpp.obj
 [ 42%] Building CXX object CMakeFiles/embx_core_type_test.dir/tests/core_type_test.cpp.obj
+[ 42%] Linking CXX executable embx_core_type_test.exe
+[ 42%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 42%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/tests/symbol_identity_test.cpp.obj
+[ 42%] Built target embx_core_type_test
 [ 43%] Building CXX object CMakeFiles/embx_generated_callback_test.dir/generated/EmbXParser.cpp.obj
-[ 43%] Linking CXX executable embx_core_type_test.exe
-[ 43%] Built target embx_core_type_test
-[ 43%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 43%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/tests/symbol_identity_test.cpp.obj
+[ 43%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/parser/ParserDriver.cpp.obj
 [ 44%] Building CXX object CMakeFiles/embx_plan_symbol_identity_test.dir/tests/plan_symbol_identity_test.cpp.obj
-[ 44%] Linking CXX executable embx_generated_callback_test.exe
-[ 44%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/parser/ParserDriver.cpp.obj
-[ 44%] Built target embx_generated_callback_test
 [ 44%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/src/ir/IrBuilder.cpp.obj
+[ 44%] Linking CXX executable embx_generated_callback_test.exe
 [ 44%] Building CXX object CMakeFiles/embx_plan_symbol_identity_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 44%] Built target embx_generated_callback_test
 [ 44%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 44%] Building CXX object CMakeFiles/embx_symbol_resolution_contract_test.dir/tests/symbol_resolution_contract_test.cpp.obj
 [ 44%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/src/parser/ParserDriver.cpp.obj
-[ 44%] Building CXX object CMakeFiles/embx_symbol_resolution_contract_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 44%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/value/Value.cpp.obj
-[ 44%] Linking CXX executable embx_symbol_resolution_contract_test.exe
 [ 44%] Building CXX object CMakeFiles/embx_plan_symbol_identity_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 45%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 45%] Built target embx_symbol_resolution_contract_test
-[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 45%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/generated/EmbXLexer.cpp.obj
+[ 45%] Building CXX object CMakeFiles/embx_symbol_resolution_contract_test.dir/tests/symbol_resolution_contract_test.cpp.obj
 [ 45%] Building CXX object CMakeFiles/embx_plan_symbol_identity_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 45%] Building CXX object CMakeFiles/embx_compiler_pipeline_test.dir/generated/EmbXParser.cpp.obj
-[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/tests/symbol_identity_codegen_test.cpp.obj
-[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/generated/EmbXLexer.cpp.obj
+[ 45%] Building CXX object CMakeFiles/embx_symbol_resolution_contract_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 45%] Linking CXX executable embx_plan_symbol_identity_test.exe
+[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 45%] Built target embx_plan_symbol_identity_test
-[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/generated/EmbXLexer.cpp.obj
+[ 45%] Linking CXX executable embx_symbol_resolution_contract_test.exe
+[ 45%] Built target embx_symbol_resolution_contract_test
 [ 45%] Building CXX object CMakeFiles/embx_symbol_identity_test.dir/generated/EmbXParser.cpp.obj
-[ 45%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/tests/name_resolution_plan_test.cpp.obj
+[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/tests/symbol_identity_codegen_test.cpp.obj
 [ 45%] Linking CXX executable embx_compiler_pipeline_test.exe
+[ 45%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/tests/name_resolution_plan_test.cpp.obj
 [ 45%] Built target embx_compiler_pipeline_test
-[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 45%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 45%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/encoder/Encoder.cpp.obj
 [ 46%] Linking CXX executable embx_symbol_identity_test.exe
 [ 46%] Built target embx_symbol_identity_test
-[ 46%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 46%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 46%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/tests/semantic_type_resolution_contract_test.cpp.obj
-[ 46%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 46%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/decoder/Decoder.cpp.obj
 [ 46%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/tests/runtime_parameters_test.cpp.obj
-[ 46%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 46%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 46%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 47%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/src/parser/ParserDriver.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/runtime/Runtime.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/reflection/Reflection.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_symbol_identity_codegen_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 47%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/value/Value.cpp.obj
 [ 48%] Linking CXX executable embx_symbol_identity_codegen_test.exe
 [ 48%] Built target embx_symbol_identity_codegen_test
-[ 48%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/runtime/Runtime.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/reflection/Reflection.cpp.obj
 [ 48%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/generated/EmbXLexer.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_midi_example_test.dir/tests/midi_example_test.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/value/Value.cpp.obj
-[ 48%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/generated/EmbXParser.cpp.obj
 [ 48%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 48%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 49%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/compiler/Compiler.cpp.obj
-[ 49%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 49%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/parser/ParserDriver.cpp.obj
-[ 49%] Linking CXX executable embx_semantic_type_resolution_contract_test.exe
-[ 49%] Built target embx_semantic_type_resolution_contract_test
-[ 50%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 50%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 50%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 50%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/ir/IrBuilder.cpp.obj
-[ 50%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/runtime/Runtime.cpp.obj
+[ 48%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 48%] Building CXX object CMakeFiles/embx_semantic_type_resolution_contract_test.dir/generated/EmbXParser.cpp.obj
+[ 48%] Building CXX object CMakeFiles/embx_midi_example_test.dir/tests/midi_example_test.cpp.obj
+[ 48%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 48%] Linking CXX executable embx_semantic_type_resolution_contract_test.exe
+[ 48%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/runtime/Runtime.cpp.obj
+[ 48%] Built target embx_semantic_type_resolution_contract_test
+[ 49%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 50%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/compiler/Compiler.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/ir/IrBuilder.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/tests/virtual_field_test.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/ir/IrBuilder.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/parser/ParserDriver.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/ir/IrBuilder.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/parser/ParserDriver.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/parser/ParserDriver.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/src/parser/ParserDriver.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/generated/EmbXLexer.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/ir/IrBuilder.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/generated/EmbXParser.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/runtime/Runtime.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/encoder/Encoder.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/runtime/Runtime.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/generated/EmbXLexer.cpp.obj
 [ 51%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/ir/IrBuilder.cpp.obj
-[ 51%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/decoder/Decoder.cpp.obj
-[ 51%] Linking CXX executable embx_name_resolution_plan_test.exe
 [ 51%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/decoder/Decoder.cpp.obj
-[ 52%] Built target embx_name_resolution_plan_test
-[ 53%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 54%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/encoder/Encoder.cpp.obj
-[ 54%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/value/Value.cpp.obj
-[ 54%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/parser/ParserDriver.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_field_alias_test.dir/tests/field_alias_test.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/generated/EmbXLexer.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/value/Value.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/generated/EmbXParser.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/reflection/Reflection.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/encoder/Encoder.cpp.obj
-[ 55%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 56%] Linking CXX executable embx_runtime_parameters_test.exe
+[ 51%] Building CXX object CMakeFiles/embx_name_resolution_plan_test.dir/generated/EmbXParser.cpp.obj
+[ 52%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 52%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 52%] Linking CXX executable embx_name_resolution_plan_test.exe
+[ 52%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/value/Value.cpp.obj
+[ 53%] Built target embx_name_resolution_plan_test
+[ 53%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 53%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/parser/ParserDriver.cpp.obj
+[ 53%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/runtime/Runtime.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_field_alias_test.dir/tests/field_alias_test.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/generated/EmbXLexer.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_runtime_parameters_test.dir/generated/EmbXParser.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/decoder/Decoder.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 54%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/encoder/Encoder.cpp.obj
+[ 55%] Linking CXX executable embx_runtime_parameters_test.exe
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/encoder/Encoder.cpp.obj
 [ 56%] Built target embx_runtime_parameters_test
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/decoder/Decoder.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/generated/EmbXLexer.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/tests/conditional_runtime_test.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/value/Value.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/generated/EmbXParser.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/tests/conditional_runtime_test.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/runtime/Runtime.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/value/Value.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/reflection/Reflection.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/ir/IrBuilder.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/value/Value.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 56%] Linking CXX executable embx_midi_example_test.exe
+[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/generated/EmbXLexer.cpp.obj
-[ 56%] Built target embx_midi_example_test
-[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/generated/EmbXParser.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/generated/EmbXLexer.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_transform_test.dir/tests/transform_test.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_virtual_field_test.dir/generated/EmbXParser.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_midi_example_test.dir/generated/EmbXParser.cpp.obj
 [ 56%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/parser/ParserDriver.cpp.obj
-[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/runtime/Runtime.cpp.obj
+[ 56%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 57%] Linking CXX executable embx_virtual_field_test.exe
-[ 58%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/ir/IrBuilder.cpp.obj
-[ 58%] Building CXX object CMakeFiles/embx_transform_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 58%] Built target embx_virtual_field_test
-[ 58%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/encoder/Encoder.cpp.obj
-[ 58%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 58%] Building CXX object CMakeFiles/embx_transform_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/decoder/Decoder.cpp.obj
+[ 57%] Linking CXX executable embx_midi_example_test.exe
+[ 57%] Built target embx_virtual_field_test
+[ 57%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 57%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/encoder/Encoder.cpp.obj
+[ 57%] Built target embx_midi_example_test
+[ 57%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/runtime/Runtime.cpp.obj
+[ 58%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/decoder/Decoder.cpp.obj
+[ 58%] Building CXX object CMakeFiles/embx_transform_test.dir/tests/transform_test.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/ir/IrBuilder.cpp.obj
 [ 59%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/tests/byte_order_closure_test.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/value/Value.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_transform_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/reflection/Reflection.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/parser/ParserDriver.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/generated/EmbXLexer.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_field_alias_test.dir/generated/EmbXParser.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_transform_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 59%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/parser/ParserDriver.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/runtime/Runtime.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/value/Value.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/ir/IrBuilder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_field_alias_test.dir/src/reflection/Reflection.cpp.obj
 [ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/encoder/Encoder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_field_alias_test.dir/generated/EmbXLexer.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_field_alias_test.dir/generated/EmbXParser.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/decoder/Decoder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/parser/ParserDriver.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/runtime/Runtime.cpp.obj
 [ 60%] Linking CXX executable embx_field_alias_test.exe
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/ir/IrBuilder.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/runtime/Runtime.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/runtime/Runtime.cpp.obj
 [ 60%] Built target embx_field_alias_test
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/value/Value.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/encoder/Encoder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/generated/EmbXLexer.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/decoder/Decoder.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/ir/IrBuilder.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/ir/IrBuilder.cpp.obj
 [ 60%] Building CXX object CMakeFiles/embx_requires_test.dir/tests/requires_test.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/decoder/Decoder.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/generated/EmbXParser.cpp.obj
-[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/parser/ParserDriver.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/value/Value.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/generated/EmbXLexer.cpp.obj
 [ 60%] Building CXX object CMakeFiles/embx_requires_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/parser/ParserDriver.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_transform_test.dir/src/parser/ParserDriver.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_conditional_runtime_test.dir/generated/EmbXParser.cpp.obj
+[ 60%] Building CXX object CMakeFiles/embx_requires_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 61%] Linking CXX executable embx_conditional_runtime_test.exe
-[ 61%] Building CXX object CMakeFiles/embx_transform_test.dir/src/value/Value.cpp.obj
-[ 61%] Built target embx_conditional_runtime_test
 [ 62%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/reflection/Reflection.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_transform_test.dir/src/encoder/Encoder.cpp.obj
+[ 62%] Built target embx_conditional_runtime_test
+[ 62%] Building CXX object CMakeFiles/embx_requires_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_transform_test.dir/src/decoder/Decoder.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_requires_test.dir/src/runtime/Runtime.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/tests/variant_closure_test.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_requires_test.dir/src/ir/IrBuilder.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/value/Value.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_transform_test.dir/src/value/Value.cpp.obj
+[ 62%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/generated/EmbXLexer.cpp.obj
 [ 63%] Building CXX object CMakeFiles/embx_transform_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_requires_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_transform_test.dir/src/reflection/Reflection.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_transform_test.dir/generated/EmbXLexer.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/tests/variant_closure_test.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_requires_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_transform_test.dir/generated/EmbXParser.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/value/Value.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_requires_test.dir/src/runtime/Runtime.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_requires_test.dir/src/ir/IrBuilder.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 63%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/generated/EmbXLexer.cpp.obj
-[ 63%] Linking CXX executable embx_transform_test.exe
-[ 63%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/generated/EmbXParser.cpp.obj
-[ 63%] Built target embx_transform_test
 [ 64%] Building CXX object CMakeFiles/embx_requires_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 64%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_transform_test.dir/src/reflection/Reflection.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_byte_order_closure_test.dir/generated/EmbXParser.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_transform_test.dir/generated/EmbXLexer.cpp.obj
 [ 64%] Building CXX object CMakeFiles/embx_requires_test.dir/src/parser/ParserDriver.cpp.obj
-[ 64%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/tests/lesson_01_first_format_test.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_transform_test.dir/generated/EmbXParser.cpp.obj
 [ 64%] Linking CXX executable embx_byte_order_closure_test.exe
-[ 64%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 64%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 65%] Built target embx_byte_order_closure_test
 [ 65%] Building CXX object CMakeFiles/embx_requires_test.dir/src/reflection/Reflection.cpp.obj
+[ 65%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 65%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/tests/lesson_01_first_format_test.cpp.obj
+[ 65%] Linking CXX executable embx_transform_test.exe
+[ 65%] Building CXX object CMakeFiles/embx_requires_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 65%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/runtime/Runtime.cpp.obj
+[ 65%] Built target embx_transform_test
 [ 65%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/compiler/Compiler.cpp.obj
 [ 65%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/ir/IrBuilder.cpp.obj
+[ 65%] Building CXX object CMakeFiles/embx_requires_test.dir/src/encoder/Encoder.cpp.obj
 [ 65%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/tests/lesson_02_integers_byte_order_test.cpp.obj
 [ 65%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/parser/ParserDriver.cpp.obj
-[ 65%] Building CXX object CMakeFiles/embx_requires_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 65%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/compiler/Compiler.cpp.obj
 [ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_requires_test.dir/src/encoder/Encoder.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/parser/ParserDriver.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/parser/ParserDriver.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/compiler/Compiler.cpp.obj
 [ 66%] Building CXX object CMakeFiles/embx_requires_test.dir/src/decoder/Decoder.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/ir/IrBuilder.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/reflection/Reflection.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/parser/ParserDriver.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/parser/ParserDriver.cpp.obj
 [ 66%] Building CXX object CMakeFiles/embx_requires_test.dir/src/value/Value.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/ir/IrBuilder.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/ir/IrBuilder.cpp.obj
 [ 66%] Building CXX object CMakeFiles/embx_requires_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 66%] Building CXX object CMakeFiles/embx_requires_test.dir/generated/EmbXLexer.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 66%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/reflection/Reflection.cpp.obj
 [ 67%] Building CXX object CMakeFiles/embx_requires_test.dir/generated/EmbXParser.cpp.obj
-[ 67%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/encoder/Encoder.cpp.obj
-[ 67%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 67%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 67%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 67%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 67%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/ir/IrBuilder.cpp.obj
 [ 67%] Linking CXX executable embx_requires_test.exe
+[ 67%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/encoder/Encoder.cpp.obj
+[ 67%] Built target embx_requires_test
+[ 67%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 67%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 67%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/decoder/Decoder.cpp.obj
 [ 68%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 68%] Built target embx_requires_test
+[ 68%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/tests/lesson_03_bit_fields_test.cpp.obj
+[ 68%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/runtime/Runtime.cpp.obj
+[ 68%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/value/Value.cpp.obj
+[ 68%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 69%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/value/Value.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/runtime/Runtime.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/tests/lesson_03_bit_fields_test.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 69%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 69%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/generated/EmbXLexer.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/runtime/Runtime.cpp.obj
-[ 69%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 69%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/compiler/Compiler.cpp.obj
+[ 69%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 69%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/encoder/Encoder.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_variant_closure_test.dir/generated/EmbXParser.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/encoder/Encoder.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/compiler/Compiler.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/parser/ParserDriver.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/encoder/Encoder.cpp.obj
-[ 70%] Linking CXX executable embx_variant_closure_test.exe
+[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/runtime/Runtime.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/decoder/Decoder.cpp.obj
+[ 70%] Linking CXX executable embx_variant_closure_test.exe
 [ 70%] Built target embx_variant_closure_test
 [ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/decoder/Decoder.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/encoder/Encoder.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/value/Value.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/ir/IrBuilder.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/tests/lesson_04_arrays_dynamic_dimensions_test.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/ir/IrBuilder.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/generated/EmbXLexer.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/value/Value.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/compiler/Compiler.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/decoder/Decoder.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_01_first_format_test.dir/generated/EmbXParser.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/compiler/Compiler.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/generated/EmbXLexer.cpp.obj
 [ 70%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/parser/ParserDriver.cpp.obj
-[ 71%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/generated/EmbXParser.cpp.obj
-[ 72%] Linking CXX executable embx_lesson_01_first_format_test.exe
-[ 72%] Built target embx_lesson_01_first_format_test
-[ 73%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 70%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/value/Value.cpp.obj
+[ 71%] Linking CXX executable embx_lesson_01_first_format_test.exe
+[ 71%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 71%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/generated/EmbXLexer.cpp.obj
+[ 71%] Built target embx_lesson_01_first_format_test
+[ 72%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 73%] Building CXX object CMakeFiles/embx_lesson_02_integers_byte_order_test.dir/generated/EmbXParser.cpp.obj
 [ 73%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 73%] Linking CXX executable embx_lesson_02_integers_byte_order_test.exe
-[ 73%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/tests/lesson_05_nested_structures_test.cpp.obj
 [ 73%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 73%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/ir/IrBuilder.cpp.obj
-[ 73%] Built target embx_lesson_02_integers_byte_order_test
-[ 73%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/compiler/Compiler.cpp.obj
+[ 73%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/tests/lesson_05_nested_structures_test.cpp.obj
 [ 73%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/runtime/Runtime.cpp.obj
+[ 73%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/ir/IrBuilder.cpp.obj
+[ 73%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 73%] Linking CXX executable embx_lesson_02_integers_byte_order_test.exe
+[ 73%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/compiler/Compiler.cpp.obj
+[ 73%] Built target embx_lesson_02_integers_byte_order_test
 [ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/encoder/Encoder.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/parser/ParserDriver.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/tests/lesson_06_variants_conditionals_test.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/encoder/Encoder.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/compiler/Compiler.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/decoder/Decoder.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/parser/ParserDriver.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/ir/IrBuilder.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/runtime/Runtime.cpp.obj
-[ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/ir/IrBuilder.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/value/Value.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/generated/EmbXLexer.cpp.obj
+[ 74%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 75%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 75%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 75%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/generated/EmbXLexer.cpp.obj
-[ 75%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/encoder/Encoder.cpp.obj
 [ 76%] Building CXX object CMakeFiles/embx_lesson_03_bit_fields_test.dir/generated/EmbXParser.cpp.obj
+[ 76%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/encoder/Encoder.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/runtime/Runtime.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 77%] Linking CXX executable embx_lesson_03_bit_fields_test.exe
+[ 77%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/ir/IrBuilder.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/decoder/Decoder.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 77%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/ir/IrBuilder.cpp.obj
-[ 77%] Linking CXX executable embx_lesson_03_bit_fields_test.exe
 [ 77%] Built target embx_lesson_03_bit_fields_test
-[ 77%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/value/Value.cpp.obj
-[ 77%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 77%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 77%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 77%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/value/Value.cpp.obj
+[ 77%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/tests/lesson_07_offsets_alignment_test.cpp.obj
 [ 77%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/runtime/Runtime.cpp.obj
+[ 77%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 78%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/generated/EmbXLexer.cpp.obj
-[ 78%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/tests/lesson_07_offsets_alignment_test.cpp.obj
 [ 78%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 78%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/generated/EmbXParser.cpp.obj
-[ 78%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/compiler/Compiler.cpp.obj
-[ 78%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/encoder/Encoder.cpp.obj
 [ 78%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 78%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/compiler/Compiler.cpp.obj
+[ 78%] Building CXX object CMakeFiles/embx_lesson_04_arrays_dynamic_dimensions_test.dir/generated/EmbXParser.cpp.obj
+[ 78%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/decoder/Decoder.cpp.obj
+[ 78%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/encoder/Encoder.cpp.obj
 [ 78%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/parser/ParserDriver.cpp.obj
 [ 78%] Linking CXX executable embx_lesson_04_arrays_dynamic_dimensions_test.exe
-[ 78%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/decoder/Decoder.cpp.obj
-[ 78%] Built target embx_lesson_04_arrays_dynamic_dimensions_test
+[ 78%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/encoder/Encoder.cpp.obj
 [ 78%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/decoder/Decoder.cpp.obj
+[ 78%] Built target embx_lesson_04_arrays_dynamic_dimensions_test
 [ 79%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 79%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/encoder/Encoder.cpp.obj
+[ 79%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/value/Value.cpp.obj
 [ 79%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/runtime/Runtime.cpp.obj
 [ 79%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/tests/lesson_08_symbol_dependencies_runtime_parameters_test.cpp.obj
+[ 79%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 79%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/value/Value.cpp.obj
-[ 79%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 79%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 80%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/generated/EmbXLexer.cpp.obj
+[ 80%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/reflection/Reflection.cpp.obj
 [ 80%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/ir/IrBuilder.cpp.obj
-[ 80%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/value/Value.cpp.obj
-[ 81%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/compiler/Compiler.cpp.obj
-[ 81%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/generated/EmbXParser.cpp.obj
-[ 81%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 81%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/parser/ParserDriver.cpp.obj
-[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/reflection/Reflection.cpp.obj
+[ 80%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 80%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 81%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/generated/EmbXLexer.cpp.obj
+[ 82%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/compiler/Compiler.cpp.obj
+[ 82%] Building CXX object CMakeFiles/embx_lesson_05_nested_structures_test.dir/generated/EmbXParser.cpp.obj
+[ 82%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/parser/ParserDriver.cpp.obj
+[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/generated/EmbXLexer.cpp.obj
 [ 82%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/generated/EmbXParser.cpp.obj
 [ 82%] Linking CXX executable embx_lesson_05_nested_structures_test.exe
 [ 82%] Built target embx_lesson_05_nested_structures_test
 [ 82%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/generated/EmbXLexer.cpp.obj
 [ 82%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 82%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/runtime/Runtime.cpp.obj
-[ 82%] Building CXX object CMakeFiles/embx_lesson_06_variants_conditionals_test.dir/generated/EmbXParser.cpp.obj
 [ 83%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/tests/lesson_09_virtual_fields_aliases_test.cpp.obj
-[ 83%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/decoder/Decoder.cpp.obj
-[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/ir/IrBuilder.cpp.obj
 [ 83%] Linking CXX executable embx_lesson_06_variants_conditionals_test.exe
-[ 83%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/compiler/Compiler.cpp.obj
-[ 83%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/encoder/Encoder.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/runtime/Runtime.cpp.obj
 [ 83%] Built target embx_lesson_06_variants_conditionals_test
-[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/decoder/Decoder.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/compiler/Compiler.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/tests/lesson_10_callbacks_transforms_test.cpp.obj
 [ 83%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/parser/ParserDriver.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/ir/IrBuilder.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/encoder/Encoder.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/compiler/Compiler.cpp.obj
+[ 83%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/value/Value.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/tests/lesson_10_callbacks_transforms_test.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/parser/ParserDriver.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/reflection/Reflection.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/runtime/Runtime.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/compiler/Compiler.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/decoder/Decoder.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/runtime/Runtime.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/parser/ParserDriver.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/generated/EmbXLexer.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/generated/EmbXParser.cpp.obj
 [ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/ir/IrBuilder.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/decoder/Decoder.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/generated/EmbXLexer.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/runtime/Runtime.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_07_offsets_alignment_test.dir/generated/EmbXParser.cpp.obj
+[ 84%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 85%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/encoder/Encoder.cpp.obj
-[ 85%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 85%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 85%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/ir/IrBuilder.cpp.obj
 [ 85%] Linking CXX executable embx_lesson_07_offsets_alignment_test.exe
 [ 85%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/value/Value.cpp.obj
-[ 85%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/plan/PlanBuilder.cpp.obj
 [ 85%] Built target embx_lesson_07_offsets_alignment_test
-[ 85%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/runtime/Runtime.cpp.obj
-[ 85%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 86%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/reflection/Reflection.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/tests/lesson_11_ipv4_test.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/ir/IrBuilder.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/decoder/Decoder.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/compiler/Compiler.cpp.obj
-[ 86%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/generated/EmbXLexer.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/parser/ParserDriver.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/generated/EmbXParser.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/encoder/Encoder.cpp.obj
-[ 87%] Linking CXX executable embx_lesson_08_symbol_dependencies_runtime_parameters_test.exe
+[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/tests/lesson_11_ipv4_test.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/reflection/Reflection.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/decoder/Decoder.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/compiler/Compiler.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/value/Value.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 87%] Built target embx_lesson_08_symbol_dependencies_runtime_parameters_test
+[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/parser/ParserDriver.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/encoder/Encoder.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/generated/EmbXLexer.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/decoder/Decoder.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_08_symbol_dependencies_runtime_parameters_test.dir/generated/EmbXParser.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/value/Value.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/reflection/Reflection.cpp.obj
-[ 87%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/tests/lesson_12_terminated_sequences_test.cpp.obj
+[ 87%] Linking CXX executable embx_lesson_08_symbol_dependencies_runtime_parameters_test.exe
+[ 87%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/encoder/Encoder.cpp.obj
+[ 87%] Built target embx_lesson_08_symbol_dependencies_runtime_parameters_test
 [ 87%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/runtime/Runtime.cpp.obj
 [ 87%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 87%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/value/Value.cpp.obj
 [ 88%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/encoder/Encoder.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/compiler/Compiler.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/tests/lesson_12_terminated_sequences_test.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/reflection/Reflection.cpp.obj
 [ 88%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/ir/IrBuilder.cpp.obj
 [ 88%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/generated/EmbXLexer.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/parser/ParserDriver.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/value/Value.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/generated/EmbXParser.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/reflection/Reflection.cpp.obj
 [ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/compiler/Compiler.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_09_virtual_fields_aliases_test.dir/generated/EmbXParser.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/parser/ParserDriver.cpp.obj
+[ 88%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/generated/EmbXLexer.cpp.obj
 [ 89%] Linking CXX executable embx_lesson_09_virtual_fields_aliases_test.exe
-[ 89%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 89%] Built target embx_lesson_09_virtual_fields_aliases_test
-[ 89%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 90%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/runtime/Runtime.cpp.obj
-[ 90%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/generated/EmbXLexer.cpp.obj
-[ 90%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/tests/lesson_14_tlv_test.cpp.obj
+[ 90%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/generated/EmbXParser.cpp.obj
+[ 90%] Built target embx_lesson_09_virtual_fields_aliases_test
+[ 90%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 90%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 90%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/decoder/Decoder.cpp.obj
-[ 90%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 91%] Building CXX object CMakeFiles/embx_lesson_10_callbacks_transforms_test.dir/generated/EmbXParser.cpp.obj
-[ 91%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/ir/IrBuilder.cpp.obj
-[ 91%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/compiler/Compiler.cpp.obj
+[ 90%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/tests/lesson_14_tlv_test.cpp.obj
+[ 90%] Linking CXX executable embx_lesson_10_callbacks_transforms_test.exe
+[ 91%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/runtime/Runtime.cpp.obj
+[ 91%] Built target embx_lesson_10_callbacks_transforms_test
 [ 91%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/encoder/Encoder.cpp.obj
-[ 91%] Linking CXX executable embx_lesson_10_callbacks_transforms_test.exe
+[ 91%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/compiler/Compiler.cpp.obj
+[ 91%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 91%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/tests/terminated_sequence_test.cpp.obj
 [ 92%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/parser/ParserDriver.cpp.obj
-[ 92%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 92%] Built target embx_lesson_10_callbacks_transforms_test
+[ 92%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/ir/IrBuilder.cpp.obj
 [ 92%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/value/Value.cpp.obj
-[ 92%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 92%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 92%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/compiler/Compiler.cpp.obj
 [ 92%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/reflection/Reflection.cpp.obj
-[ 92%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 92%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 92%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/parser/ParserDriver.cpp.obj
 [ 93%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/runtime/Runtime.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/tests/terminated_sequence_test.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/decoder/Decoder.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/ir/IrBuilder.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 93%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/generated/EmbXLexer.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/runtime/Runtime.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/plan/LayoutGraph.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
 [ 93%] Building CXX object CMakeFiles/embx_lesson_11_ipv4_test.dir/generated/EmbXParser.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/compiler/Compiler.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/encoder/Encoder.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/parser/ParserDriver.cpp.obj
-[ 93%] Linking CXX executable embx_lesson_11_ipv4_test.exe
-[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/value/Value.cpp.obj
-[ 93%] Built target embx_lesson_11_ipv4_test
-[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 94%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/reflection/Reflection.cpp.obj
-[ 94%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 94%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/decoder/Decoder.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/ir/IrBuilder.cpp.obj
+[ 93%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/decoder/Decoder.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/runtime/Runtime.cpp.obj
+[ 94%] Linking CXX executable embx_lesson_11_ipv4_test.exe
+[ 94%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 94%] Built target embx_lesson_11_ipv4_test
+[ 94%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/encoder/Encoder.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/ir/IrBuilder.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 94%] Building CXX object CMakeFiles/embx.dir/src/main.cpp.obj
-[ 94%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 95%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/runtime/Runtime.cpp.obj
-[ 95%] Building CXX object CMakeFiles/embx.dir/src/compiler/Compiler.cpp.obj
-[ 95%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 95%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/encoder/Encoder.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/value/Value.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/plan/PlanBuilder.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/diagnostics/Diagnostic.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx.dir/src/compiler/Compiler.cpp.obj
+[ 94%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/decoder/Decoder.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/reflection/Reflection.cpp.obj
 [ 95%] Building CXX object CMakeFiles/embx.dir/src/parser/ParserDriver.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/encoder/Encoder.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/plan/LayoutGraph.cpp.obj
 [ 95%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/generated/EmbXLexer.cpp.obj
-[ 95%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/ir/IrBuilder.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/decoder/Decoder.cpp.obj
+[ 95%] Building CXX object CMakeFiles/embx.dir/src/semantic/SemanticAnalyzer.cpp.obj
 [ 95%] Building CXX object CMakeFiles/embx_lesson_12_terminated_sequences_test.dir/generated/EmbXParser.cpp.obj
 [ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/value/Value.cpp.obj
 [ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/diagnostics/Diagnostic.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/plan/PlanBuilder.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/reflection/Reflection.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 96%] Linking CXX executable embx_lesson_12_terminated_sequences_test.exe
-[ 96%] Built target embx_lesson_12_terminated_sequences_test
-[ 96%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/plan/LayoutGraph.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/codegen/CppGenerator.cpp.obj
 [ 96%] Building CXX object CMakeFiles/embx.dir/src/runtime/Runtime.cpp.obj
+[ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/reflection/Reflection.cpp.obj
+[ 96%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/encoder/Encoder.cpp.obj
+[ 96%] Linking CXX executable embx_lesson_12_terminated_sequences_test.exe
 [ 96%] Building CXX object CMakeFiles/embx.dir/src/runtime/ExpressionEvaluator.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/tests/semantic_ir_test.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/decoder/Decoder.cpp.obj
-[ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/generated/EmbXLexer.cpp.obj
+[ 96%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/src/codegen/CppGenerator.cpp.obj
+[ 96%] Built target embx_lesson_12_terminated_sequences_test
+[ 96%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/value/Value.cpp.obj
 [ 97%] Building CXX object CMakeFiles/embx.dir/src/ir/IrBuilder.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/generated/EmbXParser.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/ir/IrBuilder.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/encoder/Encoder.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx.dir/src/plan/PlanBuilder.cpp.obj
-[ 97%] Linking CXX executable embx_lesson_14_tlv_test.exe
-[ 97%] Built target embx_lesson_14_tlv_test
-[ 97%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/parser/ParserDriver.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/value/Value.cpp.obj
-[ 97%] Building CXX object CMakeFiles/embx.dir/src/plan/LayoutGraph.cpp.obj
+[ 97%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/generated/EmbXLexer.cpp.obj
 [ 97%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/reflection/Reflection.cpp.obj
-[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/generated/EmbXLexer.cpp.obj
-[ 98%] Building CXX object CMakeFiles/embx.dir/src/decoder/Decoder.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/tests/semantic_ir_test.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx_lesson_14_tlv_test.dir/generated/EmbXParser.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx.dir/src/plan/PlanBuilder.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/src/codegen/CppGenerator.cpp.obj
-[ 98%] Building CXX object CMakeFiles/embx.dir/src/encoder/Encoder.cpp.obj
-[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/generated/EmbXParser.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/semantic/SemanticAnalyzer.cpp.obj
+[ 98%] Linking CXX executable embx_lesson_14_tlv_test.exe
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/ir/IrBuilder.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/generated/EmbXLexer.cpp.obj
-[ 98%] Building CXX object CMakeFiles/embx.dir/src/value/Value.cpp.obj
+[ 98%] Built target embx_lesson_14_tlv_test
+[ 98%] Building CXX object CMakeFiles/embx.dir/src/plan/LayoutGraph.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx_terminated_sequence_test.dir/generated/EmbXParser.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/src/parser/ParserDriver.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx.dir/src/decoder/Decoder.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx.dir/src/encoder/Encoder.cpp.obj
+[ 98%] Linking CXX executable embx_terminated_sequence_test.exe
+[ 98%] Built target embx_terminated_sequence_test
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/generated/EmbXLexer.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx_semantic_ir_test.dir/generated/EmbXParser.cpp.obj
+[ 98%] Building CXX object CMakeFiles/embx.dir/src/value/Value.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx.dir/src/diagnostics/Diagnostic.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx.dir/src/reflection/Reflection.cpp.obj
 [ 98%] Building CXX object CMakeFiles/embx.dir/src/codegen/CppGenerator.cpp.obj
-[ 98%] Linking CXX executable embx_semantic_ir_test.exe
-[ 99%] Built target embx_semantic_ir_test
-[100%] Building CXX object CMakeFiles/embx.dir/generated/EmbXLexer.cpp.obj
-[100%] Building CXX object CMakeFiles/embx.dir/generated/EmbXParser.cpp.obj
-[100%] Linking CXX executable embx_terminated_sequence_test.exe
-[100%] Built target embx_terminated_sequence_test
+[ 99%] Building CXX object CMakeFiles/embx.dir/generated/EmbXLexer.cpp.obj
+[ 99%] Building CXX object CMakeFiles/embx.dir/generated/EmbXParser.cpp.obj
+[ 99%] Linking CXX executable embx_semantic_ir_test.exe
+[100%] Built target embx_semantic_ir_test
 [100%] Linking CXX executable embx.exe
 [100%] Built target embx
 === examples\callback.embx ===
@@ -1079,23 +1079,23 @@ Test project C:/projects/embx/build
       Start  4: ast_structural_test
  4/75 Test  #4: ast_structural_test ................................   Passed    0.02 sec
       Start  5: semantic_ir_test
- 5/75 Test  #5: semantic_ir_test ...................................   Passed    0.04 sec
+ 5/75 Test  #5: semantic_ir_test ...................................   Passed    0.03 sec
       Start  6: semantic_negative_test
- 6/75 Test  #6: semantic_negative_test .............................   Passed    0.10 sec
+ 6/75 Test  #6: semantic_negative_test .............................   Passed    0.07 sec
       Start  7: ir_structural_test
  7/75 Test  #7: ir_structural_test .................................   Passed    0.11 sec
       Start  8: plan_test
- 8/75 Test  #8: plan_test ..........................................   Passed    0.07 sec
+ 8/75 Test  #8: plan_test ..........................................   Passed    0.05 sec
       Start  9: plan_executable_contract_test
- 9/75 Test  #9: plan_executable_contract_test ......................   Passed    0.14 sec
+ 9/75 Test  #9: plan_executable_contract_test ......................   Passed    0.13 sec
       Start 10: runtime_lookup_audit_test
-10/75 Test #10: runtime_lookup_audit_test ..........................   Passed    0.18 sec
+10/75 Test #10: runtime_lookup_audit_test ..........................   Passed    0.17 sec
       Start 11: plan_execution_independence_test
-11/75 Test #11: plan_execution_independence_test ...................   Passed    0.17 sec
+11/75 Test #11: plan_execution_independence_test ...................   Passed    0.16 sec
       Start 12: dynamic_expression_determinism_audit_test
-12/75 Test #12: dynamic_expression_determinism_audit_test ..........   Passed    0.18 sec
+12/75 Test #12: dynamic_expression_determinism_audit_test ..........   Passed    0.17 sec
       Start 13: plan_negative_test
-13/75 Test #13: plan_negative_test .................................   Passed    0.06 sec
+13/75 Test #13: plan_negative_test .................................   Passed    0.05 sec
       Start 14: decoder_test
 14/75 Test #14: decoder_test .......................................   Passed    0.08 sec
       Start 15: encoder_test
@@ -1103,31 +1103,31 @@ Test project C:/projects/embx/build
       Start 16: composite_type_test
 16/75 Test #16: composite_type_test ................................   Passed    0.02 sec
       Start 17: nested_composite_test
-17/75 Test #17: nested_composite_test ..............................   Passed    0.09 sec
+17/75 Test #17: nested_composite_test ..............................   Passed    0.08 sec
       Start 18: dynamic_layout_test
 18/75 Test #18: dynamic_layout_test ................................   Passed    0.03 sec
       Start 19: value_reflection_test
-19/75 Test #19: value_reflection_test ..............................   Passed    0.07 sec
+19/75 Test #19: value_reflection_test ..............................   Passed    0.06 sec
       Start 20: diagnostics_pipeline_test
 20/75 Test #20: diagnostics_pipeline_test ..........................   Passed    0.02 sec
       Start 21: layout_graph_test
 21/75 Test #21: layout_graph_test ..................................   Passed    0.05 sec
       Start 22: dependency_validation_test
-22/75 Test #22: dependency_validation_test .........................   Passed    0.05 sec
+22/75 Test #22: dependency_validation_test .........................   Passed    0.04 sec
       Start 23: foundation_hardening_test
 23/75 Test #23: foundation_hardening_test ..........................   Passed    0.02 sec
       Start 24: namespace_import_test
-24/75 Test #24: namespace_import_test ..............................   Passed    0.12 sec
+24/75 Test #24: namespace_import_test ..............................   Passed    0.11 sec
       Start 25: type_system_test
-25/75 Test #25: type_system_test ...................................   Passed    0.23 sec
+25/75 Test #25: type_system_test ...................................   Passed    0.18 sec
       Start 26: enum_test
-26/75 Test #26: enum_test ..........................................   Passed    0.05 sec
+26/75 Test #26: enum_test ..........................................   Passed    0.04 sec
       Start 27: attribute_test
-27/75 Test #27: attribute_test .....................................   Passed    0.07 sec
+27/75 Test #27: attribute_test .....................................   Passed    0.05 sec
       Start 28: documentation_test
-28/75 Test #28: documentation_test .................................   Passed    0.04 sec
+28/75 Test #28: documentation_test .................................   Passed    0.03 sec
       Start 29: type_system_wp2_test
-29/75 Test #29: type_system_wp2_test ...............................   Passed    0.14 sec
+29/75 Test #29: type_system_wp2_test ...............................   Passed    0.12 sec
       Start 30: semantic_edge_cases_test
 30/75 Test #30: semantic_edge_cases_test ...........................   Passed    0.05 sec
       Start 31: runtime_hardening_test
@@ -1145,15 +1145,15 @@ Test project C:/projects/embx/build
       Start 37: cpp_generator_test
 37/75 Test #37: cpp_generator_test .................................   Passed    0.03 sec
       Start 38: generated_codec_test
-38/75 Test #38: generated_codec_test ...............................   Passed    0.17 sec
+38/75 Test #38: generated_codec_test ...............................   Passed    0.15 sec
       Start 39: generated_dynamic_codec_test
-39/75 Test #39: generated_dynamic_codec_test .......................   Passed    0.14 sec
+39/75 Test #39: generated_dynamic_codec_test .......................   Passed    0.13 sec
       Start 40: generated_nested_types_test
 40/75 Test #40: generated_nested_types_test ........................   Passed    0.14 sec
       Start 41: generated_callback_test
-41/75 Test #41: generated_callback_test ............................   Passed    0.04 sec
+41/75 Test #41: generated_callback_test ............................   Passed    0.03 sec
       Start 42: encoder_callback_symmetry_test
-42/75 Test #42: encoder_callback_symmetry_test .....................   Passed    0.02 sec
+42/75 Test #42: encoder_callback_symmetry_test .....................   Passed    0.03 sec
       Start 43: compiler_pipeline_test
 43/75 Test #43: compiler_pipeline_test .............................   Passed    0.14 sec
       Start 44: core_expression_test
@@ -1169,58 +1169,58 @@ Test project C:/projects/embx/build
       Start 49: symbol_resolution_contract_test
 49/75 Test #49: symbol_resolution_contract_test ....................   Passed    0.02 sec
       Start 50: symbol_identity_codegen_test
-50/75 Test #50: symbol_identity_codegen_test .......................   Passed    0.03 sec
+50/75 Test #50: symbol_identity_codegen_test .......................   Passed    0.02 sec
       Start 51: name_resolution_plan_test
-51/75 Test #51: name_resolution_plan_test ..........................   Passed    0.17 sec
+51/75 Test #51: name_resolution_plan_test ..........................   Passed    0.16 sec
       Start 52: semantic_type_resolution_contract_test
-52/75 Test #52: semantic_type_resolution_contract_test .............   Passed    0.04 sec
+52/75 Test #52: semantic_type_resolution_contract_test .............   Passed    0.03 sec
       Start 53: runtime_parameters_test
 53/75 Test #53: runtime_parameters_test ............................   Passed    0.17 sec
       Start 54: midi_example_test
-54/75 Test #54: midi_example_test ..................................   Passed    0.17 sec
+54/75 Test #54: midi_example_test ..................................   Passed    0.16 sec
       Start 55: virtual_field_test
-55/75 Test #55: virtual_field_test .................................   Passed    0.04 sec
+55/75 Test #55: virtual_field_test .................................   Passed    0.03 sec
       Start 56: field_alias_test
-56/75 Test #56: field_alias_test ...................................   Passed    0.05 sec
+56/75 Test #56: field_alias_test ...................................   Passed    0.04 sec
       Start 57: conditional_runtime_test
 57/75 Test #57: conditional_runtime_test ...........................   Passed    0.04 sec
       Start 58: transform_test
-58/75 Test #58: transform_test .....................................   Passed    0.08 sec
+58/75 Test #58: transform_test .....................................   Passed    0.05 sec
       Start 59: byte_order_closure_test
-59/75 Test #59: byte_order_closure_test ............................   Passed    0.04 sec
+59/75 Test #59: byte_order_closure_test ............................   Passed    0.03 sec
       Start 60: requires_test
-60/75 Test #60: requires_test ......................................   Passed    0.04 sec
+60/75 Test #60: requires_test ......................................   Passed    0.03 sec
       Start 61: variant_closure_test
-61/75 Test #61: variant_closure_test ...............................   Passed    0.06 sec
+61/75 Test #61: variant_closure_test ...............................   Passed    0.04 sec
       Start 62: lesson_01_first_format
-62/75 Test #62: lesson_01_first_format .............................   Passed    0.17 sec
+62/75 Test #62: lesson_01_first_format .............................   Passed    0.16 sec
       Start 63: lesson_02_integers_byte_order
 63/75 Test #63: lesson_02_integers_byte_order ......................   Passed    0.16 sec
       Start 64: lesson_03_bit_fields
-64/75 Test #64: lesson_03_bit_fields ...............................   Passed    0.17 sec
+64/75 Test #64: lesson_03_bit_fields ...............................   Passed    0.16 sec
       Start 65: lesson_04_arrays_dynamic_dimensions
 65/75 Test #65: lesson_04_arrays_dynamic_dimensions ................   Passed    0.03 sec
       Start 66: lesson_05_nested_structures
 66/75 Test #66: lesson_05_nested_structures ........................   Passed    0.03 sec
       Start 67: lesson_06_variants_conditionals
-67/75 Test #67: lesson_06_variants_conditionals ....................   Passed    0.17 sec
+67/75 Test #67: lesson_06_variants_conditionals ....................   Passed    0.16 sec
       Start 68: lesson_07_offsets_alignment
-68/75 Test #68: lesson_07_offsets_alignment ........................   Passed    0.03 sec
+68/75 Test #68: lesson_07_offsets_alignment ........................   Passed    0.02 sec
       Start 69: lesson_08_symbol_dependencies_runtime_parameters
-69/75 Test #69: lesson_08_symbol_dependencies_runtime_parameters ...   Passed    0.17 sec
+69/75 Test #69: lesson_08_symbol_dependencies_runtime_parameters ...   Passed    0.16 sec
       Start 70: lesson_09_virtual_fields_aliases
-70/75 Test #70: lesson_09_virtual_fields_aliases ...................   Passed    0.19 sec
+70/75 Test #70: lesson_09_virtual_fields_aliases ...................   Passed    0.17 sec
       Start 71: lesson_10_callbacks_transforms
 71/75 Test #71: lesson_10_callbacks_transforms .....................   Passed    0.03 sec
       Start 72: lesson_11_ipv4
-72/75 Test #72: lesson_11_ipv4 .....................................   Passed    0.17 sec
+72/75 Test #72: lesson_11_ipv4 .....................................   Passed    0.16 sec
       Start 73: lesson_12_terminated_sequences
 73/75 Test #73: lesson_12_terminated_sequences .....................   Passed    0.03 sec
       Start 74: lesson_14_tlv
 74/75 Test #74: lesson_14_tlv ......................................   Passed    0.03 sec
       Start 75: terminated_sequence_test
-75/75 Test #75: terminated_sequence_test ...........................   Passed    0.21 sec
+75/75 Test #75: terminated_sequence_test ...........................   Passed    0.19 sec
 
 100% tests passed out of 75
 
-Total Test time (real) =   6.09 sec
+Total Test time (real) =   5.59 sec

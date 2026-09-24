@@ -1,12 +1,12 @@
 # Archive manifest — EmbX 0.9.52 TLV course update
 
-EmbX 0.9.49 remains the accepted green language baseline with 73/73 CTest tests. EmbX 0.9.50 added the accepted Lesson 12 course coverage and retained a 74/74 suite. EmbX 0.9.51 extends Lesson 13 with standard MIDI Track Name text metadata; 0.9.52 adds the Lesson 14 TLV composition course material without changing language semantics. The 0.9.52 candidate release gate is a clean local build with 75/75 CTest tests (100%) plus a successful run of all canonical examples.
+EmbX 0.9.49 remains the accepted green language baseline with 73/73 CTest tests. EmbX 0.9.50 added the accepted Lesson 12 course coverage and brought the course suite to 74/74. EmbX 0.9.51 extended Lesson 13 with standard MIDI Track Name text metadata without changing the test count. EmbX 0.9.52 adds the accepted Lesson 14 TLV composition material without changing language semantics. The 0.9.52 acceptance gate is the clean local build, 75/75 CTest tests (100%), and successful canonical examples.
 
 # EmbX Source Archive Manifest
 
 ## Archive state
 
-**EmbX 0.9.52 — TLV composition lesson — CANDIDATE**
+**EmbX 0.9.52 — TLV composition lesson — ACCEPTED GREEN**
 
 This source tree contains the canonical grammar, compiler/runtime implementation, generated-C++
 backend, examples, tests, executable learning material and active documentation. It contains no
@@ -44,7 +44,7 @@ moves MIDI to Lesson 13; 0.9.51 adds standard Track Name text metadata to the Le
 0.9.44 remains the immutable predecessor baseline with 61 CTest registrations. 0.9.45 adds the
 executable learning course, the 20-case MIDI corpus checker and manual Windows playback check.
 0.9.49 is the accepted 73-test language baseline with generalized structured/nested terminated
-sequences. 0.9.50 adds one course test, so the acceptance gate becomes 74/74. 0.9.51 changes only the MIDI fixture, regression assertions and course documentation; 0.9.52 adds one course test, bringing the candidate gate to 75/75.
+sequences. 0.9.50 adds one course test, so the acceptance gate becomes 74/74. 0.9.51 changes only the MIDI fixture, regression assertions and course documentation; 0.9.52 adds one course test, bringing the accepted course gate to 75/75.
 
 ## Dependency and build policy
 
@@ -53,8 +53,9 @@ build uses it directly; otherwise CMake falls back to the pinned Catch2 3.15.3 s
 Java is discovered through CMake's normal `find_package(Java 11 REQUIRED COMPONENTS Runtime)`;
 MSYS2/ANTLR discovery is derived from the active compiler or an explicit user override.
 
-`build.cmd` writes the local build protocol to `build\\build_protocol.txt`. `clean_build.cmd` removes
-the entire build tree before rebuilding, so the protocol never becomes a source-tree artifact.
+`build.cmd` writes the local build protocol to the source-root `build_protocol.txt`; it is ignored by
+`.gitignore` and excluded from source archives. `clean_build.cmd` removes the entire build tree before
+rebuilding.
 
 ## Current backend scope
 
@@ -62,4 +63,6 @@ PASS9–PASS14 cover generated C++ conditional, variant, virtual, alias, transfo
 runtime-parameter expression, multidimensional-array and callback paths. Rust and Python
 backends remain intentionally deferred.
 
-Course status: Lessons 1–13 are accepted; Lesson 14 (TLV composition) is candidate. Lesson 13 (MIDI) remains the first real-format conformance lesson. Lessons 15–17 remain planned.
+Course status: Lessons 1–14 are accepted. Lesson 13 (MIDI) remains the first real-format conformance lesson. Lessons 15–17 remain planned.
+
+- `docs/DEVELOPMENT_PLAN.md` — forward development plan, including GGUF, canonical source generation and format reporting.
