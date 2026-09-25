@@ -5,9 +5,9 @@ AST → Semantic → IR → Plan → reference runtime/codecs → backends.
 
 ## Current development state
 
-- **0.9.52 is the current accepted green course state. Lesson 14 adds TLV composition using only existing language mechanisms; the 0.9.49 language baseline remains unchanged.
+- **0.9.53 is the accepted universal array-buffer baseline.** It closes the target-neutral `ArrayDescriptor + ArrayBuffer + ArrayView` boundary, including Plan integration, dynamic dimensions, nested structures and conformance coverage.
 - The canonical pipeline remains one-way and minimal: AST → Semantic → IR → Plan → reference runtime/codecs; `SymbolId` is the executable identity boundary.
-- **0.9.52 acceptance:** the complete local suite is validated at 75/75 CTest tests (100%).
+- **0.9.53 acceptance:** the complete array-buffer closure is validated at **79/79 CTest tests (100%)** in the target environment.
 - Generalized terminated sequences remain a language feature of the accepted 0.9.49 baseline; the course lesson adds no compiler semantics.
 
 ## Examples
@@ -31,6 +31,9 @@ protocol logs.
 - `docs/LANGUAGE.md` — normative language contract.
 - `docs/LANGUAGE_COMPLETION_MATRIX.md` — current implementation/status matrix.
 - `docs/ARCHITECTURE.md` and `docs/ARCHITECTURE_CONTRACTS.md` — architecture and invariants.
+- `docs/MULTIDIMENSIONAL_ARRAY_LAYOUT.md` — normative multidimensional storage-order contract.
+- `docs/MULTIDIMENSIONAL_ARRAY_VIEW.md` — target-neutral array-view boundary for final programs.
+- `docs/DEVELOPMENT_HANDOFF.md` — concise continuation point for the next development stage.
 - `docs/DEVELOPMENT_ROADMAP.md` — current roadmap and lesson plan.
 - `docs/TERMINATED_SEQUENCE_SPEC.md` — normative generalized terminated-sequence contract accepted in 0.9.49.
 - `docs/RELEASE_NOTES.md` — historical release record.
@@ -45,9 +48,11 @@ contract.
 
 ## Current stage
 
-**0.9.52 — Lesson 14 TLV composition — ACCEPTED GREEN.**
+**0.9.53 — Universal array-buffer boundary — ACCEPTED GREEN.**
+
+The documentation freeze preceding Lesson 15 also fixes the multidimensional-array boundary: canonical shape/order remain in EmbX, while a final program may consume decoded arrays through a target-specific non-owning view rather than a language-level tensor object.
 
 Lesson 12 adds executable teaching material for generalized terminated sequences, including a
 structured sequence whose elements contain their own terminated byte payloads. Lesson 13 extends
 the real MIDI fixture with a standard Track Name text metadata event. The language implementation
-remains the accepted 0.9.49 contract; the course suite is accepted at 75/75 tests.
+remains the accepted 0.9.49 contract; the course suite through Lesson 14 and the 0.9.53 array-buffer closure are accepted at 79/79 tests.

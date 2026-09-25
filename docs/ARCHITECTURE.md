@@ -82,6 +82,12 @@ Compiler vectors define semantic order. `std::unordered_map` and `std::unordered
 
 SymbolIds are deterministic within one compiler-produced symbol table and are not persistent ABI identifiers.
 
+## 9a. Multidimensional array order
+
+Multidimensional array shape is canonicalized in `core::Type::dimensions`. The physical traversal is also canonical: the first dimension is outermost and the last dimension varies fastest. This is defined independently of scalar byte order and alignment.
+
+The architecture does not maintain a separate stride model or tensor object model for ordinary EmbX arrays. At a runtime/backend boundary, decoded multidimensional data may be exposed as a small non-owning array view containing the data reference, element count, element size and shape. External tensor formats must be mapped explicitly to the canonical EmbX order. See `MULTIDIMENSIONAL_ARRAY_LAYOUT.md` and `MULTIDIMENSIONAL_ARRAY_VIEW.md`.
+
 ## 10. Layout arithmetic
 
 Logical EmbX layout quantities use checked `uint64_t` semantics. Actual buffer access uses host-sized offsets only after checked conversion. Logical range therefore does not imply unlimited physical memory.

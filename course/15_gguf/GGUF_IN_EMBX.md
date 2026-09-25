@@ -156,7 +156,33 @@ Alignment belongs to EmbX's existing layout model. Lesson 15 must distinguish:
 
 No GGUF-specific alignment primitive should be introduced.
 
-## 10. Counts and widths
+## 10. Multidimensional tensor layout and dimension mapping
+
+GGUF tensor dimensions must not be copied into an EmbX multidimensional declaration without first checking the external GGML dimension convention.
+
+EmbX canonical order is:
+
+```text
+D0 outermost -> ... -> D(n-1) innermost
+D(n-1) varies fastest
+```
+
+Current upstream GGML documentation describes multidimensional tensors as row-major and exposes `ne` for dimension sizes and `nb` for byte strides. Its contiguous stride calculation makes dimension 0 the fastest-varying dimension. Therefore the dimension numbering used by GGML must be mapped explicitly to EmbX's source-level nesting convention.
+
+Lesson 15 must include a 2-D tensor with distinct values (for example 1..6) and verify the exact physical byte order. A square matrix is insufficient because transposition can remain invisible; use both 2 × 3 and 3 × 2 cases.
+
+The lesson must distinguish:
+
+- GGUF dimension metadata;
+- GGML logical dimension numbering;
+- GGML contiguous/strided physical interpretation;
+- EmbX logical nesting;
+- scalar element byte order;
+- alignment and tensor-data offsets.
+
+No GGUF-specific storage-order or stride feature is added to EmbX. If a concrete tensor cannot be represented by the current contract, record the minimal reproducible gap before proposing language evolution. Do not introduce a generic tensor object into the EmbX core merely to consume GGUF tensors; the application-side representation remains outside the language.
+
+## 11. Counts and widths
 
 The supplied GGUF specification uses `u64` for most countable values. This makes GGUF a useful practical check of the internal width choices already made in EmbX.
 
@@ -171,7 +197,7 @@ dimensions: u64[count];
 
 The test should validate actual encoded values, not merely compile-time type names.
 
-## 11. Real-fixture conformance
+## 12. Real-fixture conformance
 
 The lesson corpus should contain files produced by the external `gguf` library where practical:
 
@@ -214,7 +240,7 @@ Reference  Generated C++
 
 Where encoding is deterministic, the produced bytes should also be compared byte-for-byte with the golden fixture. Where the external library intentionally permits representation choices, compare the decoded semantic values and validate the result with an independent GGUF reader.
 
-## 12. Known investigation points
+## 13. Known investigation points
 
 The following are deliberately kept as investigation points rather than silently resolved:
 
@@ -226,7 +252,7 @@ The following are deliberately kept as investigation points rather than silently
 
 A failure to express one of these with current EmbX must first be reproduced with a minimal source and test case. Only then should language evolution be considered.
 
-## 13. Course rule
+## 14. Course rule
 
 GGUF-specific terminology belongs in this lesson and its documentation. The compiler, Plan, Reference Runtime, and generated backends remain format-independent.
 

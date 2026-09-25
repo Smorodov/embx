@@ -99,6 +99,7 @@ set(EMBX_CORE_SOURCES
   src/runtime/ExpressionEvaluator.cpp
   src/ir/IrBuilder.cpp
   src/plan/PlanBuilder.cpp
+  src/plan/ArrayDescriptor.cpp
   src/plan/LayoutGraph.cpp
   src/decoder/Decoder.cpp
   src/encoder/Encoder.cpp
@@ -142,6 +143,33 @@ add_executable(embx_layout_size_64bit_test tests/layout_size_64bit_test.cpp src/
 target_include_directories(embx_layout_size_64bit_test PRIVATE src)
 target_compile_options(embx_layout_size_64bit_test PRIVATE -Wall -Wextra -Wpedantic)
 add_test(NAME layout_size_64bit_test COMMAND embx_layout_size_64bit_test)
+
+add_executable(embx_array_buffer_contract_test tests/array_buffer_contract_test.cpp)
+target_include_directories(embx_array_buffer_contract_test PRIVATE src)
+target_compile_options(embx_array_buffer_contract_test PRIVATE -Wall -Wextra -Wpedantic)
+add_test(NAME array_buffer_contract_test COMMAND embx_array_buffer_contract_test)
+
+add_executable(embx_array_descriptor_plan_test
+  tests/array_descriptor_plan_test.cpp
+  src/plan/ArrayDescriptor.cpp src/plan/PlanBuilder.cpp src/plan/LayoutGraph.cpp
+  src/runtime/ExpressionEvaluator.cpp)
+target_include_directories(embx_array_descriptor_plan_test PRIVATE src)
+target_compile_options(embx_array_descriptor_plan_test PRIVATE -Wall -Wextra -Wpedantic)
+add_test(NAME array_descriptor_plan_test COMMAND embx_array_descriptor_plan_test)
+
+add_executable(embx_array_descriptor_dynamic_nested_test
+  tests/array_descriptor_dynamic_nested_test.cpp
+  src/plan/ArrayDescriptor.cpp src/plan/PlanBuilder.cpp src/plan/LayoutGraph.cpp
+  src/runtime/Runtime.cpp src/runtime/ExpressionEvaluator.cpp src/value/Value.cpp
+  src/diagnostics/Diagnostic.cpp)
+target_include_directories(embx_array_descriptor_dynamic_nested_test PRIVATE src)
+target_compile_options(embx_array_descriptor_dynamic_nested_test PRIVATE -Wall -Wextra -Wpedantic)
+add_test(NAME array_descriptor_dynamic_nested_test COMMAND embx_array_descriptor_dynamic_nested_test)
+
+add_executable(embx_array_conformance_test tests/array_conformance_test.cpp)
+target_include_directories(embx_array_conformance_test PRIVATE src)
+target_compile_options(embx_array_conformance_test PRIVATE -Wall -Wextra -Wpedantic)
+add_test(NAME array_conformance_test COMMAND embx_array_conformance_test)
 
 add_test(NAME runtime_test COMMAND embx_runtime_test)
 add_executable(embx_expression_test tests/expression_test.cpp src/runtime/ExpressionEvaluator.cpp)
@@ -224,7 +252,7 @@ add_executable(embx_encoder_test tests/encoder_test.cpp src/encoder/Encoder.cpp 
 target_include_directories(embx_encoder_test PRIVATE src)
 target_compile_options(embx_encoder_test PRIVATE -Wall -Wextra -Wpedantic)
 add_test(NAME encoder_test COMMAND embx_encoder_test)
-add_executable(embx_composite_type_test tests/composite_type_test.cpp src/encoder/Encoder.cpp src/decoder/Decoder.cpp src/runtime/Runtime.cpp src/runtime/ExpressionEvaluator.cpp src/value/Value.cpp src/diagnostics/Diagnostic.cpp)
+add_executable(embx_composite_type_test tests/composite_type_test.cpp src/encoder/Encoder.cpp src/decoder/Decoder.cpp src/runtime/Runtime.cpp src/runtime/ExpressionEvaluator.cpp src/value/Value.cpp src/diagnostics/Diagnostic.cpp src/plan/ArrayDescriptor.cpp src/plan/PlanBuilder.cpp src/plan/LayoutGraph.cpp)
 target_include_directories(embx_composite_type_test PRIVATE src)
 target_compile_options(embx_composite_type_test PRIVATE -Wall -Wextra -Wpedantic)
 add_test(NAME composite_type_test COMMAND embx_composite_type_test)

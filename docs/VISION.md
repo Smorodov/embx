@@ -147,6 +147,12 @@ They must nevertheless implement the same Plan semantics.
 
 Backend diversity is therefore an implementation concern, not a reason to duplicate the language definition.
 
+### 4.11 Application data representation remains downstream
+
+EmbX defines the binary meaning and canonical logical order of multidimensional arrays, but it does not need to own a matrix or tensor abstraction. A final program may receive decoded multidimensional data through a small target-specific non-owning view over the canonical contiguous elements and then construct whatever application representation it needs.
+
+This keeps application concerns such as tensor libraries, arbitrary strides, transpose views and matrix operations outside the semantic core.
+
 ## 5. What EmbX is not
 
 EmbX is not intended to be:

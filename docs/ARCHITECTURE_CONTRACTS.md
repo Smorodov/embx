@@ -67,3 +67,19 @@ Diagnostics are compiler/tooling contracts. Runtime errors must not silently tur
 ## O. Cleanup integrity
 
 Dead code, duplicate mechanisms, obsolete compatibility paths and stale documentation are defects when they obscure or contradict the current architecture.
+
+
+## P. Multidimensional array layout
+
+The canonical array shape is `core::Type::dimensions`. For dimensions `D0..Dn-1`, dimension 0 is outermost and dimension `n-1` varies fastest. Encoder, decoder, Reference Runtime and generated backends must preserve this order.
+
+Array storage order is independent of element byte order and alignment. No backend may silently transpose or reverse dimensions. External tensor formats require an explicit dimension/stride mapping before they are represented as EmbX arrays.
+
+The complete normative definition and index-to-linear mapping are in `MULTIDIMENSIONAL_ARRAY_LAYOUT.md`.
+
+
+## Q. Multidimensional array view boundary
+
+A multidimensional array may be exposed at a runtime/backend API as a non-owning view over contiguous logical elements. The conceptual facts are: data pointer/reference, total element count, element size, dimension count and resolved dimensions in canonical EmbX order.
+
+The view does not introduce tensor semantics, arbitrary strides, transpose state or a second layout model. Ownership and lifetime are target-API concerns. The complete boundary is defined in `MULTIDIMENSIONAL_ARRAY_VIEW.md`.

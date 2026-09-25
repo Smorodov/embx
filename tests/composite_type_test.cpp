@@ -2,6 +2,8 @@
 #include <catch2/catch_test_macros.hpp>
 #include "decoder/Decoder.h"
 #include "encoder/Encoder.h"
+#include "plan/ArrayDescriptor.h"
+#include "runtime/Array.h"
 #include <cstdint>
 #include <iostream>
 
@@ -155,4 +157,84 @@ TEST_CASE("multidimensional arrays preserve runtime shape", "[composite_type]") 
     REQUIRE(uv(first[2]) == 3);
     REQUIRE(uv(second[0]) == 4);
     REQUIRE(uv(second[2]) == 6);
+}
+
+
+TEST_CASE("array descriptor wraps an encoded multidimensional struct buffer", "[array_buffer]") {
+    embx::plan::Module p;
+
+    embx::plan::Struct item;
+    item.name = "Item";
+    {
+        auto f = std::make_unique<embx::plan::Field>();
+        f->name = "id";
+        f->type = primitive("u16");
+        item.members.push_back(std::move(f));
+    }
+    {
+        auto f = std::make_unique<embx::plan::Field>();
+        f->name = "value";
+        f->type = primitive("u8");
+        item.members.push_back(std::move(f));
+    }
+    const auto itemId = embx::test::addStruct(p, std::move(item));
+
+    embx::plan::Struct matrix;
+    matrix.name = "Matrix";
+    auto values = std::make_unique<embx::plan::Field>();
+    values->name = "values";
+    values->type = named("Item", itemId);
+    values->type.dimensions.push_back(embx::core::Dimension::fixed(lit("2")));
+    values->type.dimensions.push_back(embx::core::Dimension::fixed(lit("3")));
+    matrix.members.push_back(std::move(values));
+    embx::test::addStruct(p, std::move(matrix));
+
+    auto itemValue = [](uint64_t id, uint64_t value) {
+        return Value{Object{{"id", u(id)}, {"value", u(value)}}};
+    };
+    Array row0;
+    row0.emplace_back(itemValue(0x1001, 11));
+    row0.emplace_back(itemValue(0x1002, 22));
+    row0.emplace_back(itemValue(0x1003, 33));
+    Array row1;
+    row1.emplace_back(itemValue(0x2001, 44));
+    row1.emplace_back(itemValue(0x2002, 55));
+    row1.emplace_back(itemValue(0x2003, 66));
+    Array matrixValue;
+    matrixValue.emplace_back(std::move(row0));
+    matrixValue.emplace_back(std::move(row1));
+
+    const auto encoded = embx::encoder::Engine(p).encode(
+        "Matrix", Value{Object{{"values", Value{std::move(matrixValue)}}}});
+    REQUIRE(encoded.success);
+    const std::vector<uint8_t> expected = {
+        0x01,0x10,11, 0x02,0x10,22, 0x03,0x10,33,
+        0x01,0x20,44, 0x02,0x20,55, 0x03,0x20,66
+    };
+    REQUIRE(encoded.data == expected);
+
+    const auto* field = dynamic_cast<const embx::plan::Field*>(p.structs.back().members.front().get());
+    REQUIRE(field != nullptr);
+    embx::runtime::ArrayDescriptor descriptor;
+    std::string error;
+    REQUIRE(embx::plan::makeArrayDescriptor(p, field->type, descriptor, error));
+    REQUIRE(descriptor.elementKind == embx::runtime::ArrayElementKind::Named);
+    REQUIRE(descriptor.elementTypeId == itemId);
+    REQUIRE(descriptor.elementSize == 3);
+    REQUIRE(descriptor.elementCount == 6);
+    REQUIRE((descriptor.dimensions == std::vector<uint64_t>{2, 3}));
+
+    embx::runtime::ArrayView view{descriptor, {encoded.data.data(), encoded.data.size()}};
+    REQUIRE(view.valid(&error));
+    REQUIRE(view.buffer.size == descriptor.elementCount * descriptor.elementSize);
+
+    // The existing codec contract defines the last dimension as the fastest
+    // varying dimension. Verify the descriptor+buffer boundary preserves that
+    // order using deliberately distinct struct bytes.
+    REQUIRE(view.buffer.data[0] == 0x01);
+    REQUIRE(view.buffer.data[3] == 0x02);
+    REQUIRE(view.buffer.data[6] == 0x03);
+    REQUIRE(view.buffer.data[9] == 0x01);
+    REQUIRE(view.buffer.data[12] == 0x02);
+    REQUIRE(view.buffer.data[15] == 0x03);
 }

@@ -2,7 +2,7 @@
 
 The project vision and general design principles are defined in [`VISION.md`](VISION.md). The roadmap implements that vision; it does not redefine the language contract.
 
-The current source state is **EmbX 0.9.52 accepted green through Lesson 14, including generalized terminated sequences, MIDI metadata and TLV composition**. The 0.9.44 source remains the immutable predecessor reference for reflection/contract closure. 0.9.49 adds the generalized terminated-sequence boundary rule while preserving the canonical AST → Plan → reference-runtime architecture.
+The current source state is **EmbX 0.9.53 accepted green through Lesson 14, including the universal multidimensional array-buffer boundary**. The 0.9.44 source remains the immutable predecessor reference for reflection/contract closure. 0.9.49 adds the generalized terminated-sequence boundary rule while preserving the canonical AST → Plan → reference-runtime architecture.
 
 ## Completed integration history
 
@@ -69,6 +69,12 @@ The 0.9.48 terminated-byte implementation is generalized to `Element[*] until ..
 The implementation reuses the existing AST, Plan, `LayoutBounds`, Reference Runtime, Reflection and generated C++ architecture. Acceptance passed on the clean Windows/MSYS2 UCRT64 build with 73/73 CTest tests.
 
 
+## 0.9.53 — universal array buffer boundary — ACCEPTED GREEN
+
+The multidimensional-array model now has a concrete runtime boundary: `ArrayDescriptor + ArrayBuffer`, composed as a non-owning `ArrayView`. The first implementation is intentionally representation-only. It does not replace `value::Value::Array`, alter Plan semantics, or introduce tensor/matrix/stride concepts. Implementation-02 connected `Plan::Type` to `ArrayDescriptor` through `plan::makeArrayDescriptor()`, deriving element metadata and checked shape from the canonical Plan. Implementation-03 exercises the descriptor against the actual encoded buffer of a `Named[2][3]` array and verifies the canonical traversal order with distinct bytes. Implementation-04 adds checked `ArrayView` indexed access plus dynamic-dimension and nested-structure coverage, still reusing the existing evaluator and Plan layout machinery.
+
+The multidimensional array closure is complete: descriptor/buffer/view separation, Plan integration, dynamic dimensions, nested structures and conformance coverage are accepted at 79/79. The next stage is the GGUF adapter.
+
 ## Stage 4 — Backend and release hardening
 
 After language semantics stabilize:
@@ -111,9 +117,10 @@ include an external/practical validation where appropriate.
 11. **IPv4** — first complete real protocol example using bit fields and network byte order.
 12. **General terminated sequences** — structured elements, element-boundary termination, nested terminated sequences and transactional failure.
 13. **MIDI** — real SMF conformance, byte corpus, round-trip and audible playback.
-14. **Container/packet format** — magic, variants, blocks, alignment and dynamic payloads.
-15. **Callback protocol** — a complete practical callback boundary and generated C++ use.
-16. **Complete protocol** — a small end-to-end binary format built from the concepts above.
+14. **TLV composition** — accepted; demonstrates dynamic byte payloads, structured remaining sequences and terminated boundaries using existing language mechanisms.
+15. **GGUF capstone** — planned next; real-world external-format conformance with explicit GGML↔EmbX tensor-dimension mapping.
+
+Earlier container/packet, callback and complete-protocol material remains part of the historical course corpus and accepted implementation evidence; it is not a competing future lesson-number sequence.
 
 ### Per-lesson acceptance contract
 
@@ -149,16 +156,14 @@ Before a lesson moves from planned to active it must have:
 
 The course therefore becomes a living validation matrix rather than a parallel specification.
 
-### Course progress at 0.9.52 accepted green
+### Course progress at 0.9.53 accepted green
 
-- Lessons 1–14: accepted and locally validated at **75/75 CTest tests (100%)**.
+- Lessons 1–14: accepted; the complete 0.9.53 source state is locally validated at **79/79 CTest tests (100%)**.
 - Lesson 14 — TLV composition: accepted, adds one CTest registration and uses only existing language mechanisms.
 - Lesson 10 — Callbacks and transforms: accepted and locally validated.
 - Lesson 11 — IPv4: accepted and locally validated.
 - Lesson 13 — MIDI: accepted, with the supplied 20-file corpus, playable Type 0 fixture, and a standard Track Name text metadata event.
-- Lesson 15 — Container/packet format: planned.
-- Lesson 16 — Callback protocol: planned.
-- Lesson 17 — Complete protocol: planned.
+- Lesson 15 — GGUF capstone: planned.
 
 The active lessons use only existing accepted language semantics. The course tests are additional executable documentation and do not alter the compiler contract.
 
@@ -225,6 +230,12 @@ Only after that gate should the C++ backend be treated as the stabilized release
 Rust and Python backends remain deferred.
 
 
+## Multidimensional array contract — CLOSED for the current language
+
+The previous documentation gap around multidimensional physical order is closed before GGUF work. `MULTIDIMENSIONAL_ARRAY_LAYOUT.md` is normative. EmbX uses one contiguous traversal: dimension 0 is outermost and the last dimension varies fastest. Shape, element order, byte order, alignment and external tensor strides are documented as separate concepts.
+
+The implementation must not grow `row_major`, `column_major` or arbitrary `stride` syntax solely for GGUF. GGUF/GGML dimension conventions are an explicit boundary-mapping problem and require byte-level conformance fixtures.
+
 ## Planned tooling — canonical source generation and format reporting
 
 After the GGUF capstone, add two related developer tools without introducing new semantic machinery.
@@ -249,4 +260,9 @@ The detailed implementation plan is maintained in `docs/DEVELOPMENT_PLAN.md`.
 
 Use GGUF as a real-world conformance target without introducing GGUF-specific compiler semantics. Preserve the supplied original GGUF specification as `docs/GGUF_SPECIFICATION.md` and maintain `course/15_gguf/GGUF_IN_EMBX.md` as the course-oriented restatement.
 
-The sequence is: (1) smallest valid GGUF header, (2) strings and metadata scalars, (3) tagged metadata arrays including nested-array investigation, (4) tensor info, (5) alignment/tensor-data region, (6) fixtures generated by the external Python `gguf` library, (7) Reference Runtime and generated-backend conformance, and (8) deep audit. If a construct is not expressible with existing EmbX, demonstrate the smallest concrete gap before changing the language.
+The sequence is: (1) consume the frozen multidimensional-array contract with exact-byte 2 × 3, 3 × 2 and 2 × 3 × 4 tests already accepted in 0.9.53, (2) smallest valid GGUF header, (3) strings and metadata scalars, (4) tagged metadata arrays including nested-array investigation, (5) tensor info and explicit GGML↔EmbX dimension mapping, (6) alignment/tensor-data region, (7) fixtures generated by the external Python `gguf` library, (8) Reference Runtime and generated-backend conformance, and (9) deep audit. If a construct is not expressible with existing EmbX, demonstrate the smallest concrete gap before changing the language.
+
+
+## Multidimensional array view boundary — CLOSED
+
+Decoded multidimensional arrays are exposed at the runtime boundary as a non-owning view over contiguous canonical elements plus resolved shape metadata. The conceptual fields are data reference, element count, element size, dimension count and dimensions. This does not introduce a tensor object into EmbX. The target API owns lifetime/ownership details; arbitrary strides and transpose semantics remain outside the core. See `docs/MULTIDIMENSIONAL_ARRAY_VIEW.md`.

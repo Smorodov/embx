@@ -243,6 +243,20 @@ An attribute use contains only its name and source value. The declaration is the
 
 Documentation comments use `///` or `/** ... */`. Module, declaration and member documentation is retained through Plan and reflection.
 
+## 12a. Multidimensional array physical order
+
+The order of array dimensions is semantically significant. For dimensions `D0, D1, ..., Dn-1`, dimension 0 is the outermost dimension and `Dn-1` is the innermost; the last dimension varies fastest on the wire.
+
+For example, a 2 × 3 array is serialized as:
+
+```text
+A[0][0], A[0][1], A[0][2], A[1][0], A[1][1], A[1][2]
+```
+
+This order is independent of little-/big-endian byte order inside each element and independent of alignment/padding. EmbX currently has no language-level column-major or arbitrary-stride facility. External formats must be mapped explicitly to this contract. A consuming program may receive the decoded multidimensional data as a target-specific non-owning array view over the canonical contiguous element sequence; this is an API representation choice, not a language construct.
+
+The complete normative definitions are `MULTIDIMENSIONAL_ARRAY_LAYOUT.md` and `MULTIDIMENSIONAL_ARRAY_VIEW.md`.
+
 ## 13. Logical layout range
 
 Logical sizes, counts, extents, offsets, alignments and derived layout sizes use checked unsigned 64-bit semantics.

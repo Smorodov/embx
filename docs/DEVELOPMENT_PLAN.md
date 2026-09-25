@@ -2,11 +2,26 @@
 
 ## Current baseline
 
-The current accepted reference point is EmbX 0.9.52: Lessons 1–14 are accepted and locally validated at 75/75 CTest tests. This document is the forward-looking working plan. It complements `DEVELOPMENT_ROADMAP.md`; it does not replace the language contracts.
+The current accepted reference point is EmbX 0.9.53: Lessons 1–14 and the universal array-buffer boundary are accepted and locally validated at 79/79 CTest tests. This document is the forward-looking working plan. It complements `DEVELOPMENT_ROADMAP.md`; it does not replace the language contracts.
 
 The architectural invariants remain mandatory: AST → semantic analysis → Plan is the canonical path; Plan is the executable semantic boundary; Reference Runtime is the semantic reference implementation; generated C++/Rust/Python backends independently consume Plan semantics; one SymbolId identity, one NameResolver, one expression semantic model and one layout model are retained. No format-specific compiler mechanism is introduced merely to satisfy a course lesson.
 
-## 1. Lesson 15 — GGUF capstone
+## 1. Documentation freeze before GGUF
+
+The multidimensional-array contract is now explicit and normative before tensor-format implementation begins. The authoritative document is `MULTIDIMENSIONAL_ARRAY_LAYOUT.md`. The current EmbX rule is one contiguous order: dimension 0 is outermost and the last dimension varies fastest.
+
+The following must not be added as part of Lesson 15 merely to accommodate GGUF:
+
+- `row_major` / `column_major` syntax;
+- arbitrary `stride`;
+- tensor-specific AST or Plan types;
+- GGUF-specific runtime or layout evaluators.
+
+GGUF/GGML dimension conventions must instead be mapped explicitly to the existing EmbX order and proven with byte-level fixtures.
+
+For runtime/backend APIs, multidimensional decoded data may be exposed as a small non-owning array view: data reference, total element count, element size, dimension count and resolved dimensions. This is target-specific representation, not a new semantic type. See `MULTIDIMENSIONAL_ARRAY_VIEW.md`.
+
+## 2. Lesson 15 — GGUF capstone
 
 GGUF is the next practical real-format target. Keep the supplied original GGUF specification unchanged as the external reference in `docs/GGUF_SPECIFICATION.md`. Keep `course/15_gguf/GGUF_IN_EMBX.md` as the course-oriented specification expressed in EmbX terminology.
 
@@ -22,9 +37,11 @@ Stages:
 9. Negative fixtures for truncation, invalid magic and other concrete format failures.
 10. Deep audit before moving to another major feature.
 
+Before tensor conformance is considered closed, complete the multidimensional exact-byte matrix (2×3, 3×2, 2×3×4 and dynamic/nested cases) and verify that any future array-view API preserves the same shape and element order.
+
 The external `gguf` package is an oracle/fixture producer or validator only. It must not become an EmbX semantic dependency. If GGUF exposes a construct not expressible by current EmbX, first demonstrate the smallest concrete language gap and determine whether existing constructs can express it. Only then consider a language change.
 
-## 2. EmbX Source Generator — planned after the GGUF capstone
+## 3. EmbX Source Generator — planned after the GGUF capstone
 
 Add a generator that converts the canonical AST into deterministic, canonical, human-readable EmbX source. This is a source reconstruction/pretty-printing facility, not an additional execution backend.
 
@@ -62,7 +79,7 @@ Require semantic/structural AST equivalence. Then test idempotence:
 
 The corpus should include all current examples and course sources, especially terminated sequences, TLV and GGUF.
 
-## 3. Format Reporter — planned together with the Source Generator
+## 4. Format Reporter — planned together with the Source Generator
 
 Add a human-readable format summary generated from the canonical AST/Plan. It is deliberately separate from source reconstruction, although both consume the same canonical compiler data.
 
@@ -102,7 +119,7 @@ The reporter should expose facts already established by Plan and Reflection rath
 
 The exact report syntax is intentionally deferred until the existing Plan/Reflection facts are audited for completeness.
 
-## 4. Round-trip and documentation quality gate
+## 5. Round-trip and documentation quality gate
 
 The Source Generator and Format Reporter should become part of the quality infrastructure rather than lesson-specific features. The desired closed loop is:
 
@@ -110,7 +127,7 @@ The Source Generator and Format Reporter should become part of the quality infra
 
 The generated source must parse back to an equivalent AST. The report must agree with Plan/Reflection facts. This creates an independent way to detect drift between parser, AST, Plan and documentation.
 
-## 5. After these two tools
+## 6. After these two tools
 
 Once GGUF, Source Generator and Format Reporter are stable, stop adding lessons merely for feature count and perform a deep semantic/conformance audit. Priority order:
 
@@ -124,7 +141,7 @@ Once GGUF, Source Generator and Format Reporter are stable, stop adding lessons 
 
 The goal is maturity and closure, not accumulation of mechanisms.
 
-## 6. Decision rules for future work
+## 7. Decision rules for future work
 
 Before adding a language feature:
 1. identify the concrete external-format or user requirement;
@@ -142,10 +159,12 @@ Before adding a new analysis/reporting mechanism:
 
 ## Immediate next actions
 
-1. Begin GGUF Stage 15.1 with the smallest valid header.
-2. Produce at least one golden GGUF fixture using the external Python `gguf` package.
-3. Express that fixture using existing EmbX only.
-4. Validate Plan and Reference Runtime behavior.
-5. Continue through the GGUF stages above before implementing the Source Generator.
-6. After GGUF closure, implement the canonical Source Generator and its round-trip tests.
-7. Implement the Format Reporter using existing Plan/Reflection facts.
+1. Add the mandatory multidimensional conformance tests from `MULTIDIMENSIONAL_ARRAY_LAYOUT.md`.
+2. Freeze the dimension-order contract against those tests.
+3. Begin GGUF Stage 15.1 with the smallest valid header and a 2-D tensor mapping fixture.
+4. Produce at least one golden GGUF fixture using the external Python `gguf` package.
+5. Express that fixture using existing EmbX only.
+6. Validate Plan and Reference Runtime behavior, including the explicit dimension mapping.
+7. Continue through the GGUF stages above before implementing the Source Generator.
+8. After GGUF closure, implement the canonical Source Generator and its round-trip tests.
+9. Implement the Format Reporter using existing Plan/Reflection facts.
