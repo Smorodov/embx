@@ -491,6 +491,15 @@ target_include_directories(embx_source_generator_test PRIVATE "${ANTLR4_OUTPUT_D
 target_link_libraries(embx_source_generator_test PRIVATE "${ANTLR4_LIB}" Catch2::Catch2WithMain)
 target_compile_options(embx_source_generator_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
 add_test(NAME source_generator_test COMMAND embx_source_generator_test)
+
+add_executable(embx_source_roundtrip_corpus_test tests/source_roundtrip_corpus_test.cpp
+  src/codegen/SourceGenerator.cpp
+  src/parser/ParserDriver.cpp ${ANTLR4_GENERATED_FILES})
+add_dependencies(embx_source_roundtrip_corpus_test GenerateAntlr)
+target_include_directories(embx_source_roundtrip_corpus_test PRIVATE "${ANTLR4_OUTPUT_DIR}" "${ANTLR4_RUNTIME_DIR}/include/antlr4-runtime" src)
+target_link_libraries(embx_source_roundtrip_corpus_test PRIVATE "${ANTLR4_LIB}" Catch2::Catch2WithMain)
+target_compile_options(embx_source_roundtrip_corpus_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
+add_test(NAME source_roundtrip_corpus_test COMMAND embx_source_roundtrip_corpus_test)
 add_executable(embx_format_reporter_test tests/format_reporter_test.cpp src/report/FormatReporter.cpp src/reflection/Reflection.cpp src/plan/LayoutGraph.cpp)
 target_include_directories(embx_format_reporter_test PRIVATE src)
 target_link_libraries(embx_format_reporter_test PRIVATE Catch2::Catch2WithMain)

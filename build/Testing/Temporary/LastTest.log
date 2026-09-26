@@ -1,0 +1,1574 @@
+Start testing: Sep 26 12:31 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/83 Testing: layout_size_64bit_test
+1/83 Test: layout_size_64bit_test
+Command: "C:/projects/embx/build/embx_layout_size_64bit_test.exe"
+Directory: C:/projects/embx/build
+"layout_size_64bit_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4188182350
+===============================================================================
+All tests passed (6 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"layout_size_64bit_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"layout_size_64bit_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/83 Testing: gguf_adapter_test
+2/83 Test: gguf_adapter_test
+Command: "C:/projects/embx/build/embx_gguf_adapter_test.exe"
+Directory: C:/projects/embx/build
+"gguf_adapter_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2701269450
+===============================================================================
+All tests passed (47 assertions in 8 test cases)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"gguf_adapter_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"gguf_adapter_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/83 Testing: array_buffer_contract_test
+3/83 Test: array_buffer_contract_test
+Command: "C:/projects/embx/build/embx_array_buffer_contract_test.exe"
+Directory: C:/projects/embx/build
+"array_buffer_contract_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"array_buffer_contract_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"array_buffer_contract_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/83 Testing: array_descriptor_plan_test
+4/83 Test: array_descriptor_plan_test
+Command: "C:/projects/embx/build/embx_array_descriptor_plan_test.exe"
+Directory: C:/projects/embx/build
+"array_descriptor_plan_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"array_descriptor_plan_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"array_descriptor_plan_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/83 Testing: array_descriptor_dynamic_nested_test
+5/83 Test: array_descriptor_dynamic_nested_test
+Command: "C:/projects/embx/build/embx_array_descriptor_dynamic_nested_test.exe"
+Directory: C:/projects/embx/build
+"array_descriptor_dynamic_nested_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"array_descriptor_dynamic_nested_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"array_descriptor_dynamic_nested_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/83 Testing: array_conformance_test
+6/83 Test: array_conformance_test
+Command: "C:/projects/embx/build/embx_array_conformance_test.exe"
+Directory: C:/projects/embx/build
+"array_conformance_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"array_conformance_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"array_conformance_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/83 Testing: runtime_test
+7/83 Test: runtime_test
+Command: "C:/projects/embx/build/embx_runtime_test.exe"
+Directory: C:/projects/embx/build
+"runtime_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3347681842
+runtime tests passed
+===============================================================================
+All tests passed (28 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"runtime_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/83 Testing: expression_test
+8/83 Test: expression_test
+Command: "C:/projects/embx/build/embx_expression_test.exe"
+Directory: C:/projects/embx/build
+"expression_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2527379736
+expression tests passed
+===============================================================================
+All tests passed (20 assertions in 1 test case)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"expression_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"expression_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/83 Testing: ast_structural_test
+9/83 Test: ast_structural_test
+Command: "C:/projects/embx/build/embx_ast_test.exe"
+Directory: C:/projects/embx/build
+"ast_structural_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4215523696
+AST structural tests passed
+===============================================================================
+All tests passed (8 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ast_structural_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"ast_structural_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/83 Testing: semantic_ir_test
+10/83 Test: semantic_ir_test
+Command: "C:/projects/embx/build/embx_semantic_ir_test.exe"
+Directory: C:/projects/embx/build
+"semantic_ir_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2206825870
+Semantic IR tests passed
+===============================================================================
+test cases: 1 | 1 passed
+assertions: - none -
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"semantic_ir_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"semantic_ir_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/83 Testing: semantic_negative_test
+11/83 Test: semantic_negative_test
+Command: "C:/projects/embx/build/embx_semantic_negative_test.exe"
+Directory: C:/projects/embx/build
+"semantic_negative_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1008667455
+Semantic negative tests passed
+===============================================================================
+All tests passed (15 assertions in 1 test case)
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"semantic_negative_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"semantic_negative_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/83 Testing: ir_structural_test
+12/83 Test: ir_structural_test
+Command: "C:/projects/embx/build/embx_ir_structural_test.exe"
+Directory: C:/projects/embx/build
+"ir_structural_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 101366917
+IR structural tests passed
+===============================================================================
+All tests passed (37 assertions in 1 test case)
+
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"ir_structural_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"ir_structural_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/83 Testing: plan_test
+13/83 Test: plan_test
+Command: "C:/projects/embx/build/embx_plan_test.exe"
+Directory: C:/projects/embx/build
+"plan_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2664535749
+Plan tests passed
+===============================================================================
+All tests passed (88 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"plan_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"plan_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/83 Testing: plan_executable_contract_test
+14/83 Test: plan_executable_contract_test
+Command: "C:/projects/embx/build/embx_plan_executable_contract_test.exe"
+Directory: C:/projects/embx/build
+"plan_executable_contract_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1638917923
+===============================================================================
+All tests passed (36 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"plan_executable_contract_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"plan_executable_contract_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/83 Testing: runtime_lookup_audit_test
+15/83 Test: runtime_lookup_audit_test
+Command: "C:/projects/embx/build/embx_runtime_lookup_audit_test.exe"
+Directory: C:/projects/embx/build
+"runtime_lookup_audit_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 688091547
+===============================================================================
+All tests passed (22 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_lookup_audit_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"runtime_lookup_audit_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/83 Testing: plan_execution_independence_test
+16/83 Test: plan_execution_independence_test
+Command: "C:/projects/embx/build/embx_plan_execution_independence_test.exe"
+Directory: C:/projects/embx/build
+"plan_execution_independence_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1984695807
+===============================================================================
+All tests passed (53 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"plan_execution_independence_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"plan_execution_independence_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/83 Testing: dynamic_expression_determinism_audit_test
+17/83 Test: dynamic_expression_determinism_audit_test
+Command: "C:/projects/embx/build/embx_dynamic_expression_determinism_audit_test.exe"
+Directory: C:/projects/embx/build
+"dynamic_expression_determinism_audit_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 985522233
+===============================================================================
+All tests passed (56 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_expression_determinism_audit_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"dynamic_expression_determinism_audit_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/83 Testing: plan_negative_test
+18/83 Test: plan_negative_test
+Command: "C:/projects/embx/build/embx_plan_negative_test.exe"
+Directory: C:/projects/embx/build
+"plan_negative_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1590382446
+Plan negative tests passed
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"plan_negative_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"plan_negative_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/83 Testing: decoder_test
+19/83 Test: decoder_test
+Command: "C:/projects/embx/build/embx_decoder_test.exe"
+Directory: C:/projects/embx/build
+"decoder_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3289018201
+Decoder tests passed
+===============================================================================
+All tests passed (10 assertions in 1 test case)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"decoder_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"decoder_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/83 Testing: encoder_test
+20/83 Test: encoder_test
+Command: "C:/projects/embx/build/embx_encoder_test.exe"
+Directory: C:/projects/embx/build
+"encoder_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3095693396
+Encoder tests passed
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"encoder_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"encoder_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/83 Testing: composite_type_test
+21/83 Test: composite_type_test
+Command: "C:/projects/embx/build/embx_composite_type_test.exe"
+Directory: C:/projects/embx/build
+"composite_type_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2214117546
+Composite type tests passed
+===============================================================================
+All tests passed (38 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"composite_type_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"composite_type_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/83 Testing: nested_composite_test
+22/83 Test: nested_composite_test
+Command: "C:/projects/embx/build/embx_nested_composite_test.exe"
+Directory: C:/projects/embx/build
+"nested_composite_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2069553833
+Nested composite tests passed
+===============================================================================
+All tests passed (15 assertions in 1 test case)
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"nested_composite_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"nested_composite_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/83 Testing: dynamic_layout_test
+23/83 Test: dynamic_layout_test
+Command: "C:/projects/embx/build/embx_dynamic_layout_test.exe"
+Directory: C:/projects/embx/build
+"dynamic_layout_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3847050558
+Dynamic layout tests passed
+===============================================================================
+All tests passed (26 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_layout_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"dynamic_layout_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/83 Testing: value_reflection_test
+24/83 Test: value_reflection_test
+Command: "C:/projects/embx/build/embx_value_reflection_test.exe"
+Directory: C:/projects/embx/build
+"value_reflection_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2589148052
+Value/reflection tests passed
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"value_reflection_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"value_reflection_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/83 Testing: diagnostics_pipeline_test
+25/83 Test: diagnostics_pipeline_test
+Command: "C:/projects/embx/build/embx_diagnostics_pipeline_test.exe"
+Directory: C:/projects/embx/build
+"diagnostics_pipeline_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 333459765
+Diagnostics pipeline tests passed
+===============================================================================
+All tests passed (14 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"diagnostics_pipeline_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"diagnostics_pipeline_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/83 Testing: layout_graph_test
+26/83 Test: layout_graph_test
+Command: "C:/projects/embx/build/embx_layout_graph_test.exe"
+Directory: C:/projects/embx/build
+"layout_graph_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 767577195
+Layout graph tests passed
+===============================================================================
+All tests passed (42 assertions in 6 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"layout_graph_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"layout_graph_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/83 Testing: dependency_validation_test
+27/83 Test: dependency_validation_test
+Command: "C:/projects/embx/build/embx_dependency_validation_test.exe"
+Directory: C:/projects/embx/build
+"dependency_validation_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2787005969
+Dependency validation tests passed
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"dependency_validation_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"dependency_validation_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/83 Testing: foundation_hardening_test
+28/83 Test: foundation_hardening_test
+Command: "C:/projects/embx/build/embx_foundation_hardening_test.exe"
+Directory: C:/projects/embx/build
+"foundation_hardening_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1361740365
+Foundation hardening tests passed
+===============================================================================
+All tests passed (18 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"foundation_hardening_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"foundation_hardening_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/83 Testing: namespace_import_test
+29/83 Test: namespace_import_test
+Command: "C:/projects/embx/build/embx_namespace_import_test.exe"
+Directory: C:/projects/embx/build
+"namespace_import_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1453030852
+===============================================================================
+All tests passed (14 assertions in 1 test case)
+
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"namespace_import_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"namespace_import_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/83 Testing: type_system_test
+30/83 Test: type_system_test
+Command: "C:/projects/embx/build/embx_type_system_test.exe"
+Directory: C:/projects/embx/build
+"type_system_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3570900130
+Type system tests passed
+===============================================================================
+All tests passed (24 assertions in 1 test case)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"type_system_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"type_system_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/83 Testing: enum_test
+31/83 Test: enum_test
+Command: "C:/projects/embx/build/embx_enum_test.exe"
+Directory: C:/projects/embx/build
+"enum_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2425324065
+Enum tests passed
+===============================================================================
+All tests passed (16 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"enum_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"enum_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/83 Testing: attribute_test
+32/83 Test: attribute_test
+Command: "C:/projects/embx/build/embx_attribute_test.exe"
+Directory: C:/projects/embx/build
+"attribute_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2128900761
+===============================================================================
+All tests passed (19 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"attribute_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"attribute_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/83 Testing: documentation_test
+33/83 Test: documentation_test
+Command: "C:/projects/embx/build/embx_documentation_test.exe"
+Directory: C:/projects/embx/build
+"documentation_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1838205369
+===============================================================================
+All tests passed (29 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"documentation_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"documentation_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/83 Testing: type_system_wp2_test
+34/83 Test: type_system_wp2_test
+Command: "C:/projects/embx/build/embx_type_system_wp2_test.exe"
+Directory: C:/projects/embx/build
+"type_system_wp2_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 374689649
+WP2 type-system tests passed
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"type_system_wp2_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"type_system_wp2_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/83 Testing: semantic_edge_cases_test
+35/83 Test: semantic_edge_cases_test
+Command: "C:/projects/embx/build/embx_semantic_edge_cases_test.exe"
+Directory: C:/projects/embx/build
+"semantic_edge_cases_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3290847403
+===============================================================================
+All tests passed (29 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"semantic_edge_cases_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"semantic_edge_cases_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/83 Testing: runtime_hardening_test
+36/83 Test: runtime_hardening_test
+Command: "C:/projects/embx/build/embx_runtime_hardening_test.exe"
+Directory: C:/projects/embx/build
+"runtime_hardening_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1265772474
+===============================================================================
+All tests passed (291 assertions in 6 test cases)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_hardening_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"runtime_hardening_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/83 Testing: codec_symmetry_test
+37/83 Test: codec_symmetry_test
+Command: "C:/projects/embx/build/embx_codec_symmetry_test.exe"
+Directory: C:/projects/embx/build
+"codec_symmetry_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1945899760
+===============================================================================
+All tests passed (9 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"codec_symmetry_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"codec_symmetry_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/83 Testing: reflection_contract_test
+38/83 Test: reflection_contract_test
+Command: "C:/projects/embx/build/embx_reflection_contract_test.exe"
+Directory: C:/projects/embx/build
+"reflection_contract_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 125414142
+===============================================================================
+All tests passed (37 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"reflection_contract_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"reflection_contract_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/83 Testing: cli_help_test
+39/83 Test: cli_help_test
+Command: "C:/msys64/ucrt64/bin/cmake.exe" "-DEMBX_EXECUTABLE=C:/projects/embx/build/embx.exe" "-DEXPECTED_VERSION=0.9.59" "-DCLI_CHECK=help" "-P" "C:/projects/embx/tests/cli_contract.cmake"
+Directory: C:/projects/embx/build
+"cli_help_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+-- EmbX CLI help contract passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"cli_help_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"cli_help_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/83 Testing: cli_version_test
+40/83 Test: cli_version_test
+Command: "C:/msys64/ucrt64/bin/cmake.exe" "-DEMBX_EXECUTABLE=C:/projects/embx/build/embx.exe" "-DEXPECTED_VERSION=0.9.59" "-DCLI_CHECK=version" "-P" "C:/projects/embx/tests/cli_contract.cmake"
+Directory: C:/projects/embx/build
+"cli_version_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+-- EmbX CLI version contract passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"cli_version_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"cli_version_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/83 Testing: cli_unknown_option_test
+41/83 Test: cli_unknown_option_test
+Command: "C:/msys64/ucrt64/bin/cmake.exe" "-DEMBX_EXECUTABLE=C:/projects/embx/build/embx.exe" "-DEXPECTED_VERSION=0.9.59" "-DCLI_CHECK=unknown" "-P" "C:/projects/embx/tests/cli_contract.cmake"
+Directory: C:/projects/embx/build
+"cli_unknown_option_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+-- EmbX CLI unknown contract passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"cli_unknown_option_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"cli_unknown_option_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/83 Testing: cpp_generator_test
+42/83 Test: cpp_generator_test
+Command: "C:/projects/embx/build/embx_cpp_generator_test.exe"
+Directory: C:/projects/embx/build
+"cpp_generator_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4262530418
+===============================================================================
+All tests passed (24 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"cpp_generator_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"cpp_generator_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/83 Testing: source_generator_test
+43/83 Test: source_generator_test
+Command: "C:/projects/embx/build/embx_source_generator_test.exe"
+Directory: C:/projects/embx/build
+"source_generator_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2509764182
+===============================================================================
+All tests passed (216 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"source_generator_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"source_generator_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/83 Testing: source_roundtrip_corpus_test
+44/83 Test: source_roundtrip_corpus_test
+Command: "C:/projects/embx/build/embx_source_roundtrip_corpus_test.exe"
+Directory: C:/projects/embx/build
+"source_roundtrip_corpus_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2863649603
+===============================================================================
+All tests passed (312 assertions in 1 test case)
+
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"source_roundtrip_corpus_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"source_roundtrip_corpus_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/83 Testing: format_reporter_test
+45/83 Test: format_reporter_test
+Command: "C:/projects/embx/build/embx_format_reporter_test.exe"
+Directory: C:/projects/embx/build
+"format_reporter_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 294322363
+===============================================================================
+All tests passed (12 assertions in 1 test case)
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"format_reporter_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"format_reporter_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/83 Testing: generated_codec_test
+46/83 Test: generated_codec_test
+Command: "C:/projects/embx/build/embx_generated_codec_test.exe"
+Directory: C:/projects/embx/build
+"generated_codec_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3451436524
+===============================================================================
+All tests passed (108 assertions in 8 test cases)
+
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"generated_codec_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"generated_codec_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/83 Testing: generated_dynamic_codec_test
+47/83 Test: generated_dynamic_codec_test
+Command: "C:/projects/embx/build/embx_generated_dynamic_codec_test.exe"
+Directory: C:/projects/embx/build
+"generated_dynamic_codec_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1340092240
+===============================================================================
+All tests passed (70 assertions in 11 test cases)
+
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"generated_dynamic_codec_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"generated_dynamic_codec_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/83 Testing: generated_nested_types_test
+48/83 Test: generated_nested_types_test
+Command: "C:/projects/embx/build/embx_generated_nested_types_test.exe"
+Directory: C:/projects/embx/build
+"generated_nested_types_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1153411946
+===============================================================================
+All tests passed (34 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"generated_nested_types_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"generated_nested_types_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/83 Testing: generated_callback_test
+49/83 Test: generated_callback_test
+Command: "C:/projects/embx/build/embx_generated_callback_test.exe"
+Directory: C:/projects/embx/build
+"generated_callback_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3016937981
+===============================================================================
+All tests passed (35 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"generated_callback_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"generated_callback_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/83 Testing: encoder_callback_symmetry_test
+50/83 Test: encoder_callback_symmetry_test
+Command: "C:/projects/embx/build/embx_encoder_callback_symmetry_test.exe"
+Directory: C:/projects/embx/build
+"encoder_callback_symmetry_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 705228006
+===============================================================================
+All tests passed (11 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"encoder_callback_symmetry_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"encoder_callback_symmetry_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/83 Testing: compiler_pipeline_test
+51/83 Test: compiler_pipeline_test
+Command: "C:/projects/embx/build/embx_compiler_pipeline_test.exe"
+Directory: C:/projects/embx/build
+"compiler_pipeline_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2972797902
+===============================================================================
+All tests passed (10 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"compiler_pipeline_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"compiler_pipeline_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/83 Testing: core_expression_test
+52/83 Test: core_expression_test
+Command: "C:/projects/embx/build/embx_core_expression_test.exe"
+Directory: C:/projects/embx/build
+"core_expression_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+core_expression_test passed
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"core_expression_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"core_expression_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/83 Testing: expression_type_test
+53/83 Test: expression_type_test
+Command: "C:/projects/embx/build/embx_expression_type_test.exe"
+Directory: C:/projects/embx/build
+"expression_type_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 313080458
+===============================================================================
+All tests passed (20 assertions in 1 test case)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"expression_type_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"expression_type_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/83 Testing: core_type_test
+54/83 Test: core_type_test
+Command: "C:/projects/embx/build/embx_core_type_test.exe"
+Directory: C:/projects/embx/build
+"core_type_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3795589711
+===============================================================================
+All tests passed (16 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"core_type_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"core_type_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/83 Testing: symbol_identity_test
+55/83 Test: symbol_identity_test
+Command: "C:/projects/embx/build/embx_symbol_identity_test.exe"
+Directory: C:/projects/embx/build
+"symbol_identity_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1544225696
+===============================================================================
+All tests passed (74 assertions in 9 test cases)
+
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"symbol_identity_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"symbol_identity_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/83 Testing: plan_symbol_identity_test
+56/83 Test: plan_symbol_identity_test
+Command: "C:/projects/embx/build/embx_plan_symbol_identity_test.exe"
+Directory: C:/projects/embx/build
+"plan_symbol_identity_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2714439668
+===============================================================================
+All tests passed (9 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"plan_symbol_identity_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"plan_symbol_identity_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/83 Testing: symbol_resolution_contract_test
+57/83 Test: symbol_resolution_contract_test
+Command: "C:/projects/embx/build/embx_symbol_resolution_contract_test.exe"
+Directory: C:/projects/embx/build
+"symbol_resolution_contract_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1387339195
+===============================================================================
+All tests passed (22 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"symbol_resolution_contract_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"symbol_resolution_contract_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/83 Testing: symbol_identity_codegen_test
+58/83 Test: symbol_identity_codegen_test
+Command: "C:/projects/embx/build/embx_symbol_identity_codegen_test.exe"
+Directory: C:/projects/embx/build
+"symbol_identity_codegen_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3603738857
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"symbol_identity_codegen_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"symbol_identity_codegen_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/83 Testing: name_resolution_plan_test
+59/83 Test: name_resolution_plan_test
+Command: "C:/projects/embx/build/embx_name_resolution_plan_test.exe"
+Directory: C:/projects/embx/build
+"name_resolution_plan_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3969034577
+===============================================================================
+All tests passed (33 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"name_resolution_plan_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"name_resolution_plan_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/83 Testing: semantic_type_resolution_contract_test
+60/83 Test: semantic_type_resolution_contract_test
+Command: "C:/projects/embx/build/embx_semantic_type_resolution_contract_test.exe"
+Directory: C:/projects/embx/build
+"semantic_type_resolution_contract_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2796270349
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"semantic_type_resolution_contract_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"semantic_type_resolution_contract_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/83 Testing: runtime_parameters_test
+61/83 Test: runtime_parameters_test
+Command: "C:/projects/embx/build/embx_runtime_parameters_test.exe"
+Directory: C:/projects/embx/build
+"runtime_parameters_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1584800672
+===============================================================================
+All tests passed (46 assertions in 4 test cases)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_parameters_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"runtime_parameters_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/83 Testing: midi_example_test
+62/83 Test: midi_example_test
+Command: "C:/projects/embx/build/embx_midi_example_test.exe"
+Directory: C:/projects/embx/build
+"midi_example_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2597635867
+===============================================================================
+All tests passed (48 assertions in 1 test case)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"midi_example_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"midi_example_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/83 Testing: virtual_field_test
+63/83 Test: virtual_field_test
+Command: "C:/projects/embx/build/embx_virtual_field_test.exe"
+Directory: C:/projects/embx/build
+"virtual_field_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 348718087
+===============================================================================
+All tests passed (18 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"virtual_field_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"virtual_field_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/83 Testing: field_alias_test
+64/83 Test: field_alias_test
+Command: "C:/projects/embx/build/embx_field_alias_test.exe"
+Directory: C:/projects/embx/build
+"field_alias_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3401547056
+===============================================================================
+All tests passed (28 assertions in 7 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"field_alias_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"field_alias_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/83 Testing: conditional_runtime_test
+65/83 Test: conditional_runtime_test
+Command: "C:/projects/embx/build/embx_conditional_runtime_test.exe"
+Directory: C:/projects/embx/build
+"conditional_runtime_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1221894078
+===============================================================================
+All tests passed (42 assertions in 4 test cases)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"conditional_runtime_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"conditional_runtime_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/83 Testing: transform_test
+66/83 Test: transform_test
+Command: "C:/projects/embx/build/embx_transform_test.exe"
+Directory: C:/projects/embx/build
+"transform_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2731862599
+===============================================================================
+All tests passed (41 assertions in 15 test cases)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"transform_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"transform_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/83 Testing: byte_order_closure_test
+67/83 Test: byte_order_closure_test
+Command: "C:/projects/embx/build/embx_byte_order_closure_test.exe"
+Directory: C:/projects/embx/build
+"byte_order_closure_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 390571738
+===============================================================================
+All tests passed (26 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"byte_order_closure_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"byte_order_closure_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/83 Testing: requires_test
+68/83 Test: requires_test
+Command: "C:/projects/embx/build/embx_requires_test.exe"
+Directory: C:/projects/embx/build
+"requires_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2163111734
+===============================================================================
+All tests passed (42 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"requires_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"requires_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/83 Testing: variant_closure_test
+69/83 Test: variant_closure_test
+Command: "C:/projects/embx/build/embx_variant_closure_test.exe"
+Directory: C:/projects/embx/build
+"variant_closure_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1433714081
+===============================================================================
+All tests passed (44 assertions in 4 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"variant_closure_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"variant_closure_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/83 Testing: lesson_01_first_format
+70/83 Test: lesson_01_first_format
+Command: "C:/projects/embx/build/embx_lesson_01_first_format_test.exe"
+Directory: C:/projects/embx/build
+"lesson_01_first_format" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2146140574
+===============================================================================
+All tests passed (17 assertions in 1 test case)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_01_first_format" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_01_first_format" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/83 Testing: lesson_02_integers_byte_order
+71/83 Test: lesson_02_integers_byte_order
+Command: "C:/projects/embx/build/embx_lesson_02_integers_byte_order_test.exe"
+Directory: C:/projects/embx/build
+"lesson_02_integers_byte_order" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1456891961
+===============================================================================
+All tests passed (18 assertions in 1 test case)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_02_integers_byte_order" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_02_integers_byte_order" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/83 Testing: lesson_03_bit_fields
+72/83 Test: lesson_03_bit_fields
+Command: "C:/projects/embx/build/embx_lesson_03_bit_fields_test.exe"
+Directory: C:/projects/embx/build
+"lesson_03_bit_fields" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 590577538
+===============================================================================
+All tests passed (18 assertions in 1 test case)
+
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_03_bit_fields" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_03_bit_fields" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/83 Testing: lesson_04_arrays_dynamic_dimensions
+73/83 Test: lesson_04_arrays_dynamic_dimensions
+Command: "C:/projects/embx/build/embx_lesson_04_arrays_dynamic_dimensions_test.exe"
+Directory: C:/projects/embx/build
+"lesson_04_arrays_dynamic_dimensions" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1198111950
+===============================================================================
+All tests passed (33 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_04_arrays_dynamic_dimensions" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_04_arrays_dynamic_dimensions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/83 Testing: lesson_05_nested_structures
+74/83 Test: lesson_05_nested_structures
+Command: "C:/projects/embx/build/embx_lesson_05_nested_structures_test.exe"
+Directory: C:/projects/embx/build
+"lesson_05_nested_structures" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1130428682
+===============================================================================
+All tests passed (38 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_05_nested_structures" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_05_nested_structures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/83 Testing: lesson_06_variants_conditionals
+75/83 Test: lesson_06_variants_conditionals
+Command: "C:/projects/embx/build/embx_lesson_06_variants_conditionals_test.exe"
+Directory: C:/projects/embx/build
+"lesson_06_variants_conditionals" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 747276093
+===============================================================================
+All tests passed (29 assertions in 2 test cases)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_06_variants_conditionals" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_06_variants_conditionals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/83 Testing: lesson_07_offsets_alignment
+76/83 Test: lesson_07_offsets_alignment
+Command: "C:/projects/embx/build/embx_lesson_07_offsets_alignment_test.exe"
+Directory: C:/projects/embx/build
+"lesson_07_offsets_alignment" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1260456649
+===============================================================================
+All tests passed (11 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_07_offsets_alignment" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_07_offsets_alignment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/83 Testing: lesson_08_symbol_dependencies_runtime_parameters
+77/83 Test: lesson_08_symbol_dependencies_runtime_parameters
+Command: "C:/projects/embx/build/embx_lesson_08_symbol_dependencies_runtime_parameters_test.exe"
+Directory: C:/projects/embx/build
+"lesson_08_symbol_dependencies_runtime_parameters" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2781461532
+===============================================================================
+All tests passed (16 assertions in 1 test case)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_08_symbol_dependencies_runtime_parameters" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_08_symbol_dependencies_runtime_parameters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/83 Testing: lesson_09_virtual_fields_aliases
+78/83 Test: lesson_09_virtual_fields_aliases
+Command: "C:/projects/embx/build/embx_lesson_09_virtual_fields_aliases_test.exe"
+Directory: C:/projects/embx/build
+"lesson_09_virtual_fields_aliases" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2663466
+===============================================================================
+All tests passed (23 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_09_virtual_fields_aliases" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_09_virtual_fields_aliases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/83 Testing: lesson_10_callbacks_transforms
+79/83 Test: lesson_10_callbacks_transforms
+Command: "C:/projects/embx/build/embx_lesson_10_callbacks_transforms_test.exe"
+Directory: C:/projects/embx/build
+"lesson_10_callbacks_transforms" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1503553621
+===============================================================================
+All tests passed (18 assertions in 4 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_10_callbacks_transforms" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_10_callbacks_transforms" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/83 Testing: lesson_11_ipv4
+80/83 Test: lesson_11_ipv4
+Command: "C:/projects/embx/build/embx_lesson_11_ipv4_test.exe"
+Directory: C:/projects/embx/build
+"lesson_11_ipv4" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4107184534
+===============================================================================
+All tests passed (37 assertions in 1 test case)
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_11_ipv4" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_11_ipv4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/83 Testing: lesson_12_terminated_sequences
+81/83 Test: lesson_12_terminated_sequences
+Command: "C:/projects/embx/build/embx_lesson_12_terminated_sequences_test.exe"
+Directory: C:/projects/embx/build
+"lesson_12_terminated_sequences" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2007493259
+===============================================================================
+All tests passed (15 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_12_terminated_sequences" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_12_terminated_sequences" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/83 Testing: lesson_14_tlv
+82/83 Test: lesson_14_tlv
+Command: "C:/projects/embx/build/embx_lesson_14_tlv_test.exe"
+Directory: C:/projects/embx/build
+"lesson_14_tlv" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3325502299
+===============================================================================
+All tests passed (28 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"lesson_14_tlv" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"lesson_14_tlv" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/83 Testing: terminated_sequence_test
+83/83 Test: terminated_sequence_test
+Command: "C:/projects/embx/build/embx_terminated_sequence_test.exe"
+Directory: C:/projects/embx/build
+"terminated_sequence_test" start time: Sep 26 12:31 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2395339299
+===============================================================================
+All tests passed (70 assertions in 8 test cases)
+
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"terminated_sequence_test" end time: Sep 26 12:31 RTZ 2 (çèìà)
+"terminated_sequence_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 26 12:31 RTZ 2 (çèìà)

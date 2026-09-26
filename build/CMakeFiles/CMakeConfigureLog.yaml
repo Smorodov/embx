@@ -1,0 +1,3284 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mingw32-make.exe"
+    candidate_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/mingw32-make.exe.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/mingw32-make.exe"
+      - "C:/Windows/System32/mingw32-make.exe.com"
+      - "C:/Windows/System32/mingw32-make.exe"
+      - "C:/Windows/mingw32-make.exe.com"
+      - "C:/Windows/mingw32-make.exe"
+      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
+      - "C:/Windows/System32/wbem/mingw32-make.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe.com"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe"
+      - "C:/Program Files/dotnet/mingw32-make.exe.com"
+      - "C:/Program Files/dotnet/mingw32-make.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe"
+      - "C:/msys64/ucrt64/bin/mingw32-make.exe.com"
+    found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/c++.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/c++.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/c++"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/g++.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/g++.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/g++"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/cl.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/cl.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/cl"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bcc.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bcc.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bcc"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/icx.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/icx.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/icx"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/clang++.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/clang++.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/clang++"
+      - "C:/Windows/System32/c++.com"
+      - "C:/Windows/System32/c++.exe"
+      - "C:/Windows/System32/c++"
+      - "C:/Windows/System32/g++.com"
+      - "C:/Windows/System32/g++.exe"
+      - "C:/Windows/System32/g++"
+      - "C:/Windows/System32/cl.com"
+      - "C:/Windows/System32/cl.exe"
+      - "C:/Windows/System32/cl"
+      - "C:/Windows/System32/bcc.com"
+      - "C:/Windows/System32/bcc.exe"
+      - "C:/Windows/System32/bcc"
+      - "C:/Windows/System32/icx.com"
+      - "C:/Windows/System32/icx.exe"
+      - "C:/Windows/System32/icx"
+      - "C:/Windows/System32/clang++.com"
+      - "C:/Windows/System32/clang++.exe"
+      - "C:/Windows/System32/clang++"
+      - "C:/Windows/c++.com"
+      - "C:/Windows/c++.exe"
+      - "C:/Windows/c++"
+      - "C:/Windows/g++.com"
+      - "C:/Windows/g++.exe"
+      - "C:/Windows/g++"
+      - "C:/Windows/cl.com"
+      - "C:/Windows/cl.exe"
+      - "C:/Windows/cl"
+      - "C:/Windows/bcc.com"
+      - "C:/Windows/bcc.exe"
+      - "C:/Windows/bcc"
+      - "C:/Windows/icx.com"
+      - "C:/Windows/icx.exe"
+      - "C:/Windows/icx"
+      - "C:/Windows/clang++.com"
+      - "C:/Windows/clang++.exe"
+      - "C:/Windows/clang++"
+      - "C:/Windows/System32/wbem/c++.com"
+      - "C:/Windows/System32/wbem/c++.exe"
+      - "C:/Windows/System32/wbem/c++"
+      - "C:/Windows/System32/wbem/g++.com"
+      - "C:/Windows/System32/wbem/g++.exe"
+      - "C:/Windows/System32/wbem/g++"
+      - "C:/Windows/System32/wbem/cl.com"
+      - "C:/Windows/System32/wbem/cl.exe"
+      - "C:/Windows/System32/wbem/cl"
+      - "C:/Windows/System32/wbem/bcc.com"
+      - "C:/Windows/System32/wbem/bcc.exe"
+      - "C:/Windows/System32/wbem/bcc"
+      - "C:/Windows/System32/wbem/icx.com"
+      - "C:/Windows/System32/wbem/icx.exe"
+      - "C:/Windows/System32/wbem/icx"
+      - "C:/Windows/System32/wbem/clang++.com"
+      - "C:/Windows/System32/wbem/clang++.exe"
+      - "C:/Windows/System32/wbem/clang++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++"
+      - "C:/Windows/System32/OpenSSH/c++.com"
+      - "C:/Windows/System32/OpenSSH/c++.exe"
+      - "C:/Windows/System32/OpenSSH/c++"
+      - "C:/Windows/System32/OpenSSH/g++.com"
+      - "C:/Windows/System32/OpenSSH/g++.exe"
+      - "C:/Windows/System32/OpenSSH/g++"
+      - "C:/Windows/System32/OpenSSH/cl.com"
+      - "C:/Windows/System32/OpenSSH/cl.exe"
+      - "C:/Windows/System32/OpenSSH/cl"
+      - "C:/Windows/System32/OpenSSH/bcc.com"
+      - "C:/Windows/System32/OpenSSH/bcc.exe"
+      - "C:/Windows/System32/OpenSSH/bcc"
+      - "C:/Windows/System32/OpenSSH/icx.com"
+      - "C:/Windows/System32/OpenSSH/icx.exe"
+      - "C:/Windows/System32/OpenSSH/icx"
+      - "C:/Windows/System32/OpenSSH/clang++.com"
+      - "C:/Windows/System32/OpenSSH/clang++.exe"
+      - "C:/Windows/System32/OpenSSH/clang++"
+      - "C:/Program Files/Git/cmd/c++.com"
+      - "C:/Program Files/Git/cmd/c++.exe"
+      - "C:/Program Files/Git/cmd/c++"
+      - "C:/Program Files/Git/cmd/g++.com"
+      - "C:/Program Files/Git/cmd/g++.exe"
+      - "C:/Program Files/Git/cmd/g++"
+      - "C:/Program Files/Git/cmd/cl.com"
+      - "C:/Program Files/Git/cmd/cl.exe"
+      - "C:/Program Files/Git/cmd/cl"
+      - "C:/Program Files/Git/cmd/bcc.com"
+      - "C:/Program Files/Git/cmd/bcc.exe"
+      - "C:/Program Files/Git/cmd/bcc"
+      - "C:/Program Files/Git/cmd/icx.com"
+      - "C:/Program Files/Git/cmd/icx.exe"
+      - "C:/Program Files/Git/cmd/icx"
+      - "C:/Program Files/Git/cmd/clang++.com"
+      - "C:/Program Files/Git/cmd/clang++.exe"
+      - "C:/Program Files/Git/cmd/clang++"
+      - "C:/Program Files/dotnet/c++.com"
+      - "C:/Program Files/dotnet/c++.exe"
+      - "C:/Program Files/dotnet/c++"
+      - "C:/Program Files/dotnet/g++.com"
+      - "C:/Program Files/dotnet/g++.exe"
+      - "C:/Program Files/dotnet/g++"
+      - "C:/Program Files/dotnet/cl.com"
+      - "C:/Program Files/dotnet/cl.exe"
+      - "C:/Program Files/dotnet/cl"
+      - "C:/Program Files/dotnet/bcc.com"
+      - "C:/Program Files/dotnet/bcc.exe"
+      - "C:/Program Files/dotnet/bcc"
+      - "C:/Program Files/dotnet/icx.com"
+      - "C:/Program Files/dotnet/icx.exe"
+      - "C:/Program Files/dotnet/icx"
+      - "C:/Program Files/dotnet/clang++.com"
+      - "C:/Program Files/dotnet/clang++.exe"
+      - "C:/Program Files/dotnet/clang++"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/c++.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/c++.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/c++"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/g++.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/g++.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/g++"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/cl.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/cl.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/cl"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/bcc.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/bcc.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/bcc"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/icx.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/icx.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/icx"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/clang++.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/clang++.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/clang++"
+      - "C:/msys64/ucrt64/bin/c++.com"
+    found: "C:/msys64/ucrt64/bin/c++.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/ucrt64/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/projects/embx/build/CMakeFiles/4.4.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ar.com"
+    found: "C:/msys64/ucrt64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ranlib.com"
+    found: "C:/msys64/ucrt64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/strip.com"
+    found: "C:/msys64/ucrt64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ld.com"
+    found: "C:/msys64/ucrt64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/nm.com"
+    found: "C:/msys64/ucrt64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/objdump.com"
+    found: "C:/msys64/ucrt64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/objcopy.com"
+    found: "C:/msys64/ucrt64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/readelf.com"
+    found: "C:/msys64/ucrt64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/dlltool.com"
+    found: "C:/msys64/ucrt64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/addr2line.com"
+    found: "C:/msys64/ucrt64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/tapi.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/tapi.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Program Files/dotnet/tapi.com"
+      - "C:/Program Files/dotnet/tapi.exe"
+      - "C:/Program Files/dotnet/tapi"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/msys64/usr/bin/tapi.com"
+      - "C:/msys64/usr/bin/tapi.exe"
+      - "C:/msys64/usr/bin/tapi"
+      - "C:/msys64/ucrt64/include/tapi.com"
+      - "C:/msys64/ucrt64/include/tapi.exe"
+      - "C:/msys64/ucrt64/include/tapi"
+      - "C:/msys64/ucrt64/lib/tapi.com"
+      - "C:/msys64/ucrt64/lib/tapi.exe"
+      - "C:/msys64/ucrt64/lib/tapi"
+      - "C:/ffmpeg/tapi.com"
+      - "C:/ffmpeg/tapi.exe"
+      - "C:/ffmpeg/tapi"
+      - "C:/msys64/ucrt64/share/java/tapi.com"
+      - "C:/msys64/ucrt64/share/java/tapi.exe"
+      - "C:/msys64/ucrt64/share/java/tapi"
+      - "C:/miniconda3/condabin/tapi.com"
+      - "C:/miniconda3/condabin/tapi.exe"
+      - "C:/miniconda3/condabin/tapi"
+      - "C:/miniconda3/DLLs/tapi.com"
+      - "C:/miniconda3/DLLs/tapi.exe"
+      - "C:/miniconda3/DLLs/tapi"
+      - "C:/miniconda3/Lib/tapi.com"
+      - "C:/miniconda3/Lib/tapi.exe"
+      - "C:/miniconda3/Lib/tapi"
+      - "C:/miniconda3/libs/tapi.com"
+      - "C:/miniconda3/libs/tapi.exe"
+      - "C:/miniconda3/libs/tapi"
+      - "C:/miniconda3/Scripts/tapi.com"
+      - "C:/miniconda3/Scripts/tapi.exe"
+      - "C:/miniconda3/Scripts/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.2"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16.2.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16.2.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16.2"
+      - "C:/Windows/System32/gcc-ar-16.2.com"
+      - "C:/Windows/System32/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/gcc-ar-16.2"
+      - "C:/Windows/gcc-ar-16.2.com"
+      - "C:/Windows/gcc-ar-16.2.exe"
+      - "C:/Windows/gcc-ar-16.2"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.2.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.2.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.2"
+      - "C:/Program Files/dotnet/gcc-ar-16.2.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.2.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16.2"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2"
+      - "C:/msys64/usr/bin/gcc-ar-16.2.com"
+      - "C:/msys64/usr/bin/gcc-ar-16.2.exe"
+      - "C:/msys64/usr/bin/gcc-ar-16.2"
+      - "C:/msys64/ucrt64/include/gcc-ar-16.2.com"
+      - "C:/msys64/ucrt64/include/gcc-ar-16.2.exe"
+      - "C:/msys64/ucrt64/include/gcc-ar-16.2"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16.2.com"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16.2.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16.2"
+      - "C:/ffmpeg/gcc-ar-16.2.com"
+      - "C:/ffmpeg/gcc-ar-16.2.exe"
+      - "C:/ffmpeg/gcc-ar-16.2"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16.2.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16.2.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16.2"
+      - "C:/miniconda3/condabin/gcc-ar-16.2.com"
+      - "C:/miniconda3/condabin/gcc-ar-16.2.exe"
+      - "C:/miniconda3/condabin/gcc-ar-16.2"
+      - "C:/miniconda3/DLLs/gcc-ar-16.2.com"
+      - "C:/miniconda3/DLLs/gcc-ar-16.2.exe"
+      - "C:/miniconda3/DLLs/gcc-ar-16.2"
+      - "C:/miniconda3/Lib/gcc-ar-16.2.com"
+      - "C:/miniconda3/Lib/gcc-ar-16.2.exe"
+      - "C:/miniconda3/Lib/gcc-ar-16.2"
+      - "C:/miniconda3/libs/gcc-ar-16.2.com"
+      - "C:/miniconda3/libs/gcc-ar-16.2.exe"
+      - "C:/miniconda3/libs/gcc-ar-16.2"
+      - "C:/miniconda3/Scripts/gcc-ar-16.2.com"
+      - "C:/miniconda3/Scripts/gcc-ar-16.2.exe"
+      - "C:/miniconda3/Scripts/gcc-ar-16.2"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-16"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar-16"
+      - "C:/Windows/System32/gcc-ar-16.com"
+      - "C:/Windows/System32/gcc-ar-16.exe"
+      - "C:/Windows/System32/gcc-ar-16"
+      - "C:/Windows/gcc-ar-16.com"
+      - "C:/Windows/gcc-ar-16.exe"
+      - "C:/Windows/gcc-ar-16"
+      - "C:/Windows/System32/wbem/gcc-ar-16.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-16"
+      - "C:/Program Files/dotnet/gcc-ar-16.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar-16"
+      - "C:/msys64/usr/bin/gcc-ar-16.com"
+      - "C:/msys64/usr/bin/gcc-ar-16.exe"
+      - "C:/msys64/usr/bin/gcc-ar-16"
+      - "C:/msys64/ucrt64/include/gcc-ar-16.com"
+      - "C:/msys64/ucrt64/include/gcc-ar-16.exe"
+      - "C:/msys64/ucrt64/include/gcc-ar-16"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16.com"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ar-16"
+      - "C:/ffmpeg/gcc-ar-16.com"
+      - "C:/ffmpeg/gcc-ar-16.exe"
+      - "C:/ffmpeg/gcc-ar-16"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ar-16"
+      - "C:/miniconda3/condabin/gcc-ar-16.com"
+      - "C:/miniconda3/condabin/gcc-ar-16.exe"
+      - "C:/miniconda3/condabin/gcc-ar-16"
+      - "C:/miniconda3/DLLs/gcc-ar-16.com"
+      - "C:/miniconda3/DLLs/gcc-ar-16.exe"
+      - "C:/miniconda3/DLLs/gcc-ar-16"
+      - "C:/miniconda3/Lib/gcc-ar-16.com"
+      - "C:/miniconda3/Lib/gcc-ar-16.exe"
+      - "C:/miniconda3/Lib/gcc-ar-16"
+      - "C:/miniconda3/libs/gcc-ar-16.com"
+      - "C:/miniconda3/libs/gcc-ar-16.exe"
+      - "C:/miniconda3/libs/gcc-ar-16"
+      - "C:/miniconda3/Scripts/gcc-ar-16.com"
+      - "C:/miniconda3/Scripts/gcc-ar-16.exe"
+      - "C:/miniconda3/Scripts/gcc-ar-16"
+      - "C:/msys64/ucrt64/bin/gcc-ar16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar16"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar16.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar16.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ar16"
+      - "C:/Windows/System32/gcc-ar16.com"
+      - "C:/Windows/System32/gcc-ar16.exe"
+      - "C:/Windows/System32/gcc-ar16"
+      - "C:/Windows/gcc-ar16.com"
+      - "C:/Windows/gcc-ar16.exe"
+      - "C:/Windows/gcc-ar16"
+      - "C:/Windows/System32/wbem/gcc-ar16.com"
+      - "C:/Windows/System32/wbem/gcc-ar16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16"
+      - "C:/Program Files/Git/cmd/gcc-ar16.com"
+      - "C:/Program Files/Git/cmd/gcc-ar16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar16"
+      - "C:/Program Files/dotnet/gcc-ar16.com"
+      - "C:/Program Files/dotnet/gcc-ar16.exe"
+      - "C:/Program Files/dotnet/gcc-ar16"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar16.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar16.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ar16"
+      - "C:/msys64/usr/bin/gcc-ar16.com"
+      - "C:/msys64/usr/bin/gcc-ar16.exe"
+      - "C:/msys64/usr/bin/gcc-ar16"
+      - "C:/msys64/ucrt64/include/gcc-ar16.com"
+      - "C:/msys64/ucrt64/include/gcc-ar16.exe"
+      - "C:/msys64/ucrt64/include/gcc-ar16"
+      - "C:/msys64/ucrt64/lib/gcc-ar16.com"
+      - "C:/msys64/ucrt64/lib/gcc-ar16.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ar16"
+      - "C:/ffmpeg/gcc-ar16.com"
+      - "C:/ffmpeg/gcc-ar16.exe"
+      - "C:/ffmpeg/gcc-ar16"
+      - "C:/msys64/ucrt64/share/java/gcc-ar16.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ar16.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ar16"
+      - "C:/miniconda3/condabin/gcc-ar16.com"
+      - "C:/miniconda3/condabin/gcc-ar16.exe"
+      - "C:/miniconda3/condabin/gcc-ar16"
+      - "C:/miniconda3/DLLs/gcc-ar16.com"
+      - "C:/miniconda3/DLLs/gcc-ar16.exe"
+      - "C:/miniconda3/DLLs/gcc-ar16"
+      - "C:/miniconda3/Lib/gcc-ar16.com"
+      - "C:/miniconda3/Lib/gcc-ar16.exe"
+      - "C:/miniconda3/Lib/gcc-ar16"
+      - "C:/miniconda3/libs/gcc-ar16.com"
+      - "C:/miniconda3/libs/gcc-ar16.exe"
+      - "C:/miniconda3/libs/gcc-ar16"
+      - "C:/miniconda3/Scripts/gcc-ar16.com"
+      - "C:/miniconda3/Scripts/gcc-ar16.exe"
+      - "C:/miniconda3/Scripts/gcc-ar16"
+      - "C:/msys64/ucrt64/bin/gcc-ar.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.2"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16.2"
+      - "C:/Windows/System32/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/gcc-ranlib-16.2"
+      - "C:/Windows/gcc-ranlib-16.2.com"
+      - "C:/Windows/gcc-ranlib-16.2.exe"
+      - "C:/Windows/gcc-ranlib-16.2"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.2"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2"
+      - "C:/msys64/usr/bin/gcc-ranlib-16.2.com"
+      - "C:/msys64/usr/bin/gcc-ranlib-16.2.exe"
+      - "C:/msys64/usr/bin/gcc-ranlib-16.2"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16.2.com"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16.2.exe"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16.2"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16.2.com"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16.2.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16.2"
+      - "C:/ffmpeg/gcc-ranlib-16.2.com"
+      - "C:/ffmpeg/gcc-ranlib-16.2.exe"
+      - "C:/ffmpeg/gcc-ranlib-16.2"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16.2.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16.2.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16.2"
+      - "C:/miniconda3/condabin/gcc-ranlib-16.2.com"
+      - "C:/miniconda3/condabin/gcc-ranlib-16.2.exe"
+      - "C:/miniconda3/condabin/gcc-ranlib-16.2"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16.2.com"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16.2.exe"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16.2"
+      - "C:/miniconda3/Lib/gcc-ranlib-16.2.com"
+      - "C:/miniconda3/Lib/gcc-ranlib-16.2.exe"
+      - "C:/miniconda3/Lib/gcc-ranlib-16.2"
+      - "C:/miniconda3/libs/gcc-ranlib-16.2.com"
+      - "C:/miniconda3/libs/gcc-ranlib-16.2.exe"
+      - "C:/miniconda3/libs/gcc-ranlib-16.2"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16.2.com"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16.2.exe"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16.2"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib-16"
+      - "C:/Windows/System32/gcc-ranlib-16.com"
+      - "C:/Windows/System32/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/gcc-ranlib-16"
+      - "C:/Windows/gcc-ranlib-16.com"
+      - "C:/Windows/gcc-ranlib-16.exe"
+      - "C:/Windows/gcc-ranlib-16"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-16"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16"
+      - "C:/msys64/usr/bin/gcc-ranlib-16.com"
+      - "C:/msys64/usr/bin/gcc-ranlib-16.exe"
+      - "C:/msys64/usr/bin/gcc-ranlib-16"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16.com"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16.exe"
+      - "C:/msys64/ucrt64/include/gcc-ranlib-16"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16.com"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib-16"
+      - "C:/ffmpeg/gcc-ranlib-16.com"
+      - "C:/ffmpeg/gcc-ranlib-16.exe"
+      - "C:/ffmpeg/gcc-ranlib-16"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib-16"
+      - "C:/miniconda3/condabin/gcc-ranlib-16.com"
+      - "C:/miniconda3/condabin/gcc-ranlib-16.exe"
+      - "C:/miniconda3/condabin/gcc-ranlib-16"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16.com"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16.exe"
+      - "C:/miniconda3/DLLs/gcc-ranlib-16"
+      - "C:/miniconda3/Lib/gcc-ranlib-16.com"
+      - "C:/miniconda3/Lib/gcc-ranlib-16.exe"
+      - "C:/miniconda3/Lib/gcc-ranlib-16"
+      - "C:/miniconda3/libs/gcc-ranlib-16.com"
+      - "C:/miniconda3/libs/gcc-ranlib-16.exe"
+      - "C:/miniconda3/libs/gcc-ranlib-16"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16.com"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16.exe"
+      - "C:/miniconda3/Scripts/gcc-ranlib-16"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib16"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib16.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/gcc-ranlib16"
+      - "C:/Windows/System32/gcc-ranlib16.com"
+      - "C:/Windows/System32/gcc-ranlib16.exe"
+      - "C:/Windows/System32/gcc-ranlib16"
+      - "C:/Windows/gcc-ranlib16.com"
+      - "C:/Windows/gcc-ranlib16.exe"
+      - "C:/Windows/gcc-ranlib16"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib16"
+      - "C:/Program Files/dotnet/gcc-ranlib16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib16"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16"
+      - "C:/msys64/usr/bin/gcc-ranlib16.com"
+      - "C:/msys64/usr/bin/gcc-ranlib16.exe"
+      - "C:/msys64/usr/bin/gcc-ranlib16"
+      - "C:/msys64/ucrt64/include/gcc-ranlib16.com"
+      - "C:/msys64/ucrt64/include/gcc-ranlib16.exe"
+      - "C:/msys64/ucrt64/include/gcc-ranlib16"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib16.com"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib16.exe"
+      - "C:/msys64/ucrt64/lib/gcc-ranlib16"
+      - "C:/ffmpeg/gcc-ranlib16.com"
+      - "C:/ffmpeg/gcc-ranlib16.exe"
+      - "C:/ffmpeg/gcc-ranlib16"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib16.com"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib16.exe"
+      - "C:/msys64/ucrt64/share/java/gcc-ranlib16"
+      - "C:/miniconda3/condabin/gcc-ranlib16.com"
+      - "C:/miniconda3/condabin/gcc-ranlib16.exe"
+      - "C:/miniconda3/condabin/gcc-ranlib16"
+      - "C:/miniconda3/DLLs/gcc-ranlib16.com"
+      - "C:/miniconda3/DLLs/gcc-ranlib16.exe"
+      - "C:/miniconda3/DLLs/gcc-ranlib16"
+      - "C:/miniconda3/Lib/gcc-ranlib16.com"
+      - "C:/miniconda3/Lib/gcc-ranlib16.exe"
+      - "C:/miniconda3/Lib/gcc-ranlib16"
+      - "C:/miniconda3/libs/gcc-ranlib16.com"
+      - "C:/miniconda3/libs/gcc-ranlib16.exe"
+      - "C:/miniconda3/libs/gcc-ranlib16"
+      - "C:/miniconda3/Scripts/gcc-ranlib16.com"
+      - "C:/miniconda3/Scripts/gcc-ranlib16.exe"
+      - "C:/miniconda3/Scripts/gcc-ranlib16"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake:169 (enable_language)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windres"
+      - "windres"
+    candidate_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+    searched_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/windres.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/windres.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/windres"
+      - "C:/Windows/System32/windres.com"
+      - "C:/Windows/System32/windres.exe"
+      - "C:/Windows/System32/windres"
+      - "C:/Windows/windres.com"
+      - "C:/Windows/windres.exe"
+      - "C:/Windows/windres"
+      - "C:/Windows/System32/wbem/windres.com"
+      - "C:/Windows/System32/wbem/windres.exe"
+      - "C:/Windows/System32/wbem/windres"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
+      - "C:/Windows/System32/OpenSSH/windres.com"
+      - "C:/Windows/System32/OpenSSH/windres.exe"
+      - "C:/Windows/System32/OpenSSH/windres"
+      - "C:/Program Files/Git/cmd/windres.com"
+      - "C:/Program Files/Git/cmd/windres.exe"
+      - "C:/Program Files/Git/cmd/windres"
+      - "C:/Program Files/dotnet/windres.com"
+      - "C:/Program Files/dotnet/windres.exe"
+      - "C:/Program Files/dotnet/windres"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/windres.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/windres.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/windres"
+      - "C:/msys64/ucrt64/bin/windres.com"
+    found: "C:/msys64/ucrt64/bin/windres.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt"
+      binary: "C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_42499/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_42499.dir\\build.make CMakeFiles/cmTC_42499.dir/build
+        mingw32-make[1]: Entering directory 'C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt'
+        Building CXX object CMakeFiles/cmTC_42499.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-16.2.0/configure --prefix=/ucrt64 --with-sysroot=/ucrt64 --with-build-sysroot=D:/M/msys64/ucrt64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev4, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (Rev4, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot C:/msys64/ucrt64/bin/../../ucrt64 -D_REENTRANT C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_42499.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccGhVJHd.s
+        GNU C++20 (Rev4, Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 16.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"
+        ignoring nonexistent directory "C:/msys64/ucrt64/bin/../../ucrt64/local/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed
+         C:/msys64/ucrt64/bin/../../ucrt64/include
+        End of search list.
+        Compiler executable checksum: 8e7d23a9ab3cd610d3de06f65ae43541
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccGhVJHd.s
+        GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;C:/msys64/ucrt64/bin/../../ucrt64/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_42499.exe
+        C:\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_42499.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-16.2.0/configure --prefix=/ucrt64 --with-sysroot=/ucrt64 --with-build-sysroot=D:/M/msys64/ucrt64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev4, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (Rev4, Built by MSYS2 project) 
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;C:/msys64/ucrt64/bin/../../ucrt64/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42499.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_42499.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        collect2 version 16.2.0
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.47.20260726
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42499.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_42499.'
+        C:\\msys64\\ucrt64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_42499.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_42499.dir/objects.a @CMakeFiles\\cmTC_42499.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_42499.dir/objects.a -Wl,--no-whole-archive -o cmTC_42499.exe -Wl,--out-implib,libcmTC_42499.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+          add: [C:/msys64/ucrt64/bin/../../ucrt64/include]
+        end of search list found
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0] ==> [C:/msys64/ucrt64/include/c++/16.2.0]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward] ==> [C:/msys64/ucrt64/include/c++/16.2.0/backward]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        collapse include dir [C:/msys64/ucrt64/bin/../../ucrt64/include] ==> [C:/msys64/ucrt64/include]
+        implicit include dirs: [C:/msys64/ucrt64/include/c++/16.2.0;C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32;C:/msys64/ucrt64/include/c++/16.2.0/backward;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed;C:/msys64/ucrt64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: 'C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_42499/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_42499.dir\\build.make CMakeFiles/cmTC_42499.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/projects/embx/build/CMakeFiles/CMakeScratch/TryCompile-cjonbt']
+        ignore line: [Building CXX object CMakeFiles/cmTC_42499.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-16.2.0/configure --prefix=/ucrt64 --with-sysroot=/ucrt64 --with-build-sysroot=D:/M/msys64/ucrt64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev4, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (Rev4  Built by MSYS2 project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot C:/msys64/ucrt64/bin/../../ucrt64 -D_REENTRANT C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_42499.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccGhVJHd.s]
+        ignore line: [GNU C++20 (Rev4  Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/bin/../../ucrt64/local/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include/c++/16.2.0/backward]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        ignore line: [ C:/msys64/ucrt64/bin/../../ucrt64/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 8e7d23a9ab3cd610d3de06f65ae43541]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccGhVJHd.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
+        ignore line: [C:/msys64/ucrt64/bin/../../ucrt64/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_42499.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_42499.exe]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_42499.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-16.2.0/configure --prefix=/ucrt64 --with-sysroot=/ucrt64 --with-build-sysroot=D:/M/msys64/ucrt64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev4, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (Rev4  Built by MSYS2 project) ]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
+        ignore line: [C:/msys64/ucrt64/bin/../../ucrt64/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42499.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_42499.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=C:/msys64/ucrt64/bin/../../ucrt64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_42499.exe] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib]
+          arg [-LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib] ==> dir [C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..]
+          arg [-LC:/msys64/ucrt64/bin/../../ucrt64/lib] ==> dir [C:/msys64/ucrt64/bin/../../ucrt64/lib]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_42499.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_42499.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [collect2 version 16.2.0]
+        link line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
+        link line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Andrey\\AppData\\Local\\Temp\\ccW105Qj.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/msys64/ucrt64/bin/../../ucrt64 -m i386pep -Bdynamic -o cmTC_42499.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../../ucrt64/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LC:/msys64/ucrt64/bin/../../ucrt64/lib -v --whole-archive CMakeFiles\\cmTC_42499.dir/objects.a --no-whole-archive --out-implib libcmTC_42499.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe -m;i386pep
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o] ==> [C:/msys64/ucrt64/lib/crt2.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o] ==> [C:/msys64/ucrt64/lib/default-manifest.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc] ==> [C:/msys64/ucrt64/lib/gcc]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../../ucrt64/lib/../lib] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../../ucrt64/lib] ==> [C:/msys64/ucrt64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o;C:/msys64/ucrt64/lib/default-manifest.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0;C:/msys64/ucrt64/lib/gcc;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.47.20260726
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:27 (find_package)"
+    name: "Catch2"
+    configs:
+      -
+        filename: "Catch2.cps"
+        kind: "cps"
+      -
+        filename: "catch2.cps"
+        kind: "cps"
+      -
+        filename: "Catch2Config.cmake"
+        kind: "cmake"
+      -
+        filename: "catch2-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "3"
+      version_complete: "3"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Catch2"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/Catch2Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/catch2-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/lib/cps/Catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/lib/cps/catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/share/cps/Catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/projects/embx/build/CMakeFiles/pkgRedirects/share/cps/catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/Catch2Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/catch2-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/Catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/Catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/catch2.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "C:/msys64/ucrt64/lib/cmake/Catch2/Catch2Config.cmake"
+      mode: "config"
+      version: "3.16.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:222 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JAVA_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "java"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/java.com"
+      - "C:/msys64/ucrt64/bin/java.exe"
+      - "C:/msys64/ucrt64/bin/java"
+      - "C:/msys64/ucrt64/sbin/java.com"
+      - "C:/msys64/ucrt64/sbin/java.exe"
+      - "C:/msys64/ucrt64/sbin/java"
+      - "C:/msys64/ucrt64/java.com"
+      - "C:/msys64/ucrt64/java.exe"
+      - "C:/msys64/ucrt64/java"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/java.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/java.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/java"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/java.com"
+    found: "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/java.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:321 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JAR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "jar"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/jar.com"
+      - "C:/msys64/ucrt64/bin/jar.exe"
+      - "C:/msys64/ucrt64/bin/jar"
+      - "C:/msys64/ucrt64/sbin/jar.com"
+      - "C:/msys64/ucrt64/sbin/jar.exe"
+      - "C:/msys64/ucrt64/sbin/jar"
+      - "C:/msys64/ucrt64/jar.com"
+      - "C:/msys64/ucrt64/jar.exe"
+      - "C:/msys64/ucrt64/jar"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jar.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jar.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jar"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/jar.com"
+    found: "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/jar.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:327 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JAVAC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "javac"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/javac.com"
+      - "C:/msys64/ucrt64/bin/javac.exe"
+      - "C:/msys64/ucrt64/bin/javac"
+      - "C:/msys64/ucrt64/sbin/javac.com"
+      - "C:/msys64/ucrt64/sbin/javac.exe"
+      - "C:/msys64/ucrt64/sbin/javac"
+      - "C:/msys64/ucrt64/javac.com"
+      - "C:/msys64/ucrt64/javac.exe"
+      - "C:/msys64/ucrt64/javac"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javac.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javac.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javac"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javac.com"
+    found: "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javac.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:333 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JAVAH_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "javah"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/javah.com"
+      - "C:/msys64/ucrt64/bin/javah.exe"
+      - "C:/msys64/ucrt64/bin/javah"
+      - "C:/msys64/ucrt64/sbin/javah.com"
+      - "C:/msys64/ucrt64/sbin/javah.exe"
+      - "C:/msys64/ucrt64/sbin/javah"
+      - "C:/msys64/ucrt64/javah.com"
+      - "C:/msys64/ucrt64/javah.exe"
+      - "C:/msys64/ucrt64/javah"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javah.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javah.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javah"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javah.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javah.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javah"
+      - "C:/Windows/System32/javah.com"
+      - "C:/Windows/System32/javah.exe"
+      - "C:/Windows/System32/javah"
+      - "C:/Windows/javah.com"
+      - "C:/Windows/javah.exe"
+      - "C:/Windows/javah"
+      - "C:/Windows/System32/wbem/javah.com"
+      - "C:/Windows/System32/wbem/javah.exe"
+      - "C:/Windows/System32/wbem/javah"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/javah.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/javah.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/javah"
+      - "C:/Windows/System32/OpenSSH/javah.com"
+      - "C:/Windows/System32/OpenSSH/javah.exe"
+      - "C:/Windows/System32/OpenSSH/javah"
+      - "C:/Program Files/Git/cmd/javah.com"
+      - "C:/Program Files/Git/cmd/javah.exe"
+      - "C:/Program Files/Git/cmd/javah"
+      - "C:/Program Files/dotnet/javah.com"
+      - "C:/Program Files/dotnet/javah.exe"
+      - "C:/Program Files/dotnet/javah"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/javah.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/javah.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/javah"
+      - "C:/msys64/ucrt64/bin/javah.com"
+      - "C:/msys64/ucrt64/bin/javah.exe"
+      - "C:/msys64/ucrt64/bin/javah"
+      - "C:/msys64/usr/bin/javah.com"
+      - "C:/msys64/usr/bin/javah.exe"
+      - "C:/msys64/usr/bin/javah"
+      - "C:/msys64/ucrt64/include/javah.com"
+      - "C:/msys64/ucrt64/include/javah.exe"
+      - "C:/msys64/ucrt64/include/javah"
+      - "C:/msys64/ucrt64/lib/javah.com"
+      - "C:/msys64/ucrt64/lib/javah.exe"
+      - "C:/msys64/ucrt64/lib/javah"
+      - "C:/ffmpeg/javah.com"
+      - "C:/ffmpeg/javah.exe"
+      - "C:/ffmpeg/javah"
+      - "C:/msys64/ucrt64/share/java/javah.com"
+      - "C:/msys64/ucrt64/share/java/javah.exe"
+      - "C:/msys64/ucrt64/share/java/javah"
+      - "C:/miniconda3/condabin/javah.com"
+      - "C:/miniconda3/condabin/javah.exe"
+      - "C:/miniconda3/condabin/javah"
+      - "C:/miniconda3/DLLs/javah.com"
+      - "C:/miniconda3/DLLs/javah.exe"
+      - "C:/miniconda3/DLLs/javah"
+      - "C:/miniconda3/Lib/javah.com"
+      - "C:/miniconda3/Lib/javah.exe"
+      - "C:/miniconda3/Lib/javah"
+      - "C:/miniconda3/libs/javah.com"
+      - "C:/miniconda3/libs/javah.exe"
+      - "C:/miniconda3/libs/javah"
+      - "C:/miniconda3/Scripts/javah.com"
+      - "C:/miniconda3/Scripts/javah.exe"
+      - "C:/miniconda3/Scripts/javah"
+      - "C:/Program Files/bin/javah.com"
+      - "C:/Program Files/bin/javah.exe"
+      - "C:/Program Files/bin/javah"
+      - "C:/Program Files/sbin/javah.com"
+      - "C:/Program Files/sbin/javah.exe"
+      - "C:/Program Files/sbin/javah"
+      - "C:/Program Files/javah.com"
+      - "C:/Program Files/javah.exe"
+      - "C:/Program Files/javah"
+      - "C:/Program Files (x86)/bin/javah.com"
+      - "C:/Program Files (x86)/bin/javah.exe"
+      - "C:/Program Files (x86)/bin/javah"
+      - "C:/Program Files (x86)/sbin/javah.com"
+      - "C:/Program Files (x86)/sbin/javah.exe"
+      - "C:/Program Files (x86)/sbin/javah"
+      - "C:/Program Files (x86)/javah.com"
+      - "C:/Program Files (x86)/javah.exe"
+      - "C:/Program Files (x86)/javah"
+      - "C:/Program Files (x86)/EmbX/bin/javah.com"
+      - "C:/Program Files (x86)/EmbX/bin/javah.exe"
+      - "C:/Program Files (x86)/EmbX/bin/javah"
+      - "C:/Program Files (x86)/EmbX/sbin/javah.com"
+      - "C:/Program Files (x86)/EmbX/sbin/javah.exe"
+      - "C:/Program Files (x86)/EmbX/sbin/javah"
+      - "C:/Program Files (x86)/EmbX/javah.com"
+      - "C:/Program Files (x86)/EmbX/javah.exe"
+      - "C:/Program Files (x86)/EmbX/javah"
+      - "/usr/lib/java/bin/javah.com"
+      - "/usr/lib/java/bin/javah.exe"
+      - "/usr/lib/java/bin/javah"
+      - "/usr/share/java/bin/javah.com"
+      - "/usr/share/java/bin/javah.exe"
+      - "/usr/share/java/bin/javah"
+      - "/usr/local/java/bin/javah.com"
+      - "/usr/local/java/bin/javah.exe"
+      - "/usr/local/java/bin/javah"
+      - "/usr/local/java/share/bin/javah.com"
+      - "/usr/local/java/share/bin/javah.exe"
+      - "/usr/local/java/share/bin/javah"
+      - "/usr/java/j2sdk1.4.2_04/javah.com"
+      - "/usr/java/j2sdk1.4.2_04/javah.exe"
+      - "/usr/java/j2sdk1.4.2_04/javah"
+      - "/usr/lib/j2sdk1.4-sun/bin/javah.com"
+      - "/usr/lib/j2sdk1.4-sun/bin/javah.exe"
+      - "/usr/lib/j2sdk1.4-sun/bin/javah"
+      - "/usr/java/j2sdk1.4.2_09/bin/javah.com"
+      - "/usr/java/j2sdk1.4.2_09/bin/javah.exe"
+      - "/usr/java/j2sdk1.4.2_09/bin/javah"
+      - "/usr/lib/j2sdk1.5-sun/bin/javah.com"
+      - "/usr/lib/j2sdk1.5-sun/bin/javah.exe"
+      - "/usr/lib/j2sdk1.5-sun/bin/javah"
+      - "/opt/sun-jdk-1.5.0.04/bin/javah.com"
+      - "/opt/sun-jdk-1.5.0.04/bin/javah.exe"
+      - "/opt/sun-jdk-1.5.0.04/bin/javah"
+      - "/usr/local/jdk-1.7.0/bin/javah.com"
+      - "/usr/local/jdk-1.7.0/bin/javah.exe"
+      - "/usr/local/jdk-1.7.0/bin/javah"
+      - "/usr/local/jdk-1.6.0/bin/javah.com"
+      - "/usr/local/jdk-1.6.0/bin/javah.exe"
+      - "/usr/local/jdk-1.6.0/bin/javah"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:339 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JAVADOC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "javadoc"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/javadoc.com"
+      - "C:/msys64/ucrt64/bin/javadoc.exe"
+      - "C:/msys64/ucrt64/bin/javadoc"
+      - "C:/msys64/ucrt64/sbin/javadoc.com"
+      - "C:/msys64/ucrt64/sbin/javadoc.exe"
+      - "C:/msys64/ucrt64/sbin/javadoc"
+      - "C:/msys64/ucrt64/javadoc.com"
+      - "C:/msys64/ucrt64/javadoc.exe"
+      - "C:/msys64/ucrt64/javadoc"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javadoc.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javadoc.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/javadoc"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javadoc.com"
+    found: "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/javadoc.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:345 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_IDLJ_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "idlj"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/idlj.com"
+      - "C:/msys64/ucrt64/bin/idlj.exe"
+      - "C:/msys64/ucrt64/bin/idlj"
+      - "C:/msys64/ucrt64/sbin/idlj.com"
+      - "C:/msys64/ucrt64/sbin/idlj.exe"
+      - "C:/msys64/ucrt64/sbin/idlj"
+      - "C:/msys64/ucrt64/idlj.com"
+      - "C:/msys64/ucrt64/idlj.exe"
+      - "C:/msys64/ucrt64/idlj"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/idlj.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/idlj.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/idlj"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/idlj.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/idlj.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/idlj"
+      - "C:/Windows/System32/idlj.com"
+      - "C:/Windows/System32/idlj.exe"
+      - "C:/Windows/System32/idlj"
+      - "C:/Windows/idlj.com"
+      - "C:/Windows/idlj.exe"
+      - "C:/Windows/idlj"
+      - "C:/Windows/System32/wbem/idlj.com"
+      - "C:/Windows/System32/wbem/idlj.exe"
+      - "C:/Windows/System32/wbem/idlj"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/idlj.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/idlj.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/idlj"
+      - "C:/Windows/System32/OpenSSH/idlj.com"
+      - "C:/Windows/System32/OpenSSH/idlj.exe"
+      - "C:/Windows/System32/OpenSSH/idlj"
+      - "C:/Program Files/Git/cmd/idlj.com"
+      - "C:/Program Files/Git/cmd/idlj.exe"
+      - "C:/Program Files/Git/cmd/idlj"
+      - "C:/Program Files/dotnet/idlj.com"
+      - "C:/Program Files/dotnet/idlj.exe"
+      - "C:/Program Files/dotnet/idlj"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/idlj.com"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/idlj.exe"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/idlj"
+      - "C:/msys64/ucrt64/bin/idlj.com"
+      - "C:/msys64/ucrt64/bin/idlj.exe"
+      - "C:/msys64/ucrt64/bin/idlj"
+      - "C:/msys64/usr/bin/idlj.com"
+      - "C:/msys64/usr/bin/idlj.exe"
+      - "C:/msys64/usr/bin/idlj"
+      - "C:/msys64/ucrt64/include/idlj.com"
+      - "C:/msys64/ucrt64/include/idlj.exe"
+      - "C:/msys64/ucrt64/include/idlj"
+      - "C:/msys64/ucrt64/lib/idlj.com"
+      - "C:/msys64/ucrt64/lib/idlj.exe"
+      - "C:/msys64/ucrt64/lib/idlj"
+      - "C:/ffmpeg/idlj.com"
+      - "C:/ffmpeg/idlj.exe"
+      - "C:/ffmpeg/idlj"
+      - "C:/msys64/ucrt64/share/java/idlj.com"
+      - "C:/msys64/ucrt64/share/java/idlj.exe"
+      - "C:/msys64/ucrt64/share/java/idlj"
+      - "C:/miniconda3/condabin/idlj.com"
+      - "C:/miniconda3/condabin/idlj.exe"
+      - "C:/miniconda3/condabin/idlj"
+      - "C:/miniconda3/DLLs/idlj.com"
+      - "C:/miniconda3/DLLs/idlj.exe"
+      - "C:/miniconda3/DLLs/idlj"
+      - "C:/miniconda3/Lib/idlj.com"
+      - "C:/miniconda3/Lib/idlj.exe"
+      - "C:/miniconda3/Lib/idlj"
+      - "C:/miniconda3/libs/idlj.com"
+      - "C:/miniconda3/libs/idlj.exe"
+      - "C:/miniconda3/libs/idlj"
+      - "C:/miniconda3/Scripts/idlj.com"
+      - "C:/miniconda3/Scripts/idlj.exe"
+      - "C:/miniconda3/Scripts/idlj"
+      - "C:/Program Files/bin/idlj.com"
+      - "C:/Program Files/bin/idlj.exe"
+      - "C:/Program Files/bin/idlj"
+      - "C:/Program Files/sbin/idlj.com"
+      - "C:/Program Files/sbin/idlj.exe"
+      - "C:/Program Files/sbin/idlj"
+      - "C:/Program Files/idlj.com"
+      - "C:/Program Files/idlj.exe"
+      - "C:/Program Files/idlj"
+      - "C:/Program Files (x86)/bin/idlj.com"
+      - "C:/Program Files (x86)/bin/idlj.exe"
+      - "C:/Program Files (x86)/bin/idlj"
+      - "C:/Program Files (x86)/sbin/idlj.com"
+      - "C:/Program Files (x86)/sbin/idlj.exe"
+      - "C:/Program Files (x86)/sbin/idlj"
+      - "C:/Program Files (x86)/idlj.com"
+      - "C:/Program Files (x86)/idlj.exe"
+      - "C:/Program Files (x86)/idlj"
+      - "C:/Program Files (x86)/EmbX/bin/idlj.com"
+      - "C:/Program Files (x86)/EmbX/bin/idlj.exe"
+      - "C:/Program Files (x86)/EmbX/bin/idlj"
+      - "C:/Program Files (x86)/EmbX/sbin/idlj.com"
+      - "C:/Program Files (x86)/EmbX/sbin/idlj.exe"
+      - "C:/Program Files (x86)/EmbX/sbin/idlj"
+      - "C:/Program Files (x86)/EmbX/idlj.com"
+      - "C:/Program Files (x86)/EmbX/idlj.exe"
+      - "C:/Program Files (x86)/EmbX/idlj"
+      - "/usr/lib/java/bin/idlj.com"
+      - "/usr/lib/java/bin/idlj.exe"
+      - "/usr/lib/java/bin/idlj"
+      - "/usr/share/java/bin/idlj.com"
+      - "/usr/share/java/bin/idlj.exe"
+      - "/usr/share/java/bin/idlj"
+      - "/usr/local/java/bin/idlj.com"
+      - "/usr/local/java/bin/idlj.exe"
+      - "/usr/local/java/bin/idlj"
+      - "/usr/local/java/share/bin/idlj.com"
+      - "/usr/local/java/share/bin/idlj.exe"
+      - "/usr/local/java/share/bin/idlj"
+      - "/usr/java/j2sdk1.4.2_04/idlj.com"
+      - "/usr/java/j2sdk1.4.2_04/idlj.exe"
+      - "/usr/java/j2sdk1.4.2_04/idlj"
+      - "/usr/lib/j2sdk1.4-sun/bin/idlj.com"
+      - "/usr/lib/j2sdk1.4-sun/bin/idlj.exe"
+      - "/usr/lib/j2sdk1.4-sun/bin/idlj"
+      - "/usr/java/j2sdk1.4.2_09/bin/idlj.com"
+      - "/usr/java/j2sdk1.4.2_09/bin/idlj.exe"
+      - "/usr/java/j2sdk1.4.2_09/bin/idlj"
+      - "/usr/lib/j2sdk1.5-sun/bin/idlj.com"
+      - "/usr/lib/j2sdk1.5-sun/bin/idlj.exe"
+      - "/usr/lib/j2sdk1.5-sun/bin/idlj"
+      - "/opt/sun-jdk-1.5.0.04/bin/idlj.com"
+      - "/opt/sun-jdk-1.5.0.04/bin/idlj.exe"
+      - "/opt/sun-jdk-1.5.0.04/bin/idlj"
+      - "/usr/local/jdk-1.7.0/bin/idlj.com"
+      - "/usr/local/jdk-1.7.0/bin/idlj.exe"
+      - "/usr/local/jdk-1.7.0/bin/idlj"
+      - "/usr/local/jdk-1.6.0/bin/idlj.com"
+      - "/usr/local/jdk-1.6.0/bin/idlj.exe"
+      - "/usr/local/jdk-1.6.0/bin/idlj"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindJava.cmake:351 (find_program)"
+      - "CMakeLists.txt:47 (find_package)"
+    mode: "program"
+    variable: "Java_JARSIGNER_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "jarsigner"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Andrey/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/ffmpeg/"
+      - "C:/msys64/ucrt64/share/java/"
+      - "C:/miniconda3/condabin/"
+      - "C:/miniconda3/DLLs/"
+      - "C:/miniconda3/Lib/"
+      - "C:/miniconda3/libs/"
+      - "C:/miniconda3/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/EmbX/bin/"
+      - "C:/Program Files (x86)/EmbX/sbin/"
+      - "C:/Program Files (x86)/EmbX/"
+      - "/usr/lib/java/bin/"
+      - "/usr/share/java/bin/"
+      - "/usr/local/java/bin/"
+      - "/usr/local/java/share/bin/"
+      - "/usr/java/j2sdk1.4.2_04/"
+      - "/usr/lib/j2sdk1.4-sun/bin/"
+      - "/usr/java/j2sdk1.4.2_09/bin/"
+      - "/usr/lib/j2sdk1.5-sun/bin/"
+      - "/opt/sun-jdk-1.5.0.04/bin/"
+      - "/usr/local/jdk-1.7.0/bin/"
+      - "/usr/local/jdk-1.6.0/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/jarsigner.com"
+      - "C:/msys64/ucrt64/bin/jarsigner.exe"
+      - "C:/msys64/ucrt64/bin/jarsigner"
+      - "C:/msys64/ucrt64/sbin/jarsigner.com"
+      - "C:/msys64/ucrt64/sbin/jarsigner.exe"
+      - "C:/msys64/ucrt64/sbin/jarsigner"
+      - "C:/msys64/ucrt64/jarsigner.com"
+      - "C:/msys64/ucrt64/jarsigner.exe"
+      - "C:/msys64/ucrt64/jarsigner"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jarsigner.com"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jarsigner.exe"
+      - "c:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/bin/jarsigner"
+      - "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/jarsigner.com"
+    found: "C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/jarsigner.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:58 (find_library)"
+    mode: "library"
+    variable: "ANTLR4_LIB"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "antlr4-runtime"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/"
+    found: "C:/msys64/ucrt64/lib/libantlr4-runtime.dll.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.20.101-hotspot\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\Andrey\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "c:\\msys64\\ucrt64\\bin\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\msys64\\ucrt64\\include\\"
+        - "c:\\msys64\\ucrt64\\lib\\"
+        - "c:\\msys64\\usr\\bin\\"
+        - "c:\\ffmpeg\\"
+        - "c:\\msys64\\ucrt64\\share\\java\\"
+        - "c:\\miniconda3\\condabin\\"
+        - "c:\\miniconda3\\DLLs\\"
+        - "c:\\miniconda3\\Lib\\"
+        - "c:\\miniconda3\\libs\\"
+        - "c:\\miniconda3\\Scripts\\"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/EmbX"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/EmbX/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+...

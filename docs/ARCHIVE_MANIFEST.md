@@ -1,3 +1,6 @@
+Current candidate: EmbX 0.9.59 — Source Corpus Round-Trip Foundation.
+Status: candidate; 0.9.58 remains the accepted-green baseline until the 0.9.59 corpus gate is confirmed.
+
 # Archive manifest — EmbX 0.9.58 Format Reporter accepted green
 
 EmbX 0.9.58 is the accepted Format Reporter baseline. It is based on the accepted 0.9.57 Canonical Source Generator and 0.9.56 GGUF external-adapter closure. The source tree contains the canonical grammar, compiler/runtime implementation, generated-C++ backend, examples, tests, course material and active documentation.

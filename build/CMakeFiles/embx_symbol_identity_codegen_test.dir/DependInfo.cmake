@@ -1,0 +1,27 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/projects/embx/src/codegen/CppGenerator.cpp" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/codegen/CppGenerator.cpp.obj" "gcc" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/codegen/CppGenerator.cpp.obj.d"
+  "C:/projects/embx/src/plan/LayoutGraph.cpp" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/LayoutGraph.cpp.obj" "gcc" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/LayoutGraph.cpp.obj.d"
+  "C:/projects/embx/src/plan/PlanBuilder.cpp" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/PlanBuilder.cpp.obj" "gcc" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/plan/PlanBuilder.cpp.obj.d"
+  "C:/projects/embx/src/runtime/ExpressionEvaluator.cpp" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/runtime/ExpressionEvaluator.cpp.obj" "gcc" "CMakeFiles/embx_symbol_identity_codegen_test.dir/src/runtime/ExpressionEvaluator.cpp.obj.d"
+  "C:/projects/embx/tests/symbol_identity_codegen_test.cpp" "CMakeFiles/embx_symbol_identity_codegen_test.dir/tests/symbol_identity_codegen_test.cpp.obj" "gcc" "CMakeFiles/embx_symbol_identity_codegen_test.dir/tests/symbol_identity_codegen_test.cpp.obj.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

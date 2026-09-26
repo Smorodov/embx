@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/projects/embx/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

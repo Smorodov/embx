@@ -258,6 +258,10 @@ The detailed implementation plan is maintained in `docs/DEVELOPMENT_PLAN.md`.
 
 ## 0.9.58 — Format Reporter — ACCEPTED GREEN
 
+## 0.9.59 — Source corpus round-trip foundation — IN PROGRESS
+
+The first post-0.9.58 quality stage promotes parser/source-generator round-trip checking to a repository-wide corpus gate. The test discovers all `.embx` files under `examples/` and `course/`, parses each source, generates canonical source, parses the generated source again, and requires the second canonical generation to be byte-identical to the first. No language semantics are added.
+
 The Format Reporter is a deterministic presentation layer over canonical Plan/Reflection facts. Dependency counts use the existing LayoutGraph; facts not established by the canonical model are reported as `unknown` rather than inferred. No second semantic or layout model was introduced.
 
 The clean target-environment validation passed at **82/82 CTest tests (100%)**.

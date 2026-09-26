@@ -157,6 +157,14 @@ The Source Generator and Format Reporter should become part of the quality infra
 
 The generated source must parse back to an equivalent AST. The report must agree with Plan/Reflection facts. This creates an independent way to detect drift between parser, AST, Plan and documentation.
 
+## 7.1 — Source corpus round-trip foundation
+
+The first post-0.9.58 quality stage is the parser/source-generator corpus gate. A dedicated CTest target discovers every `.embx` source under `examples/` and `course/` and verifies:
+
+`source → AST → canonical source → AST → canonical source`
+
+The two generated canonical sources must be identical. The corpus is discovered from the repository tree rather than maintained as a second hand-written list, so adding a new example or lesson automatically extends the gate. This stage adds no language semantics and no second parser or AST model.
+
 ## 7. After these two tools
 
 Once GGUF, Source Generator and Format Reporter are stable, stop adding lessons merely for feature count and perform a deep semantic/conformance audit. Priority order:

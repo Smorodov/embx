@@ -1,3 +1,12 @@
+# EmbX 0.9.59 — Source Corpus Round-Trip Foundation (candidate)
+
+- Adds a repository-wide `source_roundtrip_corpus_test`.
+- Automatically discovers every `.embx` source under `examples/` and `course/` (24 sources in the current baseline).
+- Verifies `source → AST → canonical source → AST → canonical source`.
+- Requires the two canonical generated sources to be byte-identical.
+- Includes imported-source examples without adding import semantics to the generator.
+- Adds no language semantics and no second parser, AST, resolver, or semantic model.
+
 # EmbX 0.9.58 — Format Reporter — ACCEPTED GREEN
 
 The Format Reporter adds a deterministic human-readable view over canonical Plan/Reflection facts. It uses the existing LayoutGraph for dependency facts and reports facts not established by the canonical model as `unknown`; it does not introduce a second semantic or layout engine.
