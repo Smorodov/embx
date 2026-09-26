@@ -2,7 +2,7 @@
 
 The project vision and general design principles are defined in [`VISION.md`](VISION.md). The roadmap implements that vision; it does not redefine the language contract.
 
-The current source state is **EmbX 0.9.53 accepted green through Lesson 14, including the universal multidimensional array-buffer boundary**. The 0.9.44 source remains the immutable predecessor reference for reflection/contract closure. 0.9.49 adds the generalized terminated-sequence boundary rule while preserving the canonical AST → Plan → reference-runtime architecture.
+The accepted reference is **EmbX 0.9.58 green**. 0.9.56 closes the GGUF external-adapter stage, 0.9.57 closes the Canonical Source Generator, and 0.9.58 closes the Format Reporter. The next working phase is semantic/conformance hardening and quality infrastructure. The 0.9.44 source remains the immutable predecessor reference for reflection/contract closure. 0.9.49 adds the generalized terminated-sequence boundary rule while preserving the canonical AST → Plan → reference-runtime architecture.
 
 ## Completed integration history
 
@@ -73,7 +73,7 @@ The implementation reuses the existing AST, Plan, `LayoutBounds`, Reference Runt
 
 The multidimensional-array model now has a concrete runtime boundary: `ArrayDescriptor + ArrayBuffer`, composed as a non-owning `ArrayView`. The first implementation is intentionally representation-only. It does not replace `value::Value::Array`, alter Plan semantics, or introduce tensor/matrix/stride concepts. Implementation-02 connected `Plan::Type` to `ArrayDescriptor` through `plan::makeArrayDescriptor()`, deriving element metadata and checked shape from the canonical Plan. Implementation-03 exercises the descriptor against the actual encoded buffer of a `Named[2][3]` array and verifies the canonical traversal order with distinct bytes. Implementation-04 adds checked `ArrayView` indexed access plus dynamic-dimension and nested-structure coverage, still reusing the existing evaluator and Plan layout machinery.
 
-The multidimensional array closure is complete: descriptor/buffer/view separation, Plan integration, dynamic dimensions, nested structures and conformance coverage are accepted at 79/79. The next stage is the GGUF adapter.
+The multidimensional array closure is complete: descriptor/buffer/view separation, Plan integration, dynamic dimensions, nested structures and conformance coverage were accepted at 79/79. The GGUF adapter is now accepted separately at 80/80.
 
 ## Stage 4 — Backend and release hardening
 
@@ -156,14 +156,14 @@ Before a lesson moves from planned to active it must have:
 
 The course therefore becomes a living validation matrix rather than a parallel specification.
 
-### Course progress at 0.9.53 accepted green
+### Course progress at 0.9.58 accepted green
 
-- Lessons 1–14: accepted; the complete 0.9.53 source state is locally validated at **79/79 CTest tests (100%)**.
+- Lessons 1–15 remain accepted; the 0.9.56 GGUF adapter closure, 0.9.57 Source Generator and 0.9.58 Format Reporter bring the current full suite to **82/82 CTest tests (100%)** without changing the EmbX language semantics.
 - Lesson 14 — TLV composition: accepted, adds one CTest registration and uses only existing language mechanisms.
 - Lesson 10 — Callbacks and transforms: accepted and locally validated.
 - Lesson 11 — IPv4: accepted and locally validated.
 - Lesson 13 — MIDI: accepted, with the supplied 20-file corpus, playable Type 0 fixture, and a standard Track Name text metadata event.
-- Lesson 15 — GGUF capstone: planned.
+- Lesson 15 — GGUF capstone: accepted through stage 15.3 as an external adapter; no GGUF semantics enter the language core.
 
 The active lessons use only existing accepted language semantics. The course tests are additional executable documentation and do not alter the compiler contract.
 
@@ -256,11 +256,35 @@ These tools form a closed documentation/conformance loop:
 
 The detailed implementation plan is maintained in `docs/DEVELOPMENT_PLAN.md`.
 
+## 0.9.58 — Format Reporter — ACCEPTED GREEN
+
+The Format Reporter is a deterministic presentation layer over canonical Plan/Reflection facts. Dependency counts use the existing LayoutGraph; facts not established by the canonical model are reported as `unknown` rather than inferred. No second semantic or layout model was introduced.
+
+The clean target-environment validation passed at **82/82 CTest tests (100%)**.
+
+## 0.9.57 — Canonical Source Generator — ACCEPTED GREEN
+
+The Source Generator reconstructs deterministic canonical EmbX source from the AST. It does not introduce a second resolver, expression model, evaluator or layout engine. Structural AST validation rejects incomplete or unsupported constructs instead of emitting partial source.
+
+The clean target-environment validation passed at **81/81 CTest tests (100%)**.
+
+## 0.9.56 — GGUF external adapter stage 15.3 — ACCEPTED GREEN
+
+Stage 15.3 closes the adapter test boundary without changing EmbX core. Coverage now includes non-square 3-D dimension mapping, multiple aligned tensors, nested metadata arrays, unsupported versions, tensor-size overflow and tensor-data bounds. This historical stage was followed by the accepted 0.9.57 Source Generator and 0.9.58 Format Reporter stages.
+
+The accepted result is that GGUF remains entirely external: no GGUF-specific AST, Plan, runtime type, layout evaluator or array semantic is introduced. The full suite is validated at 80/80 CTest tests (100%).
+
+## 0.9.54 — GGUF external adapter stage 15.1 — ACCEPTED GREEN
+
+The first GGUF stage is deliberately outside EmbX core. It adds a standalone structural parser/adapter for GGUF v3 and maps only fixed-size, unquantized tensor representations to the existing `ArrayDescriptor`/`ArrayBuffer` boundary. No GGUF-specific AST, Plan, runtime type or layout mechanism is introduced.
+
+The new adapter is the only layer that knows GGUF metadata tags, tensor type codes, alignment, offsets and external dimension conventions. Quantized representations remain adapter-owned.
+
 ## Next capstone — Lesson 15: GGUF
 
 Use GGUF as a real-world conformance target without introducing GGUF-specific compiler semantics. Preserve the supplied original GGUF specification as `docs/GGUF_SPECIFICATION.md` and maintain `course/15_gguf/GGUF_IN_EMBX.md` as the course-oriented restatement.
 
-The sequence is: (1) consume the frozen multidimensional-array contract with exact-byte 2 × 3, 3 × 2 and 2 × 3 × 4 tests already accepted in 0.9.53, (2) smallest valid GGUF header, (3) strings and metadata scalars, (4) tagged metadata arrays including nested-array investigation, (5) tensor info and explicit GGML↔EmbX dimension mapping, (6) alignment/tensor-data region, (7) fixtures generated by the external Python `gguf` library, (8) Reference Runtime and generated-backend conformance, and (9) deep audit. If a construct is not expressible with existing EmbX, demonstrate the smallest concrete gap before changing the language.
+The sequence is: (1) consume the frozen multidimensional-array contract, (2) smallest valid GGUF header, (3) strings and metadata scalars, (4) tagged metadata arrays including nested-array investigation, (5) tensor info and explicit GGML↔EmbX dimension mapping, (6) alignment/tensor-data region, (7) independent fixtures, (8) Reference Runtime and generated-backend conformance, and (9) deep audit. Stage 15.2 closes the mapping/alignment fixture boundary; subsequent work must preserve Format Independence. If a construct is not expressible with existing EmbX, demonstrate the smallest concrete gap before changing the language.
 
 
 ## Multidimensional array view boundary — CLOSED

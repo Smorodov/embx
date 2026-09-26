@@ -1,5 +1,7 @@
 #include "parser/ParserDriver.h"
 #include "compiler/Compiler.h"
+#include "codegen/SourceGenerator.h"
+#include "report/FormatReporter.h"
 #include <fstream>
 #include <iostream>
 namespace { using namespace embx::ast;
@@ -18,7 +20,7 @@ int main(int argc,char**argv){
 const std::string version = projectVersion;
     auto usage=[&](){
         std::cout << "EmbX " << version << "\n"
-                  << "Usage: embx <file.embx> [--dump-ast|--generate-cpp <prefix>]\n"
+                  << "Usage: embx <file.embx> [--dump-ast|--generate-cpp <prefix>|--generate-source <file>|--report-format <file>]\n"
                   << "       embx --help\n"
                   << "       embx --version\n";
     };
@@ -39,6 +41,24 @@ const std::string version = projectVersion;
         if(argc!=3) { std::cerr << "--dump-ast takes no additional arguments\n"; usage(); return 2; }
         dump(m);
         return 0;
+    }
+    if(argc>2 && std::string(argv[2])=="--generate-source") {
+        if(argc!=4 || std::string(argv[3]).empty()) { std::cerr << "--generate-source requires an output file\n"; usage(); return 2; }
+        std::string source;
+        if(!embx::codegen::generateSource(*compilation->ast,source,e)) { std::cerr << "source generation error: " << e << "\n"; return 1; }
+        std::ofstream out(argv[3],std::ios::binary);
+        if(!out){std::cerr<<"cannot open source generator output file: "<<argv[3]<<"\n";return 1;}
+        out << source;
+        std::cout << "Generated: " << argv[3] << "\n";
+        return 0;
+    }
+    if(argc>2 && std::string(argv[2])=="--report-format") {
+        if(argc!=4 || std::string(argv[3]).empty()) { std::cerr << "--report-format requires an output file\n"; usage(); return 2; }
+        std::string report;
+        if(!embx::report::generate(*compilation->plan, report, e)) { std::cerr << "format report error: " << e << "\n"; return 1; }
+        std::ofstream out(argv[3],std::ios::binary);
+        if(!out){std::cerr<<"cannot open format report output file: "<<argv[3]<<"\n";return 1;}
+        out<<report;std::cout<<"Generated: "<<argv[3]<<"\n";return 0;
     }
     if(argc>2 && std::string(argv[2])=="--generate-cpp") {
         if(argc!=4 || std::string(argv[3]).empty()) { std::cerr << "--generate-cpp requires an output prefix\n"; usage(); return 2; }

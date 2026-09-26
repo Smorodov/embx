@@ -1,5 +1,7 @@
 # EmbX Vision
 
+**EmbX — Язык исполняемых моделей бинарных данных.**
+
 This document describes the project vision and design principles. It is intentionally non-normative. The normative language meaning remains defined by `docs/LANGUAGE.md` and the associated semantic/Plan contracts.
 
 ## 1. What EmbX is
@@ -98,6 +100,14 @@ In particular, the project avoids:
 - duplicate layout algorithms;
 - compatibility layers for obsolete models;
 - format-specific semantics hidden inside the compiler core.
+
+### 4.5 Format independence
+
+EmbX is intentionally not a catalog of external binary formats. Support for a particular format must not turn its incidental rules into language features. Format-specific parsing, codecs, metadata and conventions belong in external adapters.
+
+This keeps the universal language small while allowing the set of adapters to grow independently. A new language mechanism is justified only by a universal semantic requirement that cannot be expressed by the existing model.
+
+The governing rule is: **do not expand the language to accommodate a format; expand the adapter to accommodate the format.**
 
 ### 4.5 Declarative first
 

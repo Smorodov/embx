@@ -217,7 +217,7 @@ No separate terminated-sequence IR is introduced.
 
 ## 17. Reference Runtime
 
-The Reference Runtime is the normative executable implementation.
+The Reference Runtime is the normative host execution subsystem: Plan-driven Encoder/Decoder plus their runtime primitives.
 
 Its sequence operation is equivalent to:
 

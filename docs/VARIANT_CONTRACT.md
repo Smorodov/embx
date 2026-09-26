@@ -40,4 +40,4 @@ At most one default branch is allowed. Without a matching case and without a def
 
 ### Backend
 
-The reference runtime is closed first. Generated C++ support must consume the executable Plan and must not resolve names, evaluate case tags, inspect AST/IR, or introduce a second semantic evaluator.
+The canonical host execution path is closed first. Generated C++ support must consume the executable Plan and must not resolve names, evaluate case tags, inspect AST/IR, or introduce a second semantic evaluator.

@@ -90,7 +90,7 @@ Byte-order inheritance is resolved once into the Plan. The precedence rule is mo
 
 ## 13. Attributes and requires
 
-Attributes require a canonical declaration/use model, validation, legal attachment rules and reflection behavior. `requires` is now the accepted 0.9.38 feature: a struct-level semantic constraint backed by canonical expressions, represented in Plan, exposed through reflection, and enforced symmetrically by the reference runtime and generated backend where supported. See `docs/REQUIRES_CONTRACT.md`.
+Attributes require a canonical declaration/use model, validation, legal attachment rules and reflection behavior. `requires` is now the accepted 0.9.38 feature: a struct-level semantic constraint backed by canonical expressions, represented in Plan, exposed through reflection, and enforced symmetrically by the canonical host execution path and generated backend where supported. See `docs/REQUIRES_CONTRACT.md`.
 
 ## 14. Variants and callbacks
 

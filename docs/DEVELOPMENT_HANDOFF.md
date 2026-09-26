@@ -1,16 +1,17 @@
-# EmbX Development Handoff — 0.9.53 Array Buffer Implementation
+# EmbX Development Handoff — 0.9.58 Format Reporter Acceptance
 
 ## Purpose
 
-This document is the short operational handoff for continuing EmbX development from the 0.9.53 array-buffer implementation checkpoint. It is intentionally redundant with the normative contracts where that redundancy makes the next work unambiguous.
+This document is the short operational handoff for continuing EmbX development from the accepted 0.9.58 Format Reporter baseline into conformance and quality hardening. It is intentionally redundant with the normative contracts where that redundancy makes the next work unambiguous.
 
 ## Current state
 
-- Implementation baseline: **EmbX 0.9.53**.
-- Accepted course state: **Lessons 1–14**.
-- Accepted local test gate: **79/79 CTest tests (100%)**.
+- Accepted implementation baseline: **EmbX 0.9.58**.
+- Current phase: **conformance/property/fuzz and differential-testing hardening**.
+- Accepted course state: **Lessons 1–15**.
+- Accepted local test gate: **82/82 CTest tests (100%)**.
 - 0.9.53 closes the universal array-buffer boundary with descriptor/buffer/view separation, Plan integration, dynamic dimensions, nested structures and conformance coverage; existing Plan and Value semantics remain unchanged.
-- The next implementation stage is Lesson 15 — GGUF, using the frozen array-buffer boundary as its tensor-data representation boundary.
+- Lesson 15.2 GGUF is accepted as an external adapter using the frozen array-buffer boundary as its tensor-data representation boundary.
 
 ## Non-negotiable architecture
 
@@ -21,7 +22,7 @@ source
   -> semantic analysis
   -> IR
   -> Plan
-  -> Reference Runtime / codecs / reflection / backends
+  -> Reference Runtime (Encoder/Decoder + runtime primitives) / reflection / backends
 ```
 
 Keep these invariants:
@@ -84,7 +85,7 @@ At minimum prove:
 5. nested structures containing arrays;
 6. scalar byte-order independence from element order;
 7. encoder/decoder symmetry;
-8. Reference Runtime/generated C++ agreement;
+8. Reference Runtime (Encoder/Decoder + runtime primitives) / generated C++ agreement;
 9. array-view metadata agreement once an implementation is introduced.
 
 Implementation-05 completes the conformance matrix, including dynamic/fixed combinations, nested structures, checked shape arithmetic and bounds/rank validation. The concrete non-owning `ArrayView::elementAt()` is already part of the accepted runtime boundary.
@@ -94,7 +95,7 @@ nested named structures use the existing Plan fixed-size calculation.
 
 Use distinct values so transpose errors cannot hide in symmetric fixtures.
 
-## Lesson 15 — GGUF work order
+## Post-GGUF deep-audit work order
 
 1. Start from the smallest valid GGUF header.
 2. Add strings and scalar metadata.
@@ -102,7 +103,7 @@ Use distinct values so transpose errors cannot hide in symmetric fixtures.
 4. Add TensorInfo and dimension arrays.
 5. Add alignment, tensor-data region and offsets.
 6. Generate golden fixtures with the external Python `gguf` package.
-7. Decode through Reference Runtime and generated C++.
+7. Decode through the canonical Reference Runtime and generated C++.
 8. Compare exact bytes where representation is deterministic.
 9. Add negative fixtures.
 10. Perform a deep audit before Source Generator / Format Reporter work.
@@ -133,3 +134,8 @@ If a real format proves an existing construct insufficient, first create the sma
 The descriptor boundary is now exercised against a real encoded multidimensional array of named structures. The test verifies `Plan::Type -> ArrayDescriptor`, the encoded contiguous buffer, element size/count, and the existing last-dimension-fastest traversal contract.
 
 The next implementation step is dynamic dimensions and nested-structure coverage. Do not introduce tensor, matrix, stride, or format-specific abstractions.
+
+
+## 0.9.54 GGUF adapter acceptance
+
+Lesson 15.1 is accepted as an external-format adapter. The full source suite is validated at **80/80 CTest tests (100%)**. GGUF-specific concepts remain outside EmbX core.

@@ -2,6 +2,16 @@
 
 These contracts are normative for the current tree.
 
+## Reference Runtime — canonical host execution subsystem
+
+EmbX does not define a separate third semantic interpreter. The term **Reference Runtime** denotes the canonical host-side execution subsystem consisting of the Plan-driven `Encoder`, `Decoder`, and the runtime primitives they use (reader/writer, expression evaluation, limits, callbacks and related execution support).
+
+`plan::Plan` remains the normative executable semantic representation. The Reference Runtime executes that Plan directly and is the canonical host execution against which generated backends are qualified.
+
+The Reference Runtime must not inspect AST or IR, perform source-name resolution, or maintain a second layout/semantic model. Generated C++/Rust/Python backends independently consume Plan semantics and must agree with the Reference Runtime at the defined conformance boundary.
+
+This terminology is intentional: adding a second interpreter solely to satisfy the name "Reference Runtime" would duplicate semantics and violate EmbX minimality.
+
 ## A. Canonical semantics
 
 `plan::Plan` is the sole validated executable semantic representation.

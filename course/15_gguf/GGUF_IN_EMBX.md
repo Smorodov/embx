@@ -1,259 +1,118 @@
 # GGUF in EmbX
 
-This document restates the supplied GGUF specification in the terminology and composition model used by the EmbX course. The original specification is preserved verbatim as [`docs/GGUF_SPECIFICATION.md`](../../docs/GGUF_SPECIFICATION.md) and remains the external format reference.
+Lesson 15 uses GGUF as an external-format conformance target. The GGUF parser/adapter is deliberately outside the EmbX language, AST, semantic core, Plan and universal array model. The original format specification remains unchanged in `docs/GGUF_SPECIFICATION.md`.
 
-## 1. Purpose and boundary
+## 1. Architectural boundary
 
-GGUF is a real binary container format. Lesson 15 uses it as a capstone conformance target rather than adding GGUF-specific semantics to EmbX.
+The governing rule is:
 
-The working rule is:
+> EmbX describes data structures and their semantics; it does not know the origin, container format, or domain meaning of the bytes.
 
-> First express the format with existing EmbX mechanisms. If a part cannot be expressed, record the concrete limitation before changing the language.
+Therefore GGUF-specific concepts belong only to the adapter:
 
-The external `gguf` Python package may be used to create and validate golden fixtures. It is an external oracle, not part of the EmbX semantic core.
+- GGUF magic and version;
+- GGUF metadata value tags;
+- GGML tensor type codes and quantization;
+- GGUF tensor-data offsets and alignment rules;
+- GGML dimension-numbering conventions;
+- GGUF metadata naming rules.
 
-## 2. Byte order
+Nothing named `GGUF`, `GGML`, `TensorInfo`, `Quantization` or equivalent is added to EmbX AST/Plan/runtime core.
 
-The supplied GGUF specification states that fields are little-endian by default and documents big-endian support in version 3. The first Lesson 15 fixtures use the little-endian form.
-
-In EmbX this is expressed at the structure/layout level rather than by introducing GGUF-specific integer types:
-
-```embx
-struct Header little {
-    magic: bytes[4];
-    version: u32;
-    tensor_count: u64;
-    metadata_kv_count: u64;
-}
-```
-
-A constant magic value can be constrained by the normal EmbX constant mechanism:
-
-```embx
-magic: bytes[4] = "GGUF";
-```
-
-## 3. GGUF string
-
-The GGUF string representation is a `u64` byte length followed by that many UTF-8 bytes. It is not NUL terminated.
-
-The direct EmbX shape is:
-
-```embx
-struct String little {
-    length: u64;
-    data: bytes[length];
-}
-```
-
-UTF-8 validity is a value-level constraint and must not be confused with the binary layout itself.
-
-## 4. Metadata value type
-
-GGUF metadata values have a numeric type tag. The supplied specification defines unsigned and signed 8/16/32/64-bit integers, float32/64, bool, string, and array.
-
-The fixed scalar alternatives can be represented as an EmbX variant. The exact variant syntax used in the executable lesson must follow the current compiler grammar; the conceptual model is a tagged union, not a new GGUF primitive.
+The direction is:
 
 ```text
-MetadataValueType  -> existing EmbX variant/tag representation
-MetadataValue      -> corresponding existing EmbX variant representation
+GGUF bytes
+    ↓
+GGUF parser / adapter
+    ↓
+universal EmbX boundary
+    ├── ArrayDescriptor
+    └── ArrayBuffer / ArrayView
+    ↓
+existing EmbX/runtime semantics
 ```
 
-No GGUF-specific `metadata_value` type is added to the compiler.
+The reverse dependency is forbidden: EmbX core must not depend on the GGUF adapter.
 
-## 5. Metadata arrays
+## 2. Stage 15.1 — structural parser
 
-The supplied specification defines an array as:
+The first implementation stage parses only the external GGUF structure:
 
-1. element type tag;
-2. element count;
-3. array elements.
+1. magic;
+2. version;
+3. tensor count;
+4. metadata count;
+5. metadata keys and recursively skippable metadata values;
+6. tensor names;
+7. tensor dimensions;
+8. GGML tensor type code;
+9. tensor-data offset;
+10. alignment and file-bound checks.
 
-For a concrete homogeneous array, the binary relationship is naturally expressed as a dynamic EmbX dimension:
+The parser records GGUF metadata as adapter-owned information. It does not translate metadata into EmbX attributes or compiler constructs.
 
-```embx
-values: Element[element_count];
-```
+The initial implementation is explicitly little-endian and version-3 only, matching the project-local frozen GGUF reference. Endianness handling remains a GGUF concern and must not leak into universal array semantics.
 
-The important distinction is that the array's element type is encoded in the preceding tag. A tagged value therefore selects which existing structural form follows.
+## 3. Universal array mapping
 
-The specification permits nested arrays. Lesson 15 must test this explicitly. If the recursive tagged representation cannot be expressed directly with the current EmbX variant facilities, that fact is a documented investigation result rather than an invitation to add an ad-hoc GGUF mechanism.
+Only after structural parsing succeeds may the adapter expose a tensor through the existing universal array boundary.
 
-## 6. Metadata key/value record
-
-A metadata key is a GGUF string followed by a metadata value type and value. Conceptually:
-
-```embx
-struct MetadataKV little {
-    key: String;
-    value_type: MetadataValueType;
-    value: MetadataValue;
-}
-```
-
-The supplied specification also imposes lexical restrictions on metadata keys (ASCII hierarchical lower_snake_case segments and a maximum encoded length). These are semantic/value constraints, not additional wire-layout primitives.
-
-## 7. Header
-
-The GGUF header consists of the magic, version, tensor count, metadata KV count, and the metadata KV sequence.
-
-The direct course model is:
-
-```embx
-struct Header little {
-    magic: bytes[4] = "GGUF";
-    version: u32;
-    tensor_count: u64;
-    metadata_kv_count: u64;
-    metadata: MetadataKV[metadata_kv_count];
-}
-```
-
-The lesson should use the actual GGUF producer to create at least one minimal valid header fixture rather than hand-authoring all bytes.
-
-## 8. Tensor information
-
-Each tensor info record contains:
-
-- a GGUF string name;
-- `n_dimensions` as `u32`;
-- `dimensions[n_dimensions]` as `u64` values;
-- tensor type as a GGML type enumeration;
-- `offset` as `u64` relative to the tensor-data region.
-
-The direct structural part is:
-
-```embx
-struct TensorInfo little {
-    name: String;
-    n_dimensions: u32;
-    dimensions: u64[n_dimensions];
-    type: GgmlType;
-    offset: u64;
-}
-```
-
-`GgmlType` is a finite format enumeration. It should be modeled with existing EmbX variant/enum facilities rather than a compiler-level GGUF type.
-
-## 9. Tensor data and alignment
-
-The complete file has the following physical order:
+For fixed-size, unquantized scalar tensor types, the adapter can produce:
 
 ```text
-Header
-TensorInfo[*]
-padding to ALIGNMENT
-Tensor data
+GGML dimensions (dim0 fastest)
+    ↓ reverse at the external boundary
+EmbX ArrayDescriptor.dimensions (last dimension fastest)
+GGUF scalar representation → element size
+tensor-data file region → ArrayBuffer
 ```
 
-Tensor offsets are relative to the beginning of tensor data. Tensor data itself is arbitrary binary data and is not interpreted by the GGUF container parser.
+The adapter does not add a GGUF type to `ArrayDescriptor`. Quantized representations remain GGUF-specific because their storage is block-encoded and cannot be honestly represented as a fixed-size scalar element merely by naming a new core type.
 
-Alignment belongs to EmbX's existing layout model. Lesson 15 must distinguish:
+## 4. Dimension mapping
 
-- the physical alignment/padding of the file;
-- the logical tensor offset stored in `TensorInfo`;
-- the external interpretation of tensor bytes according to `GgmlType`.
+GGUF/GGML dimension numbering is an external convention. It must be mapped explicitly to EmbX's canonical contiguous order rather than changing EmbX's array model.
 
-No GGUF-specific alignment primitive should be introduced.
-
-## 10. Multidimensional tensor layout and dimension mapping
-
-GGUF tensor dimensions must not be copied into an EmbX multidimensional declaration without first checking the external GGML dimension convention.
-
-EmbX canonical order is:
+EmbX remains:
 
 ```text
-D0 outermost -> ... -> D(n-1) innermost
-D(n-1) varies fastest
+dimension 0 = outermost source-level dimension
+last dimension = fastest varying
 ```
 
-Current upstream GGML documentation describes multidimensional tensors as row-major and exposes `ne` for dimension sizes and `nb` for byte strides. Its contiguous stride calculation makes dimension 0 the fastest-varying dimension. Therefore the dimension numbering used by GGML must be mapped explicitly to EmbX's source-level nesting convention.
+The adapter must prove any GGML↔EmbX mapping with non-square byte-level fixtures such as 2 × 3 and 3 × 2. No `row_major`, `column_major` or arbitrary-stride syntax is introduced for GGUF.
 
-Lesson 15 must include a 2-D tensor with distinct values (for example 1..6) and verify the exact physical byte order. A square matrix is insufficient because transposition can remain invisible; use both 2 × 3 and 3 × 2 cases.
+## 5. Test boundary
 
-The lesson must distinguish:
+Structural adapter tests cover:
 
-- GGUF dimension metadata;
-- GGML logical dimension numbering;
-- GGML contiguous/strided physical interpretation;
-- EmbX logical nesting;
-- scalar element byte order;
-- alignment and tensor-data offsets.
+- valid minimal GGUF;
+- metadata scalars and nested arrays;
+- multiple tensors;
+- 2-D and 3-D dimensions;
+- invalid magic;
+- unsupported version;
+- truncated header/metadata;
+- invalid metadata type;
+- invalid dimension/rank;
+- unaligned tensor offset;
+- tensor offset outside the file;
+- arithmetic overflow.
 
-No GGUF-specific storage-order or stride feature is added to EmbX. If a concrete tensor cannot be represented by the current contract, record the minimal reproducible gap before proposing language evolution. Do not introduce a generic tensor object into the EmbX core merely to consume GGUF tensors; the application-side representation remains outside the language.
+Universal mapping tests cover fixed-size scalar tensors and explicitly verify that quantized GGUF representations do not become new EmbX semantic types.
 
-## 11. Counts and widths
+## 6. Dimension mapping fixture
 
-The supplied GGUF specification uses `u64` for most countable values. This makes GGUF a useful practical check of the internal width choices already made in EmbX.
+`gguf_2x3_mapping.gguf` is a small valid GGUF v3 fixture with two F32 tensors. Its tensor dimensions are deliberately non-square:
 
-Lesson 15 should therefore exercise large-width declarations such as:
+- GGML tensor A: `[2, 3]` → EmbX view shape `[3, 2]`;
+- GGML tensor B: `[3, 2]` → EmbX view shape `[2, 3]`.
 
-```embx
-count: u64;
-length: u64;
-offset: u64;
-dimensions: u64[count];
-```
+The fixture stores distinct scalar values so the mapping can be checked at the byte level. It is a project-local conformance fixture, not an EmbX language construct.
 
-The test should validate actual encoded values, not merely compile-time type names.
+The external Python `gguf` package may be used later to generate independent golden fixtures. It is a fixture producer/oracle only. It is not an EmbX dependency and must not influence the language design.
 
-## 12. Real-fixture conformance
+## 7. Completion criterion
 
-The lesson corpus should contain files produced by the external `gguf` library where practical:
-
-```text
-course/15_gguf/corpus/
-    minimal.gguf
-    metadata.gguf
-    arrays.gguf
-    tensors.gguf
-```
-
-Later negative fixtures may cover:
-
-```text
-bad_magic.gguf
-truncated_header.gguf
-truncated_metadata.gguf
-invalid_alignment.gguf
-```
-
-The conformance path is:
-
-```text
-GGUF specification
-        |
-        v
-    EmbX model
-        |
-        v
-      Plan
-     /    \
-    v      v
-Reference  Generated C++
- Runtime
-     \    /
-      \  /
-       vv
-  same external fixture
-```
-
-Where encoding is deterministic, the produced bytes should also be compared byte-for-byte with the golden fixture. Where the external library intentionally permits representation choices, compare the decoded semantic values and validate the result with an independent GGUF reader.
-
-## 13. Known investigation points
-
-The following are deliberately kept as investigation points rather than silently resolved:
-
-1. Recursive metadata arrays and their exact expression using current EmbX variants.
-2. Tensor data as an arbitrary byte region whose physical location is constrained by alignment and stored offsets.
-3. Version-3 big-endian support and whether the fixture corpus should include it.
-4. Very large `u64` counts/offsets and their practical interaction with host/container limits.
-5. Validation of UTF-8 and metadata-key lexical rules as value constraints rather than layout rules.
-
-A failure to express one of these with current EmbX must first be reproduced with a minimal source and test case. Only then should language evolution be considered.
-
-## 14. Course rule
-
-GGUF-specific terminology belongs in this lesson and its documentation. The compiler, Plan, Reference Runtime, and generated backends remain format-independent.
-
-The desired result is not a special GGUF implementation inside EmbX. It is evidence that existing EmbX composition mechanisms are sufficient to describe a substantial real-world binary format, with any genuine language gaps isolated and documented.
+GGUF integration is complete only when the adapter can consume real GGUF files while the EmbX core remains format-agnostic. A need to add GGUF-specific fields, AST nodes, Plan operations, runtime types or layout evaluators is treated first as an architectural defect or a demonstrated language gap, not as an automatic feature request.

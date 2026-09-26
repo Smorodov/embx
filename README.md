@@ -1,13 +1,16 @@
 # EmbX
 
 EmbX is a declarative binary-format language with a canonical compiler pipeline:
-AST → Semantic → IR → Plan → reference runtime/codecs → backends.
+
+**EmbX — Язык исполняемых моделей бинарных данных.**
+AST → Semantic → IR → Plan → Reference Runtime (Encoder/Decoder + runtime primitives) → backends.
 
 ## Current development state
 
-- **0.9.53 is the accepted universal array-buffer baseline.** It closes the target-neutral `ArrayDescriptor + ArrayBuffer + ArrayView` boundary, including Plan integration, dynamic dimensions, nested structures and conformance coverage.
+- **0.9.58 is the accepted Format Reporter baseline.** It follows the accepted 0.9.57 Canonical Source Generator and 0.9.56 GGUF external-adapter closure. The reporter consumes canonical Plan/Reflection facts and the existing LayoutGraph without introducing a second semantic or layout model.
+- **0.9.53 remains the accepted universal array-buffer baseline.** It closes the target-neutral `ArrayDescriptor + ArrayBuffer + ArrayView` boundary, including Plan integration, dynamic dimensions, nested structures and conformance coverage.
 - The canonical pipeline remains one-way and minimal: AST → Semantic → IR → Plan → reference runtime/codecs; `SymbolId` is the executable identity boundary.
-- **0.9.53 acceptance:** the complete array-buffer closure is validated at **79/79 CTest tests (100%)** in the target environment.
+- **0.9.58 acceptance:** the complete suite is validated at **82/82 CTest tests (100%)** in the target environment.
 - Generalized terminated sequences remain a language feature of the accepted 0.9.49 baseline; the course lesson adds no compiler semantics.
 
 ## Examples
@@ -48,11 +51,13 @@ contract.
 
 ## Current stage
 
-**0.9.53 — Universal array-buffer boundary — ACCEPTED GREEN.**
+**0.9.58 — Format Reporter — ACCEPTED GREEN.**
+
+The accepted 0.9.53 array-buffer boundary and 0.9.56 GGUF external-adapter boundary remain frozen. The 0.9.57 Source Generator and 0.9.58 Format Reporter are developer-quality tools over canonical AST/Plan data; neither introduces new language semantics.
 
 The documentation freeze preceding Lesson 15 also fixes the multidimensional-array boundary: canonical shape/order remain in EmbX, while a final program may consume decoded arrays through a target-specific non-owning view rather than a language-level tensor object.
 
 Lesson 12 adds executable teaching material for generalized terminated sequences, including a
 structured sequence whose elements contain their own terminated byte payloads. Lesson 13 extends
 the real MIDI fixture with a standard Track Name text metadata event. The language implementation
-remains the accepted 0.9.49 contract; the course suite through Lesson 14 and the 0.9.53 array-buffer closure are accepted at 79/79 tests.
+remains the accepted 0.9.49 contract; the course suite through Lesson 15, the 0.9.57 Source Generator and the 0.9.58 Format Reporter are accepted at 82/82 tests.

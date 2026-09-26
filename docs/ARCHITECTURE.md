@@ -88,6 +88,14 @@ Multidimensional array shape is canonicalized in `core::Type::dimensions`. The p
 
 The architecture does not maintain a separate stride model or tensor object model for ordinary EmbX arrays. At a runtime/backend boundary, decoded multidimensional data may be exposed as a small non-owning array view containing the data reference, element count, element size and shape. External tensor formats must be mapped explicitly to the canonical EmbX order. See `MULTIDIMENSIONAL_ARRAY_LAYOUT.md` and `MULTIDIMENSIONAL_ARRAY_VIEW.md`.
 
+## 10. Format independence
+
+EmbX core describes universal binary-data structure and executable semantics. External formats such as GGUF or MIDI must not introduce format-specific types, AST nodes, Plan operations, layout engines or semantic rules into the language core.
+
+Format-specific parsing, metadata, ordering conventions, codecs and other external rules belong to an adapter outside `src/`. An adapter may translate those rules to existing EmbX boundaries such as `Plan`, `ArrayDescriptor`, `ArrayBuffer` and `ArrayView`, but it must not redefine their semantics.
+
+The rule is: **do not expand the language to accommodate a format; expand the adapter to accommodate the format.** A language change requires a demonstrated universal semantic gap, not merely a feature found in one external format.
+
 ## 10. Layout arithmetic
 
 Logical EmbX layout quantities use checked `uint64_t` semantics. Actual buffer access uses host-sized offsets only after checked conversion. Logical range therefore does not imply unlimited physical memory.

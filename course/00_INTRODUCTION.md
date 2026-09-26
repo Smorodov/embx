@@ -439,7 +439,7 @@ The course therefore serves two purposes at once:
 
 ## 15. Current starting point
 
-At EmbX 0.9.52, Lessons 1–14 form the current accepted teaching sequence in this course: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, virtual fields and aliases, callbacks and transforms, IPv4, and general terminated sequences, MIDI, and TLV composition. Lesson 13 is MIDI, the first real-format conformance lesson; Lesson 14 composes existing length-dependent and terminated-sequence mechanisms into a small TLV format.
+At EmbX 0.9.54, Lessons 1–15 form the current accepted teaching sequence in this course: first binary format, integers and byte order, bit fields, arrays and dynamic dimensions, nested structures, variants and conditionals, offsets and alignment, symbol dependencies and runtime parameters, virtual fields and aliases, callbacks and transforms, IPv4, and general terminated sequences, MIDI, and TLV composition. Lesson 13 is MIDI, the first real-format conformance lesson; Lesson 14 composes existing length-dependent and terminated-sequence mechanisms into a small TLV format.
 
 Start with Lesson 1 after reading this introduction, then continue through the active sequence in order. The introduction is deliberately not a replacement for the lessons: it supplies the common map so each lesson can concentrate on its own language concept.
 

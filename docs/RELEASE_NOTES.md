@@ -1,3 +1,62 @@
+# EmbX 0.9.58 — Format Reporter — ACCEPTED GREEN
+
+The Format Reporter adds a deterministic human-readable view over canonical Plan/Reflection facts. It uses the existing LayoutGraph for dependency facts and reports facts not established by the canonical model as `unknown`; it does not introduce a second semantic or layout engine.
+
+- added `src/report/FormatReporter.*`;
+- added `--report-format <file>` to the CLI;
+- added the normative `docs/FORMAT_REPORTER_CONTRACT.md`;
+- added deterministic reporter coverage and updated the CLI contract test;
+- preserved AST, Semantic, IR, Plan, Runtime and external-format boundaries unchanged.
+
+The clean target-environment validation passed at **82/82 CTest tests (100%)**. This stage is accepted green.
+
+# EmbX 0.9.57 — canonical Source Generator — ACCEPTED GREEN
+
+This accepted stage begins the post-GGUF Source Generator stage from the accepted 0.9.56 baseline. The implementation reconstructs deterministic canonical EmbX source from the AST and does not introduce a second semantic, expression or layout model.
+
+- added `docs/SOURCE_GENERATOR_CONTRACT.md` as the normative generator boundary;
+- clarified that Reference Runtime means the canonical host execution subsystem (`Encoder` + `Decoder` + runtime primitives), not a separate interpreter;
+- added `src/codegen/SourceGenerator.*`;
+- added `--generate-source <file>` to the CLI;
+- added deterministic/idempotence and current-corpus source-generator tests;
+- preserved the accepted 0.9.56 GGUF adapter and language/Plan semantics unchanged.
+
+The user validation gate passed at **81/81 CTest tests (100%)** in the target environment. The stage is accepted green.
+
+# EmbX 0.9.56 — GGUF external adapter stage 15.3 — ACCEPTED GREEN
+
+Stage 15.3 expands GGUF external-adapter conformance coverage without changing EmbX core. The candidate adds non-square 3-D mapping, multiple aligned tensors, nested metadata arrays, unsupported-version rejection, arithmetic-overflow and tensor-data-bound checks.
+
+Previous accepted baseline: EmbX 0.9.55 — GGUF external adapter stage 15.2.
+
+Lesson 15 continues without changing the EmbX language or semantic core. This stage closes the explicit GGML↔EmbX dimension-order mapping at the adapter boundary and adds a small valid non-square GGUF fixture.
+
+- GGUF `general.alignment` is now parsed directly by the adapter and its required type/value constraints are checked.
+- GGUF tensor offsets are checked against the resolved alignment.
+- Fixed-size tensor views now reverse GGML dimension order at the external boundary because GGML dimension 0 is fastest-varying while EmbX's last dimension is fastest-varying.
+- Added `course/15_gguf/gguf_2x3_mapping.gguf`, containing two non-square F32 tensors with distinct values for byte-level mapping checks.
+- Added negative coverage for invalid alignment metadata and unaligned tensor offsets.
+- No GGUF-specific type, stride, layout, AST or Plan mechanism was added to EmbX core.
+
+The clean local validation is complete: **80/80 CTest tests (100%)**. The stage is accepted green.
+
+## Architecture audit closure
+
+The 0.9.55 audit confirms that GGUF-specific identifiers occur only in the external adapter, its test, CMake registration and Lesson 15 documentation/fixtures. EmbX `src/` contains no GGUF/MIDI/other external-format semantics. The Format Independence rule is now explicit in the architecture and vision documents.
+
+# EmbX 0.9.54 — GGUF external adapter stage 15.1 — ACCEPTED GREEN
+
+EmbX 0.9.54 begins Lesson 15 without teaching the language anything about GGUF. The new GGUF adapter is isolated from the semantic core and consumes the existing universal array-buffer boundary.
+
+- Added a standalone GGUF v3 structural parser for header, metadata structure, tensor descriptors, alignment and checked file bounds.
+- Added adapter-owned GGUF metadata and tensor type representations.
+- Added mapping of fixed-size, unquantized scalar tensors to `ArrayDescriptor` + `ArrayBuffer`.
+- Quantized GGUF representations remain format-specific and are not added to EmbX core.
+- Added malformed-input and architectural-boundary tests.
+- Updated Lesson 15 documentation to make the external-format boundary explicit.
+
+The 0.9.53 79/79 baseline remains the predecessor reference point. The 0.9.54 stage adds one adapter test target and is accepted at 80/80 CTest tests (100%) after clean local validation.
+
 # EmbX 0.9.53 — universal array buffer boundary — ACCEPTED GREEN
 
 EmbX 0.9.53 closes the universal `ArrayDescriptor + ArrayBuffer + ArrayView` runtime boundary. The existing language and Plan semantics remain authoritative; the array layer provides a target-neutral interpretation boundary without introducing a second type or layout system.

@@ -106,7 +106,9 @@ set(EMBX_CORE_SOURCES
   src/value/Value.cpp
   src/diagnostics/Diagnostic.cpp
   src/reflection/Reflection.cpp
+  src/report/FormatReporter.cpp
   src/codegen/CppGenerator.cpp
+  src/codegen/SourceGenerator.cpp
 )
 
 add_executable(embx
@@ -143,6 +145,12 @@ add_executable(embx_layout_size_64bit_test tests/layout_size_64bit_test.cpp src/
 target_include_directories(embx_layout_size_64bit_test PRIVATE src)
 target_compile_options(embx_layout_size_64bit_test PRIVATE -Wall -Wextra -Wpedantic)
 add_test(NAME layout_size_64bit_test COMMAND embx_layout_size_64bit_test)
+
+add_executable(embx_gguf_adapter_test tests/gguf_adapter_test.cpp course/15_gguf/adapter/Gguf.cpp)
+target_include_directories(embx_gguf_adapter_test PRIVATE src course/15_gguf/adapter)
+target_compile_options(embx_gguf_adapter_test PRIVATE -Wall -Wextra -Wpedantic)
+target_link_libraries(embx_gguf_adapter_test PRIVATE Catch2::Catch2WithMain)
+add_test(NAME gguf_adapter_test COMMAND embx_gguf_adapter_test)
 
 add_executable(embx_array_buffer_contract_test tests/array_buffer_contract_test.cpp)
 target_include_directories(embx_array_buffer_contract_test PRIVATE src)
@@ -474,6 +482,20 @@ target_include_directories(embx_cpp_generator_test PRIVATE "${ANTLR4_OUTPUT_DIR}
 target_link_libraries(embx_cpp_generator_test PRIVATE "${ANTLR4_LIB}" Catch2::Catch2WithMain)
 target_compile_options(embx_cpp_generator_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
 add_test(NAME cpp_generator_test COMMAND embx_cpp_generator_test)
+
+add_executable(embx_source_generator_test tests/source_generator_test.cpp
+  src/codegen/SourceGenerator.cpp
+  src/parser/ParserDriver.cpp ${ANTLR4_GENERATED_FILES})
+add_dependencies(embx_source_generator_test GenerateAntlr)
+target_include_directories(embx_source_generator_test PRIVATE "${ANTLR4_OUTPUT_DIR}" "${ANTLR4_RUNTIME_DIR}/include/antlr4-runtime" src)
+target_link_libraries(embx_source_generator_test PRIVATE "${ANTLR4_LIB}" Catch2::Catch2WithMain)
+target_compile_options(embx_source_generator_test PRIVATE -Wall -Wextra -Wpedantic -Wno-overloaded-virtual)
+add_test(NAME source_generator_test COMMAND embx_source_generator_test)
+add_executable(embx_format_reporter_test tests/format_reporter_test.cpp src/report/FormatReporter.cpp src/reflection/Reflection.cpp src/plan/LayoutGraph.cpp)
+target_include_directories(embx_format_reporter_test PRIVATE src)
+target_link_libraries(embx_format_reporter_test PRIVATE Catch2::Catch2WithMain)
+target_compile_options(embx_format_reporter_test PRIVATE -Wall -Wextra -Wpedantic)
+add_test(NAME format_reporter_test COMMAND embx_format_reporter_test)
 
 add_executable(embx_generated_codec_test tests/generated_codec_test.cpp
   src/codegen/CppGenerator.cpp src/plan/PlanBuilder.cpp src/runtime/ExpressionEvaluator.cpp

@@ -132,7 +132,7 @@ produces a view whose `dimensions` contains the resolved runtime extents. The la
 
 ## 9. Reference Runtime and generated backends
 
-The Reference Runtime remains the semantic reference implementation. It must preserve the canonical element order while materializing or exposing data.
+The Reference Runtime remains the canonical host execution reference (Plan-driven Encoder/Decoder plus runtime primitives). It must preserve the canonical element order while materializing or exposing data.
 
 A future backend may expose a view directly when that is the natural target representation. Another backend may use nested containers internally and expose a view only at an API boundary.
 
