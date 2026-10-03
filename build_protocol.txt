@@ -1,0 +1,415 @@
+Build started at 03.10.2026 16:31:14,26
+Test profile: ALL
+-- Catch2: using system installation (3.16.0)
+-- ================ EmbX 0.9.84 ================
+-- MSYS2:     C:/msys64/ucrt64
+-- Java:      C:/Program Files/Microsoft/jdk-17.0.20.101-hotspot/bin/java.exe
+-- Java:      17.0.20.1
+-- ANTLR JAR: C:/msys64/ucrt64/share/java/antlr-4.13.2-complete.jar
+-- ANTLR lib: C:/msys64/ucrt64/lib/libantlr4-runtime.dll.a
+-- Grammar:   C:/projects/embx/grammar/EmbX.g4
+-- Generated: C:/projects/embx/build/generated
+-- =========================================================
+-- Configuring done (0.1s)
+-- Generating done (1.5s)
+-- Build files have been written to: C:/projects/embx/build
+[  0%] Built target GenerateAntlr
+[  0%] Built target embx_layout_size_64bit_test
+[  0%] Built target embx_ast_test
+[  0%] Built target embx_runtime_test
+[  0%] Built target embx_gguf_adapter_test
+[  0%] Built target embx_array_buffer_contract_test
+[  0%] Built target embx_array_descriptor_plan_test
+[  1%] Built target embx_array_descriptor_dynamic_nested_test
+[  1%] Built target embx_array_conformance_test
+[  1%] Built target embx_expression_test
+[  2%] Built target embx_semantic_negative_test
+[  2%] Built target embx_ir_structural_test
+[  3%] Built target embx_plan_test
+[  4%] Built target embx_plan_executable_contract_test
+[  5%] Built target embx_plan_execution_independence_test
+[  7%] Built target embx_runtime_lookup_audit_test
+[  7%] Built target embx_decoder_test
+[  8%] Built target embx_dynamic_expression_determinism_audit_test
+[  9%] Built target embx_plan_negative_test
+[ 10%] Built target embx_encoder_test
+[ 11%] Built target embx_nested_composite_test
+[ 12%] Built target embx_composite_type_test
+[ 12%] Built target embx_value_reflection_test
+[ 14%] Built target embx_dynamic_layout_test
+[ 14%] Built target embx_diagnostics_pipeline_test
+[ 16%] Built target embx_layout_graph_test
+[ 18%] Built target embx_dependency_validation_test
+[ 19%] Built target embx_foundation_hardening_test
+[ 19%] Built target embx_namespace_import_test
+[ 20%] Built target embx_enum_test
+[ 21%] Built target embx_type_system_test
+[ 22%] Built target embx_attribute_test
+[ 23%] Built target embx_documentation_test
+[ 24%] Built target embx_type_system_wp2_test
+[ 26%] Built target embx_binary_conformance_corpus_test
+[ 27%] Built target embx_semantic_edge_cases_test
+[ 27%] Built target embx_runtime_hardening_test
+[ 28%] Built target embx_codec_symmetry_test
+[ 28%] Built target embx_reflection_contract_test
+[ 29%] Built target embx_cpp_generator_test
+[ 30%] Built target embx_source_generator_test
+[ 30%] Built target embx_format_reporter_test
+[ 30%] Built target embx_source_roundtrip_corpus_test
+[ 31%] Built target embx_generated_codec_test
+[ 32%] Built target embx_generated_dynamic_codec_test
+[ 34%] Built target embx_generated_nested_types_test
+[ 35%] Built target embx_generated_callback_test
+[ 35%] Built target embx_encoder_callback_symmetry_test
+[ 36%] Built target embx_core_expression_test
+[ 36%] Built target embx_expression_type_test
+[ 37%] Built target embx_compiler_pipeline_test
+[ 37%] Built target embx_core_type_test
+[ 37%] Built target embx_symbol_resolution_contract_test
+[ 38%] Built target embx_plan_symbol_identity_test
+[ 39%] Built target embx_symbol_identity_test
+[ 40%] Built target embx_symbol_identity_codegen_test
+[ 40%] Built target embx_semantic_type_resolution_contract_test
+[ 42%] Built target embx_name_resolution_plan_test
+[ 44%] Built target embx_runtime_parameters_test
+[ 45%] Built target embx_midi_example_test
+[ 47%] Built target embx_virtual_field_test
+[ 49%] Built target embx_field_alias_test
+[ 50%] Built target embx_conditional_runtime_test
+[ 51%] Built target embx_transform_test
+[ 53%] Built target embx_byte_order_closure_test
+[ 55%] Built target embx_requires_test
+[ 57%] Built target embx_variant_closure_test
+[ 59%] Built target embx_lesson_01_first_format_test
+[ 61%] Built target embx_lesson_03_bit_fields_test
+[ 62%] Built target embx_lesson_02_integers_byte_order_test
+[ 63%] Built target embx_lesson_04_arrays_dynamic_dimensions_test
+[ 65%] Built target embx_lesson_05_nested_structures_test
+[ 67%] Built target embx_lesson_07_offsets_alignment_test
+[ 69%] Built target embx_lesson_06_variants_conditionals_test
+[ 71%] Built target embx_lesson_08_symbol_dependencies_runtime_parameters_test
+[ 73%] Built target embx_lesson_09_virtual_fields_aliases_test
+[ 75%] Built target embx_lesson_10_callbacks_transforms_test
+[ 77%] Built target embx_lesson_11_ipv4_test
+[ 79%] Built target embx_lesson_12_terminated_sequences_test
+[ 81%] Built target embx_lesson_14_tlv_test
+[ 82%] Built target embx_semantic_ir_test
+[ 84%] Built target embx_terminated_sequence_test
+[ 86%] Built target embx
+[ 86%] Built target embx_differential_generated_common_codegen
+[ 86%] Built target embx_differential_generated_matrix_codegen
+[ 86%] Built target embx_differential_generated_parameters_codegen
+[ 86%] Built target embx_differential_generated_access_codegen
+[ 86%] Built target embx_differential_generated_callbacks_codegen
+[ 86%] Built target embx_differential_generated_layout_codegen
+[ 86%] Built target embx_differential_generated_terminated_codegen
+[ 88%] Built target embx_differential_generated_common_test
+[ 90%] Built target embx_differential_generated_matrix_test
+[ 92%] Built target embx_differential_generated_parameters_test
+[ 94%] Built target embx_differential_generated_access_test
+[ 96%] Built target embx_differential_generated_callbacks_test
+[ 98%] Built target embx_differential_generated_terminated_test
+[100%] Built target embx_differential_generated_layout_test
+=== examples\callback.embx ===
+module
+  callback on_decode_packet(ctx)
+  callback on_encode_packet(ctx)
+  struct Event
+    field kind: u8
+    callback on_decode_packet
+    callback on_encode_packet
+    field payload: bytes[2]
+=== examples\common.embx ===
+module
+  const common::net::MAGIC = 0xA1B2
+  struct common::net::Header
+    field magic: u16 = 0xA1B2
+    field kind: u8
+=== examples\conditional.embx ===
+module
+  struct ConditionalPacket
+    field flags: u8
+    === examples\container.embx ===
+module
+  struct Container
+    field count: u8
+    field payload_size: u16
+    block payload[payload_size]
+      field data: bytes[*]
+    align(4)
+=== examples\ipv4.embx ===
+module
+  enum net::ipv4::Protocol: u8
+    ICMP = 1
+    TCP = 6
+    UDP = 17
+  struct net::ipv4::Header
+    bits
+      field version: u8 (4)
+      field ihl: u8 (4)
+    field dscp: u8
+    field total_length: u16
+    field identification: u16
+    field flags_fragment: u16
+    field ttl: u8
+    field protocol: net::ipv4::Protocol
+    field checksum: u16
+    field source: bytes[4]
+    field destination: bytes[4]
+=== examples\metadata.embx ===
+module
+  struct Metadata
+    field version: u8
+    field kind: u8
+=== examples\midi.embx ===
+module
+  struct examples::midi::Track
+    field magic: bytes[4] = "MTrk"
+    field length: u32
+    block data[length]
+      field raw: bytes[*]
+  struct examples::midi::MidiFile
+    field magic: bytes[4] = "MThd"
+    field header_length: u32 = 6
+    field format: u16
+    field track_count: u16
+    field division: u16
+    field tracks: examples::midi::Track[track_count]
+=== examples\nested_types.embx ===
+module
+  type demo::nested::PointAlias = demo::nested::Point
+  enum demo::nested::Kind: u8
+    Small = 1
+    Large = 2
+  struct demo::nested::Point
+    field x: u16
+    field y: u16
+  struct demo::nested::Packet
+    field kind: demo::nested::Kind
+    field head: demo::nested::Point
+    field alias_head: demo::nested::PointAlias
+    field points: demo::nested::Point[2]
+=== examples\next.embx ===
+module
+  struct NextLayout
+    field header: u8
+    at($next+2)
+      field payload: u16
+    field tail: u8
+=== examples\packet_import.embx ===
+module
+  type app::packet::H = common::net::Header
+  const app::packet::SHARED_MAGIC = common::net::MAGIC
+  const common::net::MAGIC = 0xA1B2
+  struct app::packet::Packet
+    field header: app::packet::H
+    field payload_size: u8
+    block payload[payload_size]
+      field data: bytes[*]
+    at(0)
+      field marker: u16 = 0xA1B2
+  struct common::net::Header
+    field magic: u16 = 0xA1B2
+    field kind: u8
+=== examples\runtime_params.embx ===
+module
+  struct RuntimePacket
+    field header: u8
+    block payload[count]
+      field data: bytes[*]
+    at($next+delta)
+      field marker: u8
+All examples passed.
+Test project C:/projects/embx/build
+      Start  1: layout_size_64bit_test
+ 1/91 Test  #1: layout_size_64bit_test .............................   Passed    0.01 sec
+      Start  2: gguf_adapter_test
+ 2/91 Test  #2: gguf_adapter_test ..................................   Passed    0.01 sec
+      Start  3: array_buffer_contract_test
+ 3/91 Test  #3: array_buffer_contract_test .........................   Passed    0.01 sec
+      Start  4: array_descriptor_plan_test
+ 4/91 Test  #4: array_descriptor_plan_test .........................   Passed    0.01 sec
+      Start  5: array_descriptor_dynamic_nested_test
+ 5/91 Test  #5: array_descriptor_dynamic_nested_test ...............   Passed    0.01 sec
+      Start  6: array_conformance_test
+ 6/91 Test  #6: array_conformance_test .............................   Passed    0.01 sec
+      Start  7: runtime_test
+ 7/91 Test  #7: runtime_test .......................................   Passed    0.01 sec
+      Start  8: expression_test
+ 8/91 Test  #8: expression_test ....................................   Passed    0.01 sec
+      Start  9: ast_structural_test
+ 9/91 Test  #9: ast_structural_test ................................   Passed    0.01 sec
+      Start 10: semantic_ir_test
+10/91 Test #10: semantic_ir_test ...................................   Passed    0.02 sec
+      Start 11: semantic_negative_test
+11/91 Test #11: semantic_negative_test .............................   Passed    0.03 sec
+      Start 12: ir_structural_test
+12/91 Test #12: ir_structural_test .................................   Passed    0.01 sec
+      Start 13: plan_test
+13/91 Test #13: plan_test ..........................................   Passed    0.02 sec
+      Start 14: plan_executable_contract_test
+14/91 Test #14: plan_executable_contract_test ......................   Passed    0.01 sec
+      Start 15: runtime_lookup_audit_test
+15/91 Test #15: runtime_lookup_audit_test ..........................   Passed    0.01 sec
+      Start 16: plan_execution_independence_test
+16/91 Test #16: plan_execution_independence_test ...................   Passed    0.02 sec
+      Start 17: dynamic_expression_determinism_audit_test
+17/91 Test #17: dynamic_expression_determinism_audit_test ..........   Passed    0.01 sec
+      Start 18: plan_negative_test
+18/91 Test #18: plan_negative_test .................................   Passed    0.02 sec
+      Start 19: decoder_test
+19/91 Test #19: decoder_test .......................................   Passed    0.01 sec
+      Start 20: encoder_test
+20/91 Test #20: encoder_test .......................................   Passed    0.01 sec
+      Start 21: composite_type_test
+21/91 Test #21: composite_type_test ................................   Passed    0.01 sec
+      Start 22: nested_composite_test
+22/91 Test #22: nested_composite_test ..............................   Passed    0.01 sec
+      Start 23: dynamic_layout_test
+23/91 Test #23: dynamic_layout_test ................................   Passed    0.01 sec
+      Start 24: value_reflection_test
+24/91 Test #24: value_reflection_test ..............................   Passed    0.01 sec
+      Start 25: diagnostics_pipeline_test
+25/91 Test #25: diagnostics_pipeline_test ..........................   Passed    0.01 sec
+      Start 26: layout_graph_test
+26/91 Test #26: layout_graph_test ..................................   Passed    0.02 sec
+      Start 27: dependency_validation_test
+27/91 Test #27: dependency_validation_test .........................   Passed    0.02 sec
+      Start 28: foundation_hardening_test
+28/91 Test #28: foundation_hardening_test ..........................   Passed    0.01 sec
+      Start 29: namespace_import_test
+29/91 Test #29: namespace_import_test ..............................   Passed    0.02 sec
+      Start 30: type_system_test
+30/91 Test #30: type_system_test ...................................   Passed    0.05 sec
+      Start 31: enum_test
+31/91 Test #31: enum_test ..........................................   Passed    0.02 sec
+      Start 32: attribute_test
+32/91 Test #32: attribute_test .....................................   Passed    0.03 sec
+      Start 33: binary_conformance_corpus_test
+33/91 Test #33: binary_conformance_corpus_test .....................   Passed    0.02 sec
+      Start 34: differential_generated_common_test
+34/91 Test #34: differential_generated_common_test .................   Passed    0.01 sec
+      Start 35: differential_generated_matrix_test
+35/91 Test #35: differential_generated_matrix_test .................   Passed    0.02 sec
+      Start 36: differential_generated_parameters_test
+36/91 Test #36: differential_generated_parameters_test .............   Passed    0.01 sec
+      Start 37: differential_generated_access_test
+37/91 Test #37: differential_generated_access_test .................   Passed    0.01 sec
+      Start 38: differential_generated_callbacks_test
+38/91 Test #38: differential_generated_callbacks_test ..............   Passed    0.01 sec
+      Start 39: differential_generated_layout_test
+39/91 Test #39: differential_generated_layout_test .................   Passed    0.01 sec
+      Start 40: differential_generated_terminated_test
+40/91 Test #40: differential_generated_terminated_test .............   Passed    0.01 sec
+      Start 41: documentation_test
+41/91 Test #41: documentation_test .................................   Passed    0.01 sec
+      Start 42: type_system_wp2_test
+42/91 Test #42: type_system_wp2_test ...............................   Passed    0.03 sec
+      Start 43: semantic_edge_cases_test
+43/91 Test #43: semantic_edge_cases_test ...........................   Passed    0.02 sec
+      Start 44: runtime_hardening_test
+44/91 Test #44: runtime_hardening_test .............................   Passed    0.01 sec
+      Start 45: codec_symmetry_test
+45/91 Test #45: codec_symmetry_test ................................   Passed    0.01 sec
+      Start 46: reflection_contract_test
+46/91 Test #46: reflection_contract_test ...........................   Passed    0.01 sec
+      Start 47: cli_help_test
+47/91 Test #47: cli_help_test ......................................   Passed    0.02 sec
+      Start 48: cli_version_test
+48/91 Test #48: cli_version_test ...................................   Passed    0.02 sec
+      Start 49: cli_unknown_option_test
+49/91 Test #49: cli_unknown_option_test ............................   Passed    0.02 sec
+      Start 50: cpp_generator_test
+50/91 Test #50: cpp_generator_test .................................   Passed    0.01 sec
+      Start 51: source_generator_test
+51/91 Test #51: source_generator_test ..............................   Passed    0.07 sec
+      Start 52: source_roundtrip_corpus_test
+52/91 Test #52: source_roundtrip_corpus_test .......................   Passed    0.14 sec
+      Start 53: format_reporter_test
+53/91 Test #53: format_reporter_test ...............................   Passed    0.01 sec
+      Start 54: generated_codec_test
+54/91 Test #54: generated_codec_test ...............................   Passed    0.03 sec
+      Start 55: generated_dynamic_codec_test
+55/91 Test #55: generated_dynamic_codec_test .......................   Passed    0.01 sec
+      Start 56: generated_nested_types_test
+56/91 Test #56: generated_nested_types_test ........................   Passed    0.01 sec
+      Start 57: generated_callback_test
+57/91 Test #57: generated_callback_test ............................   Passed    0.02 sec
+      Start 58: encoder_callback_symmetry_test
+58/91 Test #58: encoder_callback_symmetry_test .....................   Passed    0.01 sec
+      Start 59: compiler_pipeline_test
+59/91 Test #59: compiler_pipeline_test .............................   Passed    0.01 sec
+      Start 60: core_expression_test
+60/91 Test #60: core_expression_test ...............................   Passed    0.01 sec
+      Start 61: expression_type_test
+61/91 Test #61: expression_type_test ...............................   Passed    0.01 sec
+      Start 62: core_type_test
+62/91 Test #62: core_type_test .....................................   Passed    0.01 sec
+      Start 63: symbol_identity_test
+63/91 Test #63: symbol_identity_test ...............................   Passed    0.01 sec
+      Start 64: plan_symbol_identity_test
+64/91 Test #64: plan_symbol_identity_test ..........................   Passed    0.01 sec
+      Start 65: symbol_resolution_contract_test
+65/91 Test #65: symbol_resolution_contract_test ....................   Passed    0.01 sec
+      Start 66: symbol_identity_codegen_test
+66/91 Test #66: symbol_identity_codegen_test .......................   Passed    0.01 sec
+      Start 67: name_resolution_plan_test
+67/91 Test #67: name_resolution_plan_test ..........................   Passed    0.01 sec
+      Start 68: semantic_type_resolution_contract_test
+68/91 Test #68: semantic_type_resolution_contract_test .............   Passed    0.02 sec
+      Start 69: runtime_parameters_test
+69/91 Test #69: runtime_parameters_test ............................   Passed    0.01 sec
+      Start 70: midi_example_test
+70/91 Test #70: midi_example_test ..................................   Passed    0.01 sec
+      Start 71: virtual_field_test
+71/91 Test #71: virtual_field_test .................................   Passed    0.03 sec
+      Start 72: field_alias_test
+72/91 Test #72: field_alias_test ...................................   Passed    0.02 sec
+      Start 73: conditional_runtime_test
+73/91 Test #73: conditional_runtime_test ...........................   Passed    0.01 sec
+      Start 74: transform_test
+74/91 Test #74: transform_test .....................................   Passed    0.03 sec
+      Start 75: byte_order_closure_test
+75/91 Test #75: byte_order_closure_test ............................   Passed    0.02 sec
+      Start 76: requires_test
+76/91 Test #76: requires_test ......................................   Passed    0.01 sec
+      Start 77: variant_closure_test
+77/91 Test #77: variant_closure_test ...............................   Passed    0.02 sec
+      Start 78: lesson_01_first_format
+78/91 Test #78: lesson_01_first_format .............................   Passed    0.01 sec
+      Start 79: lesson_02_integers_byte_order
+79/91 Test #79: lesson_02_integers_byte_order ......................   Passed    0.01 sec
+      Start 80: lesson_03_bit_fields
+80/91 Test #80: lesson_03_bit_fields ...............................   Passed    0.01 sec
+      Start 81: lesson_04_arrays_dynamic_dimensions
+81/91 Test #81: lesson_04_arrays_dynamic_dimensions ................   Passed    0.02 sec
+      Start 82: lesson_05_nested_structures
+82/91 Test #82: lesson_05_nested_structures ........................   Passed    0.01 sec
+      Start 83: lesson_06_variants_conditionals
+83/91 Test #83: lesson_06_variants_conditionals ....................   Passed    0.01 sec
+      Start 84: lesson_07_offsets_alignment
+84/91 Test #84: lesson_07_offsets_alignment ........................   Passed    0.02 sec
+      Start 85: lesson_08_symbol_dependencies_runtime_parameters
+85/91 Test #85: lesson_08_symbol_dependencies_runtime_parameters ...   Passed    0.01 sec
+      Start 86: lesson_09_virtual_fields_aliases
+86/91 Test #86: lesson_09_virtual_fields_aliases ...................   Passed    0.02 sec
+      Start 87: lesson_10_callbacks_transforms
+87/91 Test #87: lesson_10_callbacks_transforms .....................   Passed    0.02 sec
+      Start 88: lesson_11_ipv4
+88/91 Test #88: lesson_11_ipv4 .....................................   Passed    0.01 sec
+      Start 89: lesson_12_terminated_sequences
+89/91 Test #89: lesson_12_terminated_sequences .....................   Passed    0.01 sec
+      Start 90: lesson_14_tlv
+90/91 Test #90: lesson_14_tlv ......................................   Passed    0.01 sec
+      Start 91: terminated_sequence_test
+91/91 Test #91: terminated_sequence_test ...........................   Passed    0.02 sec
+
+100% tests passed out of 91
+
+Label Time Summary:
+ACTIVE      =   0.16 sec*proc (13 tests)
+AUDIT       =   0.07 sec*proc (5 tests)
+CORE        =   0.39 sec*proc (36 tests)
+EXTENDED    =   0.90 sec*proc (41 tests)
+
+Total Test time (real) =   1.51 sec

@@ -1,0 +1,9 @@
+/// Length-delimited payload with a bounded dynamic byte sequence.
+struct Container little {
+  count: u8;
+  payload_size: u16;
+  block payload[payload_size] {
+    data: bytes[*];
+  }
+  align(4);
+}

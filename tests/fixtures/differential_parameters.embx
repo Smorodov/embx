@@ -1,0 +1,15 @@
+/** EmbX differential conformance corpus: runtime parameters. */
+namespace differential_parameters;
+
+param count: u32;
+param delta: u32;
+
+struct RuntimePacket big {
+  header: u8;
+  scaled: i16 transform scale(0.5);
+  values: u8[count];
+  at(delta) {
+    marker: u8;
+  }
+  tail: u8;
+}

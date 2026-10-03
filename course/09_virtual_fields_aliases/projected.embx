@@ -1,0 +1,7 @@
+/** Lesson 9: virtual fields and aliases. */
+
+struct Projected big {
+  value: u8;
+  let doubled = value * 2;
+  alias value2 = value;
+}

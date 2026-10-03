@@ -1,0 +1,14 @@
+/** EmbX differential conformance corpus: dynamic dimensions and explicit layout. */
+namespace differential_layout;
+
+struct LayoutPacket big {
+  count: u8;
+  values: u8[count];
+  offset: u8;
+  at(offset) {
+    marker: u8;
+    align(4);
+    value: u16;
+  }
+  tail: u8;
+}

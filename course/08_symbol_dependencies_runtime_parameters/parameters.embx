@@ -1,0 +1,10 @@
+/** Lesson 8: symbol dependencies and runtime parameters. */
+param count: u8;
+param gap: u8;
+
+struct ParameterPacket big {
+  values: u8[count];
+  at($next + gap) {
+    marker: u8;
+  }
+}

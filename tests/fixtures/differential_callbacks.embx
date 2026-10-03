@@ -1,0 +1,15 @@
+namespace differential_callbacks;
+
+/** EmbX differential conformance corpus: callback execution in both codec directions. */
+callback on_decode_event(value);
+callback on_encode_event(value);
+
+struct EncodeCallbackPacket big {
+    value: u8;
+    callback on_encode_event(value);
+}
+
+struct DecodeCallbackPacket big {
+    value: u8;
+    callback on_decode_event(value);
+}

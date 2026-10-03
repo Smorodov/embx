@@ -1,0 +1,15 @@
+/** Metadata and reflection example. */
+attribute packed;
+attribute width: u8;
+attribute title: string;
+
+/// Demonstrates attributes and documentation.
+[packed, title="metadata"]
+struct Metadata {
+  /// Version byte.
+  [width=8]
+  version: u8;
+
+  /// Message kind.
+  kind: u8;
+}

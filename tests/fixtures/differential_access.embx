@@ -1,0 +1,19 @@
+/** EmbX differential conformance corpus: virtual fields, aliases and transforms. */
+namespace differential_access;
+
+struct AccessPacket big {
+    count: u8;
+    let doubled = count * 2;
+    alias count_alias = count;
+    payload: bytes[doubled];
+}
+
+struct TransformPacket big {
+    raw: i16 transform scale(0.1);
+}
+
+
+struct FloatTransformPacket big {
+    f32Value: f32 transform scale(0.5);
+    f64Value: f64 transform scale(0.5);
+}

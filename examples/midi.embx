@@ -1,0 +1,21 @@
+/** Standard MIDI File (SMF) Type 0 structural example. */
+namespace examples::midi;
+
+/** One MIDI track chunk. Event bytes are retained for the format-specific event layer. */
+struct Track big {
+  magic: bytes[4] = "MTrk";
+  length: u32;
+  block data[length] {
+    raw: bytes[*];
+  }
+}
+
+/** Minimal Standard MIDI File container. */
+struct MidiFile big {
+  magic: bytes[4] = "MThd";
+  header_length: u32 = 6;
+  format: u16;
+  track_count: u16;
+  division: u16;
+  tracks: Track[track_count];
+}

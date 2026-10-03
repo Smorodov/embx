@@ -1,0 +1,94 @@
+# ============================================
+#  Build artifacts
+# ============================================
+
+# CMake build tree (главный источник мусора в вашем репо)
+/build/
+/cmake-build-*/
+build/
+out/
+bin/
+obj/
+
+# CMake generated files (если случайно окажутся вне build/)
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+!tests/cli_contract.cmake
+
+# ============================================
+#  Compiled binaries and object files
+# ============================================
+
+*.obj
+*.o
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.exp
+
+# ============================================
+#  Generated sources (ANTLR output)
+# ============================================
+
+# ANTLR генерирует лексер/парсер из grammar/EmbX.g4.
+# Они должны пересоздаваться при сборке, а не лежать в репо.
+/generated/
+/generated-src/
+
+# ============================================
+#  Test / build logs and temp data
+# ============================================
+
+Testing/
+Testing/Temporary/
+*.log
+LastTest.log
+CTestCostData.txt
+
+# ============================================
+#  IDE and editor files
+# ============================================
+
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# ============================================
+#  OS junk
+# ============================================
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# ============================================
+#  Misc
+# ============================================
+
+*.bak
+*.tmp
+*.swp
+*~

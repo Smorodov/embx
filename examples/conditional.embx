@@ -1,0 +1,9 @@
+/// Conditional field example.
+struct ConditionalPacket {
+  flags: u8;
+  if (flags == 1) {
+    value: u32;
+  } else {
+    small: u16;
+  }
+}

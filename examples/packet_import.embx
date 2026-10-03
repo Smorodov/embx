@@ -1,0 +1,17 @@
+/** Namespace/import example. */
+namespace app::packet;
+import "common.embx";
+
+type H = common::net::Header;
+const SHARED_MAGIC = common::net::MAGIC;
+
+struct Packet big {
+  header: H;
+  payload_size: u8;
+  block payload[payload_size] {
+    data: bytes[*];
+  }
+  at(0) {
+    marker: u16 = 0xA1B2;
+  }
+}

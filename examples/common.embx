@@ -1,0 +1,10 @@
+/// Shared network definitions.
+namespace common::net;
+
+const MAGIC = 0xA1B2;
+
+/// Fixed network header.
+struct Header big {
+  magic: u16 = 0xA1B2;
+  kind: u8;
+}

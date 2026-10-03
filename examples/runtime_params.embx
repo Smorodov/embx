@@ -1,0 +1,12 @@
+param count: u32;
+param delta: u32;
+
+struct RuntimePacket {
+    header: u8;
+    block payload[count] {
+        data: bytes[*];
+    }
+    at($next + delta) {
+        marker: u8;
+    }
+}
