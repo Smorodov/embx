@@ -1,0 +1,11 @@
+/** Lesson 5: composition of named structures. */
+struct Header big {
+  version: u8;
+  flags: u8;
+}
+
+struct Packet big {
+  header: Header;
+  sequence: u16;
+  payload: u8[3];
+}

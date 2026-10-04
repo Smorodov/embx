@@ -1,0 +1,42 @@
+/** EmbX differential conformance corpus: representative backend semantics. */
+namespace differential_matrix;
+
+struct Numbers big {
+  bigValue: u16;
+  littleValue: u16 little;
+  signedLittle: i16 little;
+  byteValue: u8;
+}
+
+struct Flags big {
+  bits {
+    version: u8(3);
+    kind: u8(2);
+    enabled: u8(1);
+    code: u8(2);
+  }
+}
+
+struct StaticArray big {
+  values: u8[4];
+}
+
+struct NestedHeader big {
+  version: u8;
+  flags: u8;
+}
+
+struct NestedPacket big {
+  header: NestedHeader;
+  sequence: u16;
+  payload: u8[3];
+}
+
+struct VariantPacket big {
+  kind: u8;
+  variant body by kind {
+    1: u16;
+    2: { value: u32; }
+    default: u8;
+  }
+}

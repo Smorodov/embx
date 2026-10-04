@@ -1,0 +1,8 @@
+struct Entry {
+    value: bytes until 0x00 max 8;
+}
+
+struct EntryList {
+    entries: Entry[*] until 0xFF 0xFF max 32;
+    tail: u8;
+}

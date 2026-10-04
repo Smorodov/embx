@@ -1,0 +1,9 @@
+struct Record big {
+    kind: u8;
+    length: u16;
+    data: bytes[length];
+}
+
+struct Message big {
+    records: Record[*] until 0xFF 0xFF max 4096;
+}
